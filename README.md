@@ -10,8 +10,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 1: Introdução - Unix & Shell
 
-- [ ] 1-3: _Unix & Shell- Part 1_
-- [ ] 1-4: _Unix & Shell- Part 2_
+- [ ] 1-1: _Unix & Shell- Part 1_
+- [ ] 1-2: _Unix & Shell- Part 2_
 
 ##### Bloco 2: Git & GitHub
 
@@ -69,4 +69,68 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 8-5: _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
 - [ ] 8-6: _Projeto - Zoo functions_
 
-[building...] 
+## Front-end :white_check_mark:
+
+##### Bloco 1: Introdução ao Frontend e JavaScript e assíncrono
+
+- [ ] 1-1: _Ambiente de desenvolvimento_
+- [ ] 1-2: _JavaScript Assíncrono - Promises e fetch_
+- [ ] 1-3: _Prática - Casa de Câmbio_
+- [ ] 1-4: _Async, await e testes assíncronos_
+- [ ] 1-5: _Projeto - Carrinho de Compras_
+
+##### Bloco 2: Introdução ao React
+
+- [ ] 2-1: _'Hello, World!' no React_
+- [ ] 2-2: _Componentes React_
+- [ ] 2-3: _Projeto - Solar System_
+
+##### Bloco 3: Componentes com Estado, Eventos e Formulários com React
+
+- [ ] 3-1: _Componentes com estado e eventos_
+- [ ] 3-2: _Formulários no React_
+- [ ] 3-3: _Projeto - Tryunfo_
+
+##### Bloco 4: Ciclo de Vida de Componentes e React Router
+
+- [ ] 4-1: _Ciclo de vida de componentes_
+- [ ] 4-2: _React Router_
+- [ ] 4-3: _Projeto - TrybeTunes_
+
+##### Bloco 5: Metodologias Ágeis
+
+- [ ] 5-1: _Metodologias Ágeis_
+- [ ] 5-2: _Projeto - Front-end Online Store_
+
+##### Bloco 6: Testes automatizados com React Testing Library
+
+- [ ] 6-1: _RTL - Primeiros passos_
+- [ ] 6-2: _RTL - Mocks e Inputs_
+- [ ] 6-3: _RTL - Testando React Router_
+- [ ] 6-4: _Projeto - Testes em React_
+
+##### Bloco 7: Gerenciamento de estado com Redux
+
+- [ ] 7-1: _Introdução ao Redux - O estado global da aplicação_
+- [ ] 7-2: _Usando o Redux no React_
+- [ ] 7-3: _Usando o Redux no React - Prática_
+- [ ] 7-4: _Usando o Redux no React - Actions Assíncronas_
+- [ ] 7-5: _Testes em React-Redux_
+- [ ] 7-6: _Projeto - Trybe Wallet_
+
+##### Bloco 8: Projeto Jogo de Trivia
+
+- [ ] 8-1: _Projeto - Jogo de Trivia_
+
+##### Bloco 9: Context API e React Hooks
+
+- [ ] 9-1: React Hooks - useState e useEffect
+- [ ] 9-2: Context API 
+- [ ] 9-3: Custom Hooks
+- [ ] 9-4: Projeto - StarWars Datatable com Context API e Hooks
+
+##### Bloco 10: Projeto App de Receitas
+
+- [ ] 10-1: Projeto - App de Receitas
+
+[...] 
