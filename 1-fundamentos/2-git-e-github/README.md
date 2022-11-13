@@ -1,0 +1,4 @@
+# Seção - Git & GitHub
+
+Nesse bloco, compreendi como é feito o versionamento de arquivos por meio do Git. Aprendi os conceitos de branch, commit e merge. No primeiro dia fiz exercícios que consistiam em armazenar arquivos em um repositório local, utilizando os comandos status, add, commit e merge. 
+No segundo dia, conheci a plataforma GitHub, além de outras, que funcionam como uma nuvem em que podemos criar repositórios remotos e acessá-los diretamente do computador por meio do comando "git clone". Consegui criar este mesmo repositório através do conteúdo desta aula, utilizando diversos comandos úteis, como o git push e o git pull. 
