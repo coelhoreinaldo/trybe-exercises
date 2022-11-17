@@ -1,0 +1,55 @@
+/* Estilize as divs para que, ao passar o cursor por cima das mesmas, elas ganhem uma borda. */
+div:hover{
+    border: 1px dashed aquamarine;
+}
+
+/* Faça cada div ter uma cor própria. */
+
+div:nth-of-type(1){
+    background-color: aqua;
+}
+
+div:nth-of-type(2){
+    background-color: aliceblue;
+}
+
+/* Faça a terceira div ser maior que as demais. */
+div:nth-of-type(3){
+    background-color: aquamarine;
+    height: 60px;
+}
+
+div:nth-of-type(4){
+    background-color: blue;
+}
+
+div:nth-of-type(5){
+    background-color: azure;
+}
+
+/* Estilize cada uma das tags h3. */
+div:nth-of-type(1) > h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div:nth-of-type(2) > h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div:nth-of-type(3) > h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div:nth-of-type(4) > h3{
+    font-family: monospace;
+}
+
+div:nth-of-type(5) > h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*  Deixe as tags ímpares h3 com o texto em itálico. */
+/* child porque o H3 é filho da div */
+
+div:nth-child(odd) h3 {
+    font-style: italic;
+}
