@@ -1,0 +1,20 @@
+/* mário em cima do goomba */
+.super-mario {
+    width: 200px;
+  }
+  
+  .goomba {
+    width: 100px;
+  }
+ /* é uma fala do bowser */
+  .baloon {
+  
+  }
+   /* tag p dentro do balão de fala */
+  .speach {
+    font-size: 25px;
+  }
+  
+  .bowser {
+    width: 200px;
+  }
