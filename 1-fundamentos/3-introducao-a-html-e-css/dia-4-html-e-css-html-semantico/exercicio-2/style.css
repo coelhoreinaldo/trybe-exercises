@@ -7,8 +7,9 @@
 .nav-bar{
     background-color: rgb(18, 18, 138);
     text-align: right;
-    padding: 8px;
+    padding: 16px;
     margin-bottom: 64px;
+    font-size: 20px;
 }
 
 .nav-bar ul li{
@@ -26,3 +27,4 @@
     text-align: center;
     font-size: 16px;
 }
+
