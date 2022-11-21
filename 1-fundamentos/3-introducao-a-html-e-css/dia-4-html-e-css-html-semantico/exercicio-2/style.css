@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.nav-bar{
+    background-color: rgb(18, 18, 138);
+    text-align: right;
+    padding: 8px;
+    margin-bottom: 64px;
+}
+
+.nav-bar ul li{
+    display: inline;
+    margin: 0 8px;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.title-subtitle{
+    margin-bottom: 64px;
+    text-align: center;
+    font-size: 16px;
+}
