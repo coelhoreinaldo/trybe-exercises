@@ -30,7 +30,7 @@
 
 /* ARTICLE */
 
-article{
+main{
     margin: 0 660px;
     font-size: 20px;
 }
@@ -43,16 +43,16 @@ article{
     margin-bottom: 16px;
 }
 
-article h3{
+main h3{
     margin: 32px 0;
 }
 
-article p{
+main p{
     text-align: justify;
     margin-bottom: 16px;
 }
 
-article table{
+main table{
     margin: auto;
 }
 
