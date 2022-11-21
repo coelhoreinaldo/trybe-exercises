@@ -30,34 +30,34 @@
 
 /* ARTICLE */
 
-article{
+main{
     margin: 0 660px;
     font-size: 20px;
 }
 
 #stomatopoda-pic{
-    width: 50%;
+    width: 600px;
     display: block;
     margin: auto;
     border-radius: 50%;
     margin-bottom: 16px;
 }
 
-article h3{
+main h3{
     margin: 32px 0;
 }
 
-article p{
+main p{
     text-align: justify;
     margin-bottom: 16px;
 }
 
-article table{
+main table{
     margin: auto;
 }
 
 #vision-pic{
-    width: 80%;
+    width: 500px;
     display: block;
     margin: auto;
     margin-bottom: 16px;
