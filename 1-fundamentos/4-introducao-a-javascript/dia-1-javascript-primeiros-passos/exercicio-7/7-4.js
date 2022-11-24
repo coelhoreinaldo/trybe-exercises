@@ -31,4 +31,4 @@ if (baseSalary <= 1903.98) {
 
 netSalary = baseSalary - ir;
 
-console.log(netSalary)
+console.log(`Seu salário base é de R$${netSalary}.`);
