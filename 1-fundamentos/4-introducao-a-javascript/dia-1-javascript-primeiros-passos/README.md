@@ -1,4 +1,4 @@
-#DIA 01
+# DIA 01
 
 Neste primeiro dia, foi introduzido a seção de Introdução à JavaScript. Eu já tinha conhecimento de parte do conteúdo devido o curso introdutório da própria Trybe. Aprendi e fiz exercícios mais de dez exercícios utilizando os seguintes elementos:
 
