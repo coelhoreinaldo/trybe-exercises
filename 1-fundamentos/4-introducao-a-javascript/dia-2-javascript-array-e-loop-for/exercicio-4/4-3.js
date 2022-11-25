@@ -6,4 +6,7 @@ for(let i = 0; i < numbers.length; i += 1) {
 }
 let media = sum / numbers.length;
 
-console.log(media);
+console.log(media.toFixed());
+
+
+//verdinho é porque é um método, tofixed faz virar um número inteiro
