@@ -11,5 +11,5 @@ for (let i = 0; i < numbers.length; i += 1) {
 if (odd === 0) {
     console.log ('nenhum valor ímpar encontrado')
 } else {
-console.log(odd);
+console.log('existem ' + odd.length + ' números ímpares: ' + odd)
 }
