@@ -1,0 +1,3 @@
+# DIA 02
+
+Foram aprofundados os conceitos de arrays e loop for. Diversos exercícios foram realizados, visando colocar em prática tudo que vimos neste conteúdo. No final da seção, tive acesso a um conteúdo adicional bônus no qual aprendi sobre Ordenação Bubble Sort. Esse exercício se mostrou conveniente, uma vez que finalmente conseguimos entender como funciona um "método". Assim, fui capaz de criar um algoritmo capaz de ordenar um array de números do menor número para o maior.
