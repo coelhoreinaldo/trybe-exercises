@@ -2,31 +2,26 @@
 let z = 10;
 let x = 2;
 
-// Adição (a + b)
 function sum (a, b) {
     return a + b;
 }
 console.log(sum(z, x));
 
-// Subtração (a - b)
 function subtraction (a, b) {
     return a - b;
 }
 console.log(subtraction(z, x));
 
-// Multiplicação (a * b)
 function multiplication (a, b) {
     return a * b;
 }
 console.log(multiplication(z, x));
 
-// Divisão (a / b)
 function division (a, b) {
     return a / b;
 }
 console.log(division(z, x));
 
-// Módulo (a % b)
 function modulus (a, b) {
     return a % b;
 }
