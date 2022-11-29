@@ -16,3 +16,21 @@ console.log(isTriangle(100, 50, 30));
 // Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
 
 // Um ângulo será considerado inválido se não tiver um valor positivo.
+
+
+/* Gabarito
+
+function triangleAnglesValidate(angleA, angleB, angleC) {
+  let sumOfAngles = angleA + angleB + angleC;
+  let allAnglesArePositives = angleA > 0 && angleB > 0 && angleC > 0;
+
+  if (allAnglesArePositives) {
+    if (sumOfAngles === 180) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return 'Erro: ângulo inválido';
+  }
+} */
