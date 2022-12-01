@@ -1,3 +1,7 @@
+// 🚀 Modifique as concatenações para template literals.
+
+// Copie o código abaixo:
+
 const name = 'Adriana';
 const lastName = 'Soares';
 // console.log('Olá' + ',' + name + ' ' + lastName + '!');
