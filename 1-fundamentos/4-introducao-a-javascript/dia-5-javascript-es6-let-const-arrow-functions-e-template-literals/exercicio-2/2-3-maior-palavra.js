@@ -7,14 +7,11 @@ let biggestWord = '';
 
 const verificaBiggestWord = (phrase) => {
     const phraseSplit = phrase.split(' ');
-    // console.log('phrasesplit', phraseSplit);
     let verifica = null;
     for (let word in phraseSplit) {
         verifica = phraseSplit[word]
-        // console.log('verifica', verifica);
         if (verifica.length > biggestWord.length) {
             biggestWord = verifica;
-            // console.log('biggestWord', biggestWord);
         }
     }
     return biggestWord
