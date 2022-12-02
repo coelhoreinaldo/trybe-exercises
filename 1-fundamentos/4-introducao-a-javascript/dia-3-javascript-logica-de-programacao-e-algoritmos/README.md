@@ -1,0 +1,3 @@
+# DIA 03
+
+Desenvolvi a minha lógica de programação e aprendi como trabalhá-la. Para criar algoritmos, deve-se primeiro quebrar grandes problemas e transformá-los em pequenos para que se possa, enfim, trabalhar na resolução. Assim, quando terminarmos de escrever um algoritmo, devemos nos perguntar: Eu resolvi o problema? Havia outras maneiras? Fiz de uma forma eficiente? Seria possível alterar a ordem dos passos? Por fim e mais importante, o computador será capaz de entender todas as instruções? Deve-se atentar também à complexidade do código, códigos muitos complexos tornam a manutenção, acompanhamento e testagem do código mais difícil.
