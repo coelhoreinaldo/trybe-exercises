@@ -28,12 +28,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 4: Introdução à JavaScript
 
-- [ ] 4-1: _JavaScript - Primeiros passos_
-- [ ] 4-2: _JavaScript - Array e loop For_
-- [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
-- [ ] 4-4: _JavaScript - Objetos e funções_
-- [ ] 4-5: _JavaScript ES6 - let, const, arrow functions e tempalte literals_
-- [ ] 4-6: _Projeto - Playground Functions_
+- [X] 4-1: _JavaScript - Primeiros passos_
+- [X] 4-2: _JavaScript - Array e loop For_
+- [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [X] 4-4: _JavaScript - Objetos e funções_
+- [X] 4-5: _JavaScript ES6 - let, const, arrow functions e tempalte literals_
+- [X] 4-6: _Projeto - Playground Functions_
 
 ##### Bloco 5: JavaScript: DOM, Eventos e Web Storage
 
@@ -71,7 +71,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Front-end :hourglass_flowing_sand:
 
-##### Bloco 1: Introdução ao Frontend e JavaScript e assíncrono
+##### Bloco 1: Introdução ao Frontend e JavaScript assíncrono
 
 - [ ] 1-1: _Ambiente de desenvolvimento_
 - [ ] 1-2: _JavaScript Assíncrono - Promises e fetch_
