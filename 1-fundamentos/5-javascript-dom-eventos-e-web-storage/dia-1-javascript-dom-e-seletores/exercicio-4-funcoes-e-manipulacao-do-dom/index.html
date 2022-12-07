@@ -72,6 +72,14 @@
         p0TextUppercase.innerText = p0TextUppercase.innerText.toUpperCase();
     }
     changeP0()
+    // exercise 6
+    const printTagP = () => {
+        let log = document.getElementsByTagName('p');
+        for (let i = 0; i < log.length; i += 1) {
+            console.log(log[i].innerHTML);
+        }
+    }
+    printTagP();
     </script>
   </body>
 </html>
