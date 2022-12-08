@@ -1,7 +1,6 @@
  //   Adicione a tag h1 com o texto TrybeTrip - Agência de Viagens como filho da tag body;
 const fatherBody = document.querySelector('body');
 const createH1Text = document.createElement('h1');
-createH1Text.id = 'h1text'
 fatherBody.appendChild(createH1Text)
 createH1Text.innerText = 'TrybeTrip - Agência de Viagens'
 
@@ -48,7 +47,20 @@ for (let items of ulList) {
 
 // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
 
-const createH3 = document.createElement('h3');
-for (let i = 0; i < 2; i += 1){
+
+for (let i = 0; i < 3; i += 1){
+    const createH3 = document.createElement('h3');
     createMain.appendChild(createH3);
+    createH3.className = 'description'
 }
+
+// Após criar as tags anteriores, você mostrou para a sua liderança como estava a estrutura inicial da página. Sua liderança então pediu para que você fizesse algumas alterações:
+
+// Adicione a classe title na tag h1 criada;
+createH1Text.className = 'title'
+// Adicione a classe description nas 3 tags h3 criadas;
+//ok
+// Remova a section criada no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
+createMain.removeChild(createLeftSection)
+// Centralize a section criada no passo 6 (aquele que possui a classe right-content).
+createRightSection.style.marginRight = 'auto';
