@@ -16,7 +16,20 @@ createCenterSection.className = 'center-content';
 createMain.appendChild(createCenterSection)
 
 // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
-
 const createP = document.createElement('p');
 createCenterSection.appendChild(createP);
 createP.innerText = 'Curtindo demais esse exercício.'
+
+// Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+const createLeftSection = document.createElement('section')
+createLeftSection.className = 'left-content'
+createMain.appendChild(createLeftSection);
+
+// Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+const createRightSection = document.createElement('section')
+createRightSection.className = 'right-content'
+createMain.appendChild(createRightSection);
+
+// Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
+// Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+// Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
