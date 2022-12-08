@@ -2,9 +2,9 @@
 const father = document.querySelector('#pai');
 //get document.getElementById('pai');
 const elementoOndeVoceEstaSimbling = document.createElement('section');
-//elementoOndeVoceEstaSimbling.id = 'irmaoElementoOndeVoceEsta'
+elementoOndeVoceEstaSimbling.id = 'irmaoElementoOndeVoceEsta' //coloando id 
 father.appendChild(elementoOndeVoceEstaSimbling);
-elementoOndeVoceEstaSimbling.innerText = 'Sou o irmão do elementoOndeVoceEsta';//como eu saberia que o elemento foi criado com êxito sem ser escrevendo hello?
+// elementoOndeVoceEstaSimbling.innerText = 'Sou o irmão do elementoOndeVoceEsta';//como eu saberia que o elemento foi criado com êxito sem ser escrevendo hello?
 
 // Crie um filho para elementoOndeVoceEsta.
 const elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
