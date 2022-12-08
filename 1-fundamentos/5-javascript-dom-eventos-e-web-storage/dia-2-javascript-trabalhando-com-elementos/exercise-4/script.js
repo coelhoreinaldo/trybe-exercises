@@ -31,5 +31,10 @@ createRightSection.className = 'right-content'
 createMain.appendChild(createRightSection);
 
 // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
+const addImage = document.createElement('img');
+addImage.className = 'small-image';
+createLeftSection.appendChild(addImage);
+addImage.src = 'https://picsum.photos/200';
+
 // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do section criado no passo 6;
 // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
