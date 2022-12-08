@@ -17,3 +17,6 @@ createMain.appendChild(createCenterSection)
 
 // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 
+const createP = document.createElement('p');
+createCenterSection.appendChild(createP);
+createP.innerText = 'Curtindo demais esse exercício.'
