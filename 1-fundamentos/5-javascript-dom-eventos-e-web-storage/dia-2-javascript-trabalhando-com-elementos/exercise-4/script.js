@@ -47,3 +47,8 @@ for (let items of ulList) {
 }
 
 // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
+
+const createH3 = document.createElement('h3');
+for (let i = 0; i < 2; i += 1){
+    createMain.appendChild(createH3);
+}
