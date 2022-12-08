@@ -64,3 +64,11 @@ createH1Text.className = 'title'
 createMain.removeChild(createLeftSection)
 // Centralize a section criada no passo 6 (aquele que possui a classe right-content).
 createRightSection.style.marginRight = 'auto';
+
+// Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+createCenterSection.style.backgroundColor = 'green';
+
+// Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+const findUl = document.getElementsByTagName('ul')[0];
+findUl.lastChild.remove();
+findUl.lastChild.remove();
