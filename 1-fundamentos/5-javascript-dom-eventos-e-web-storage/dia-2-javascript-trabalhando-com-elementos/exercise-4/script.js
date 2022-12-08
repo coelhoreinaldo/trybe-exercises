@@ -9,5 +9,11 @@ createH1Text.innerText = 'TrybeTrip - Agência de Viagens'
 const createMain = document.createElement('main');
 createMain.className = 'main-content';
 fatherBody.appendChild(createMain)
+
 // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+const createCenterSection = document.createElement('section');
+createCenterSection.className = 'center-content';
+createMain.appendChild(createCenterSection)
+
 // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+
