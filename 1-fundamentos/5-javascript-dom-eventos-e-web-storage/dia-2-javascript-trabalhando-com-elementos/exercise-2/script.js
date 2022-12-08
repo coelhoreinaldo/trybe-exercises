@@ -1,11 +1,14 @@
 // Crie um irmão para elementoOndeVoceEsta.
 const father = document.querySelector('#pai');
+//get document.getElementById('pai');
 const elementoOndeVoceEstaSimbling = document.createElement('section');
+//elementoOndeVoceEstaSimbling.id = 'irmaoElementoOndeVoceEsta'
 father.appendChild(elementoOndeVoceEstaSimbling);
 elementoOndeVoceEstaSimbling.innerText = 'Sou o irmão do elementoOndeVoceEsta';//como eu saberia que o elemento foi criado com êxito sem ser escrevendo hello?
 
 // Crie um filho para elementoOndeVoceEsta.
 const elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
+//get element by id
 const elementoOndeVoceEstaChild = document.createElement('p');
 elementoOndeVoceEsta.appendChild(elementoOndeVoceEstaChild);
 elementoOndeVoceEstaChild.innerText = 'Sou o filho do elementoOndeVoceEsta'
