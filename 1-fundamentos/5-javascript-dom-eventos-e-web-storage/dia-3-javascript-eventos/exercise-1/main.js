@@ -19,16 +19,36 @@ const addTech = (event) => {
 
 firstLi.addEventListener('click', addTech);
 secondLi.addEventListener('click', addTech);
-thirdLi.addEventListener('click', addTech)
-// - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
-// com a classe 'tech';
+thirdLi.addEventListener('click', addTech);
+// - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento // com a classe 'tech';
+
+input.addEventListener("input", (event) => {
+  const techClass = document.querySelector('.tech');
+  techClass.innerText = event.target.value
+});
 
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
+myWebpage.addEventListener("dblclick", event => {
+  window.location.replace('https://coelhoreinaldo.github.io/')
+})
+
 
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+myWebpage.addEventListener('mouseover', event => {
+  // myWebpage.style.color = 'cyan'; <- como eu fiz
+  event.target.style.color = 'cyan'; // gabarito
+})
+
+// myWebpage.addEventListener('mouseleave', event => {
+//   // myWebpage.style.color = 'white'; <- como eu fiz
+// })
+
+myWebpage.addEventListener('mouseout', event => {
+  event.target.style.color = 'unset';
+}) // gabarito
 
 // Segue abaixo um exemplo do uso de event.target:
 
