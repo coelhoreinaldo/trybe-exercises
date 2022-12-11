@@ -112,16 +112,16 @@ createFridayButton('Sexta-feira')
 
 const fridayButtonDispay = (fridaysArray) => {
   const fridayButton = document.querySelector('#btn-friday');
-  const fridayItems = document.getElementsByClassName('friday');
+  const fridayItems = document.querySelectorAll('.friday');
   const newText = 'its friday then'
 
 
   fridayButton.addEventListener('click', () => {
-    for (let i of fridayItems) {
-      if (i.innerHTML !== newText) {
-        i.innerHTML = newText
+    for (let i = 0 ; i < fridayItems.length; i += 1) {
+      if (fridayItems[i].innerHTML !== newText) {
+        fridayItems[i].innerHTML = newText
       } else {
-        i.innerHTML = fridaysArray[i];
+        fridayItems[i].innerHTML = fridaysArray[i];
       }
     }
   })
@@ -129,23 +129,4 @@ const fridayButtonDispay = (fridaysArray) => {
 
 let decemberFridays = [4, 11, 18, 25]
 fridayButtonDispay(decemberFridays);
-
-// const test = (fridaysArray) => {
-//   let getFridayButton = document.querySelector('#btn-friday');
-//   let fridays = document.getElementsByClassName('friday');
-//   let newFridayText = 'SEXTOU o/';
-
-//   getFridayButton.addEventListener('click', () => {
-//   for (let index = 0; index < fridays.length; index += 1) {
-//     if (fridays[index].innerHTML !== newFridayText) {
-//         fridays[index].innerHTML = newFridayText;
-//         //caso o texto não tenha sido substituído, ao clicar no botão ele será substituído pelo novo texto;
-//     } else {
-//         fridays[index].innerHTML = fridaysArray[index];
-//         //caso o texto já tenha sido substituído, ao clicar no botão ele volta ao texto padrão.
-//       }
-//     }
-//   });
-// }
-//   let decemberFridays = [ 4, 11, 18, 25 ];
-//   test(decemberFridays);
+//dúvidas, como usar aquele unset aqui???
