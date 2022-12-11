@@ -35,12 +35,12 @@ const createDays = () => {
     dayListItem.innerHTML = currentDay;
     daysCont.appendChild(dayListItem);
 
-    if (currentDay === 24 || currentDay === 25 || currentDay === 31) {
+    if (currentDay === 24 || currentDay === 31) {
       dayListItem.classList.add('holiday');
     } else if (currentDay === 4 || currentDay === 11 || currentDay === 18) {
       dayListItem.classList.add('friday')
     } else if (currentDay === 25) {
-      dayListItem.classList.add([holiday, friday])
+      dayListItem.classList.add('friday', 'holiday');
     }
   }
 }
@@ -75,10 +75,10 @@ const holidaysColor = () => {
   let holidayItems = document.getElementsByClassName('holiday');
   let backgroundColor = 'rgb(238, 238, 238)'
   let newColor = 'cyan';
-//post feedback
+  //post feedback
   holidaysButton.addEventListener('click', () => {
     for (let i = 0; i < holidayItems.length; i += 1) {
-      if (holidayItems[i].style.backgroundColor === newColor){
+      if (holidayItems[i].style.backgroundColor === newColor) {
         holidayItems[i].style.backgroundColor = backgroundColor;
       } else {
         holidayItems[i].style.backgroundColor = newColor;
@@ -96,11 +96,56 @@ holidaysColor();
 // Adicione esse botão como filho/filha da tag <div> com classe "buttons-container".
 
 const createFridayButton = (buttonName) => {
-const buttonsDiv = document.querySelector('.buttons-container');
-const fridayButton = document.createElement('button');
-fridayButton.id = 'btn-friday';
-buttonsDiv.appendChild(fridayButton);
-fridayButton.innerHTML = buttonName;
+  const buttonsDiv = document.querySelector('.buttons-container');
+  const fridayButton = document.createElement('button');
+  fridayButton.id = 'btn-friday';
+  buttonsDiv.appendChild(fridayButton);
+  fridayButton.innerHTML = buttonName;
 }
 
 createFridayButton('Sexta-feira')
+
+// Parte 5
+// Implemente uma função que modifica o texto exibido nos dias que são Sexta-feira;
+// Adicione ao botão “Sexta-feira” um evento de “click” e modifique o texto a ser exibido nos dias que são sextas-feiras.
+// De olho na dica 👀: É interessante que esse botão possua também a lógica inversa. Ao ser clicado novamente, ele retorna à configuração inicial exibindo os dias.
+
+const fridayButtonDispay = (fridaysArray) => {
+  const fridayButton = document.querySelector('#btn-friday');
+  const fridayItems = document.getElementsByClassName('friday');
+  const newText = 'its friday then'
+
+
+  fridayButton.addEventListener('click', () => {
+    for (let i of fridayItems) {
+      if (i.innerHTML !== newText) {
+        i.innerHTML = newText
+      } else {
+        i.innerHTML = fridaysArray[i];
+      }
+    }
+  })
+}
+
+let decemberFridays = [4, 11, 18, 25]
+fridayButtonDispay(decemberFridays);
+
+// const test = (fridaysArray) => {
+//   let getFridayButton = document.querySelector('#btn-friday');
+//   let fridays = document.getElementsByClassName('friday');
+//   let newFridayText = 'SEXTOU o/';
+
+//   getFridayButton.addEventListener('click', () => {
+//   for (let index = 0; index < fridays.length; index += 1) {
+//     if (fridays[index].innerHTML !== newFridayText) {
+//         fridays[index].innerHTML = newFridayText;
+//         //caso o texto não tenha sido substituído, ao clicar no botão ele será substituído pelo novo texto;
+//     } else {
+//         fridays[index].innerHTML = fridaysArray[index];
+//         //caso o texto já tenha sido substituído, ao clicar no botão ele volta ao texto padrão.
+//       }
+//     }
+//   });
+// }
+//   let decemberFridays = [ 4, 11, 18, 25 ];
+//   test(decemberFridays);
