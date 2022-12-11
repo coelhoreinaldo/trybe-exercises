@@ -237,3 +237,29 @@ const addColorToCalendar = () => {
 
 addColorToCalendar();
 //tentei fazer selectedtask com queryselector e não funcionou, por que?
+
+// Bônus
+// Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto “COMPROMISSOS”, adiciona o item à lista “MEUS COMPROMISSOS” ao clicar no botão “ADICIONAR”;
+// Se nenhum caractere for inserido no campo input, a função deve retornar um alert com uma mensagem de erro ao clicar em “ADICIONAR”;
+// Ao pressionar a tecla “enter” o evento também deverá ser disparado.
+// De olho na dica 👀: Você pode utilizar a propriedade key.
+
+const addAppointment = () => {
+  const appointments = document.querySelector('.input-container');
+  const taskInput = document.querySelector('#task-input');
+  const addButton = document.querySelector('#btn-add');
+  
+  addButton.addEventListener('click', () =>{
+
+  })
+
+  taskInput.addEventListener('keyup', (event) =>{
+    if(taskInput.value.length === 0) {
+      window.alert
+    } else {
+
+    }
+  })
+}
+
+// fazer amanhã
