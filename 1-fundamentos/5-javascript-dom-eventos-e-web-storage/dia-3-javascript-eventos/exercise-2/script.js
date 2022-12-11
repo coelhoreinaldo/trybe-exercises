@@ -213,3 +213,27 @@ const selectTask = () => {
 selectTask();
 //DÚVIDAS: Quem afinal é o .target dessa função???
 
+// Parte 10
+// Implemente uma função que atribua a cor da tarefa ao dia do calendário;
+// Adicione um evento que, ao clicar em um dia do mês no calendário, atribua a esse dia a cor da legenda da sua tarefa selecionada;
+// Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119).
+
+const addColorToCalendar = () => {
+  let selectedTask = document.getElementsByClassName('task selected');
+  let day = document.querySelector('#days');
+  let taskDiv = document.querySelector('.task');
+  let taskColor = taskDiv.style.backgroundColor;
+
+  day.addEventListener('click', (event) => {
+    let eventTargetColor = event.target.style.color;
+     if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+     } else if (eventTargetColor === taskColor) {
+      event.target.style.color = 'rgb(119,119,119)';
+     }
+  })
+}
+
+addColorToCalendar();
+//tentei fazer selectedtask com queryselector e não funcionou, por que?
