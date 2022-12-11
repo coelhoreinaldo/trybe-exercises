@@ -191,3 +191,25 @@ const addColorToTask = (color) => {
 }
 
 addColorToTask('aquamarine');
+
+
+// Parte 9
+// Implemente uma função que selecione uma tarefa;
+// Adicione um evento que ao clicar no elemento com a tag <div> referente à cor da sua tarefa, atribua a esse elemento a classe task selected, ou seja, quando sua tarefa possuir a classe task selected ela estará selecionada;
+// Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task, ou seja, essa tarefa está deixando de ser uma tarefa selecionada.
+const selectTask = () => {
+  let selectedTask = document.getElementsByClassName('task selected');
+  let divTags = document.querySelector('.task');
+  divTags.addEventListener('click', (event) => {
+    // console.log(event.target);
+      if (selectedTask.length === 0){
+        event.target.className = 'task selected';
+      } else {
+        event.target.className = 'task';
+      }
+  });
+}
+
+selectTask();
+//DÚVIDAS: Quem afinal é o .target dessa função???
+
