@@ -139,7 +139,7 @@ fridayButtonDispay(decemberFridays);
 
 
 const dayMouseOver = () => {
-  let daysOfTheMonth = document.getElementById('days');  //DÚVIDAS: Não dá pra usar com class?
+  let daysOfTheMonth = document.getElementById('days');  
   daysOfTheMonth.addEventListener('mouseover', (event) => {
     event.target.style.fontSize = '30px';
     event.target.style.fontWeight = '600';
@@ -157,4 +157,22 @@ const dayMouseOut = () => {
 }
 
 dayMouseOut();
+
+//DÚVIDAS: Não dá pra usar o event.target com class?
+
+// Parte 7
+// Implemente uma função que adicione uma tarefa personalizada ao calendário;
+// A função deve receber como parâmetro a string com o nome da tarefa (ex: “cozinhar”) e criar dinamicamente um elemento com a tag <span> contendo a tarefa;
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".
+
+const createTask = (taskName) => {
+  const myTasksDiv = document.querySelector('.my-tasks');
+  const taskSpan = document.createElement('span');
+  taskSpan.innerHTML = taskName;
+  myTasksDiv.appendChild(taskSpan);
+}
+
+createTask('Aprender Eventos');
+
+//DÚVIDAS: não dá pra usar com getelementsbyclass? tem a ver com nodelist e html colection?
 
