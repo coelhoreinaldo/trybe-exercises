@@ -15,7 +15,6 @@ createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
 
-
 //   Crie um calendário dinamicamente.
 // O array decemberDaysList contém os dois últimos dias de novembro e os dias do mês de dezembro. Sua função deve criar dinamicamente cada dia do calendário e os adicionar dentro da tag <ul>.
 // Observação 🔎: Note que os dias 29 e 30 de novembro estão no array, pois representam respectivamente Domingo e Segunda-feira.
@@ -129,4 +128,33 @@ const fridayButtonDispay = (fridaysArray) => {
 
 let decemberFridays = [4, 11, 18, 25]
 fridayButtonDispay(decemberFridays);
-//dúvidas, como usar aquele unset aqui???
+//DÚVIDAS;  como usar aquele unset aqui???, olhei o gabarito e me senti muito trapaceado porque assim: não era pra resolver de forma dinâmica? Eu tava tentando usar o unset para retornar ao texto padrão (4, 11, 18, 25) mas não ia, imagina se eu tenho que criar um array chamado Fridays para todas sexta-feiras pelos próximos 50 anos??? Custei muito pra resolver a linha 124, queria saber se tinha um jeito de fazer usando o unset que usei no exercício 1 anterior
+
+
+
+// Parte 6
+// Implemente duas funções que criem um efeito de “zoom”;
+// Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+// De olho na dica 👀: Você pode utilizar a propriedade event.target.
+
+
+const dayMouseOver = () => {
+  let daysOfTheMonth = document.getElementById('days');  //DÚVIDAS: Não dá pra usar com class?
+  daysOfTheMonth.addEventListener('mouseover', (event) => {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '600';
+  })
+}
+
+dayMouseOver();
+
+const dayMouseOut = () => {
+  let daysOfTheMonth = document.getElementById('days');
+  daysOfTheMonth.addEventListener('mouseout', (event) => {
+    event.target.style.fontSize = 'unset';
+    event.target.style.fontWeight = 'unset';
+  })
+}
+
+dayMouseOut();
+

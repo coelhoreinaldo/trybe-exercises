@@ -43,7 +43,7 @@ myWebpage.addEventListener('mouseover', event => {
 })
 
 // myWebpage.addEventListener('mouseleave', event => {
-//   // myWebpage.style.color = 'white'; <- como eu fiz
+//   // myWebpage.style.color = 'white'; <- como eu  fiz
 // })
 
 myWebpage.addEventListener('mouseout', event => {
