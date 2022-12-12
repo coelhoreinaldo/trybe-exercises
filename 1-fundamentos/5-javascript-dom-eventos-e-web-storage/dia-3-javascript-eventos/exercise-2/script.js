@@ -245,21 +245,34 @@ addColorToCalendar();
 // De olho na dica 👀: Você pode utilizar a propriedade key.
 
 const addAppointment = () => {
-  const appointments = document.querySelector('.input-container');
-  const taskInput = document.querySelector('#task-input');
-  const addButton = document.querySelector('#btn-add');
-  
-  addButton.addEventListener('click', () =>{
+  //100% feedback
+  const getInputField = document.querySelector('#task-input');
+  const addInputButton = document.querySelector('#btn-add');
+  let getTaskList = document.querySelector('.task-list');
 
+  addInputButton.addEventListener('click', () =>{
+    if (getInputField.value.length > 0) {
+      let newLi = document.createElement('li');
+      newLi.innerHTML = getInputField.value;
+      
+      getTaskList.appendChild(newLi);
+      getInputField.value = '';
+    } else {
+      alert('Error: Digite pelo menos 1 caractere.');
+    }
   })
 
-  taskInput.addEventListener('keyup', (event) =>{
-    if(taskInput.value.length === 0) {
-      window.alert
-    } else {
+  getInputField.addEventListener('keyup', (event) =>{
+    if(event.key === 'Enter' && getInputField.value.length > 0) {
+      let newLi = document.createElement('li');
+      newLi.innerText = getInputField.value;
 
+      getTaskList.appendChild(newLi);
+      getInputField.value=''
     }
   })
 }
+
+addAppointment();
 
 // fazer amanhã
