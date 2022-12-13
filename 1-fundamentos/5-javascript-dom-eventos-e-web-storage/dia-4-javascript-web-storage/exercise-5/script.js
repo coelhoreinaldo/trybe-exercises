@@ -89,4 +89,17 @@ changeLineHeight = () => {
 }
 
 changeLineHeight();
+
+changeFontFamily = () => {
+    let fontFamilyBottons = document.querySelectorAll('.my-buttons')[4].children;
+    for (let i = 0; i < fontFamilyBottons.length; i += 1){
+        fontFamilyBottons[i].addEventListener('click', () => {
+            body.style.fontFamily = fontFamilyBottons[i].innerHTML;
+        })
+    }
 }
+
+changeFontFamily();
+
+}
+
