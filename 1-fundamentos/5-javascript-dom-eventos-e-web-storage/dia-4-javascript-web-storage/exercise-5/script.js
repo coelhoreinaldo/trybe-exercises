@@ -1,6 +1,6 @@
 
 window.onload = () => {
-    const body = document.querySelector('body');
+    const body = document.body;
     const whiteButton = document.querySelectorAll(".white-button");
     const blackButton = document.querySelectorAll(".black-button");
     const greenButton = document.querySelectorAll(".green-button");
@@ -52,5 +52,16 @@ const changeFontColor = () => {
 }
 
 changeFontColor();
+
+const changeFontSize = () => {
+    let botoes = document.querySelectorAll('.my-buttons')[2].children
+    for (let i = 0; i < botoes.length; i += 1){
+        botoes[i].addEventListener('click', () => {
+            body.style.fontSize = botoes[i].innerHTML;
+        })
+    }
+}
+
+changeFontSize();
 
 }
