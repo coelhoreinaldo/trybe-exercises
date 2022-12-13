@@ -1,0 +1,23 @@
+*{
+    margin: 4px 16px;
+}
+
+body {
+    background-color: gray;
+}
+
+.section-content {
+    text-align: center;
+}
+
+.preferences{
+    display: flex;
+    border: 1px dotted black;
+    text-align: center;
+    justify-content: center;
+    margin: 16px;
+}
+.my-buttons{
+    display: flex;
+    flex-direction: column;
+}
