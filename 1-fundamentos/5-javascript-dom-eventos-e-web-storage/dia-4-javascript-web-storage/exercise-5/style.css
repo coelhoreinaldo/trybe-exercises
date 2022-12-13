@@ -5,6 +5,7 @@
 body {
     background-color: gray;
 }
+
 .section-content {
     text-align: center;
 }
@@ -12,6 +13,9 @@ body {
 .preferences{
     display: flex;
     border: 1px dotted black;
+    text-align: center;
+    justify-content: center;
+    margin: 16px;
 }
 .my-buttons{
     display: flex;
