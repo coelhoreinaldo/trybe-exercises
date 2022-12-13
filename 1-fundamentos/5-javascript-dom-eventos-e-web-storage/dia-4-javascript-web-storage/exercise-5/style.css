@@ -1,3 +1,18 @@
+*{
+    margin: 4px 16px;
+}
+
+body {
+    background-color: gray;
+}
 .section-content {
     text-align: center;
+}
+
+.preferences{
+    display: flex;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
 }
