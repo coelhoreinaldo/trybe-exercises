@@ -12,7 +12,7 @@ body {
 .preferences{
     display: flex;
 }
-.buttons{
+.background-color-buttons{
     display: flex;
     flex-direction: column;
 }

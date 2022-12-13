@@ -1,28 +1,36 @@
-const backgroundBody = document.querySelector('body');
+
 window.onload = () => {
 const changeBackgroundColor = () => {
+    const body = document.querySelector('body');
+    body.style.color = 'black';
+    let color;
     const whiteButton = document.querySelector("#white-button");
     const blackButton = document.querySelector("#black-button");
     const greenButton = document.querySelector("#green-button");
     const blueButton = document.querySelector("#blue-button");
     const yellowButton = document.querySelector("#yellow-button");
 
-    
     whiteButton.addEventListener('click', () => {
-        backgroundBody.style.backgroundColor = 'white';
+        color = whiteButton.innerHTML;        
+        body.style.backgroundColor = color;
     })
     blackButton.addEventListener('click', () => {
-        backgroundBody.style.backgroundColor = 'black';
+        color = blackButton.innerHTML;     
+        body.style.backgroundColor = color;
     })
     greenButton.addEventListener('click', () => {
-        backgroundBody.style.backgroundColor = 'green';
+        color = greenButton.innerHTML;     
+        body.style.backgroundColor = color;
     })
     blueButton.addEventListener('click', () => {
-        backgroundBody.style.backgroundColor = 'blue';
+        color = blueButton.innerHTML;     
+        body.style.backgroundColor = color;
     })
     yellowButton.addEventListener('click', () => {
-        backgroundBody.style.backgroundColor = 'yellow';
-    })  
+        color = yellowButton.innerHTML;     
+        body.style.backgroundColor = color;
+    })
+    localStorage.setItem(body.style.backgroundColor, color); // Minha dúvida: como eu salvo minhas coisas no local storage po?
 }
 
 changeBackgroundColor()
