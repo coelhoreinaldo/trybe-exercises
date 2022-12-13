@@ -79,4 +79,14 @@ const changeFontSize = () => {
 
 changeFontSize();
 
+changeLineHeight = () => {
+    let lineHeightBottons = document.querySelectorAll('.my-buttons')[3].children;
+    for (let i = 0; i < lineHeightBottons.length; i += 1){
+        lineHeightBottons[i].addEventListener('click', () => {
+            body.style.lineHeight = lineHeightBottons[i].innerHTML;
+        })
+    }
+}
+
+changeLineHeight();
 }
