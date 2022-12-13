@@ -37,27 +37,34 @@ const changeBackgroundColor = () => {
 changeBackgroundColor();
 
 const changeFontColor = () => {
-    whiteButton[1].addEventListener('click', () => {
-        color = whiteButton[1].innerHTML;
-        body.style.color = color;
-    })
-    blackButton[1].addEventListener('click', () => {
-        color = blackButton[1].innerHTML;
-        body.style.color = color;
-    })
-    blueButton[1].addEventListener('click', () => {
-        color = blueButton[1].innerHTML;
-        body.style.color = color;
-    })
+    let fontColorButtons = document.querySelectorAll('.my-buttons')[1].children;
+    for (let i = 0; i < fontColorButtons.length; i += 1) {
+        fontColorButtons[i].addEventListener('click', () => {
+            color = fontColorButtons[i].innerHTML;
+            body.style.color = color;
+        })
+    }
+    // whiteButton[1].addEventListener('click', () => {
+    //     color = whiteButton[1].innerHTML;
+    //     body.style.color = color;
+    // })
+    // blackButton[1].addEventListener('click', () => {
+    //     color = blackButton[1].innerHTML;
+    //     body.style.color = color;
+    // })
+    // blueButton[1].addEventListener('click', () => {
+    //     color = blueButton[1].innerHTML;
+    //     body.style.color = color;
+    // })
 }
 
 changeFontColor();
 
 const changeFontSize = () => {
-    let botoes = document.querySelectorAll('.my-buttons')[2].children
-    for (let i = 0; i < botoes.length; i += 1){
-        botoes[i].addEventListener('click', () => {
-            body.style.fontSize = botoes[i].innerHTML;
+    let fontSizeBottons = document.querySelectorAll('.my-buttons')[2].children
+    for (let i = 0; i < fontSizeBottons.length; i += 1){
+        fontSizeBottons[i].addEventListener('click', () => {
+            body.style.fontSize = fontSizeBottons[i].innerHTML;
         })
     }
 }
