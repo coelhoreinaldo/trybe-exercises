@@ -11,8 +11,9 @@ body {
 
 .preferences{
     display: flex;
+    border: 1px dotted black;
 }
-.background-color-buttons{
+.my-buttons{
     display: flex;
     flex-direction: column;
 }
