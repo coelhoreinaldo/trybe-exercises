@@ -1,10 +1,25 @@
 
 window.onload = () => {
     const body = document.body;
-    if (localStorage.length !== 0) {
+    if (localStorage.getItem('backgroundColor')) {
         let test = localStorage.getItem('backgroundColor');
-        console.log(test);
-        
+        body.style.backgroundColor = test;
+    }
+    if (localStorage.getItem('fontColor')) {
+        let fontColor = localStorage.getItem('fontColor');
+        body.style.color = fontColor;
+    }
+    if (localStorage.getItem('fontSize')) {
+        let fontSize = localStorage.getItem('fontSize');
+        body.style.fontSize = fontSize;
+    }
+    if (localStorage.getItem('lineHeight')) {
+        let lineHeight = localStorage.getItem('lineHeight');
+        body.style.lineHeight = lineHeight;
+    }
+    if (localStorage.getItem('fontFamily')) {
+        let fontFamily = localStorage.getItem('fontFamily');
+        body.style.fontFamily = fontFamily;
     }
 
     // const whiteButton = document.querySelectorAll(".white-button");
