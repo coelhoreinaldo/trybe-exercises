@@ -31,8 +31,8 @@
     </section>
 
     <section class="content">
-      <label for="expectations"> <h2>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h2></label>
-      <textarea name="expectations" id="expectations" cols="30" rows="10" maxlength="500" placeholder="Escreva aqui sua resposta..."></textarea>
+      <label for="why-me"> <h2>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h2></label>
+      <textarea name="why-me" id="why-me" cols="40" rows="10" maxlength="500" placeholder="Escreva aqui sua resposta..."></textarea>
     </section>
 
     <section class="content">
@@ -44,9 +44,15 @@
         <input type="radio" name="oportunity" id="oportunity">
         <label for="oportunity">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
       <br>
-        <input type="radio" name="images" id="images">
+        <input type="radio" name="images" id="images" required>
         <label for="images">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>      
     </section>
+    
+    <section class="content">
+      <button type="submit" id="submit-btn" disabled>Enviar</button>
+      <button type="reset" id="clear-btn">Apagar</button>
+    </section>
   </form>
+  <script src="./script.js"></script>
 </body>
 </html>
