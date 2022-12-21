@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrybeTrip</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">TrybeTrip</h1>
+  </header>
+  <form action="" method="get">
+    <section class="content">
+      <label for="user-name">Nome:</label>
+      <input type="text" name="user-name" id="user-name" minlength="10" maxlength="40" required>
+      <br>
+      <label for="user-name">Email:</label>
+      <input type="email" name="user-email" id="user-email" minlength="10" maxlength="50" required>
+    </section>
+
+    <section class="content">
+        <input type="radio" name="fav-destination" value="city" id="city">      
+        <label for="city">Cidade</label>
+        <input type="radio" name="fav-destination" value="country-side" id="country-side">       
+        <label for="country-side">Campo</label>
+        <input type="radio" name="fav-destination" value="beach" id="beach">       
+        <label for="beach">Praia</label>
+        <input type="radio" name="fav-destination" value="mountains" id="mountains">       
+        <label for="mountains">Montanhas</label>
+    </section>
+
+    <section class="content">
+      <label for="why-me"> <h2>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h2></label>
+      <textarea name="why-me" id="why-me" cols="40" rows="10" maxlength="500" placeholder="Escreva aqui sua resposta..."></textarea>
+    </section>
+
+    <section class="content">
+      <label for="date">Data:</label>
+      <input type="date" name="date" id="date">
+    </section>
+
+    <section class="content">
+        <input type="radio" name="oportunity" id="oportunity">
+        <label for="oportunity">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+      <br>
+        <input type="radio" name="images" id="images" required>
+        <label for="images">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>      
+    </section>
+    
+    <section class="content">
+      <button type="submit" id="submit-btn" disabled>Enviar</button>
+      <button type="reset" id="clear-btn">Apagar</button>
+    </section>
+  </form>
+  <script src="./script.js"></script>
+</body>
+</html>
