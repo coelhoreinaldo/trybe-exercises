@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <title>TrybeTrip</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1 id="title">TrybeTrip</h1>
   </header>
   <form action="" method="get">
-    <section class="content">
+    <section class="content ">
       <label for="user-name">Nome:</label>
       <input type="text" name="user-name" id="user-name" minlength="10" maxlength="40" required>
       <br>
@@ -21,13 +22,13 @@
     </section>
 
     <section class="content">
-        <input type="radio" name="fav-destination" value="city" id="city">      
+        <input class="form-check-input" type="radio" name="fav-destination" value="city" id="city">      
         <label for="city">Cidade</label>
-        <input type="radio" name="fav-destination" value="country-side" id="country-side">       
+        <input class="form-check-input" type="radio" name="fav-destination" value="country-side" id="country-side">       
         <label for="country-side">Campo</label>
-        <input type="radio" name="fav-destination" value="beach" id="beach">       
+        <input class="form-check-input" type="radio" name="fav-destination" value="beach" id="beach">       
         <label for="beach">Praia</label>
-        <input type="radio" name="fav-destination" value="mountains" id="mountains">       
+        <input class="form-check-input" type="radio" name="fav-destination" value="mountains" id="mountains">       
         <label for="mountains">Montanhas</label>
     </section>
 
@@ -43,16 +44,16 @@
     </section>
 
     <section class="content">
-        <input type="radio" name="oportunity" id="oportunity">
+        <input class="form-check-input" type="radio" name="oportunity" id="oportunity">
         <label for="oportunity">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
       <br>
-        <input type="radio" name="images" id="images" required>
+        <input class="form-check-input" type="radio" name="images" id="images" required>
         <label for="images">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>      
     </section>
     
     <section class="content">
-      <button type="submit" id="submit-btn" disabled>Enviar</button>
-      <button type="reset" id="clear-btn">Apagar</button>
+      <button class="btn btn-primary" type="submit" id="submit-btn" disabled>Enviar</button>
+      <button class="btn btn-light" type="reset" id="clear-btn">Apagar</button>
     </section>
   </form>
   <script src="./script.js"></script>
