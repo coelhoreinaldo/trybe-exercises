@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(73, 209, 251);
+  color: black;
+  margin: 8px 16px;
+}
+
+#fullName {
+  width: 35%;
+}
+#email {
+  width: 35%;
+}
+
+#pimba {
+  width: 35%;
+}
