@@ -17,6 +17,12 @@ header {
   width: 70px;
 }
 
+#first-section {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
 .gallery-img {
   width: 150px;
 }
