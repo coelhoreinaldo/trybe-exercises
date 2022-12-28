@@ -18,7 +18,6 @@ header {
 }
 
 #first-section {
-  border: 1px solid blue;
   display: flex;
   justify-content: center;
   margin: 8px 0;
@@ -28,13 +27,11 @@ header {
 }
 
 #second-section-container {
-  border: 1px solid blue;
   display: flex;
   justify-content: center;
 }
 
 #second-section {
-  border: 1px solid blue;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -44,4 +41,10 @@ header {
 .social-img {
   width: 25px;
   margin-left: 10px;
+}
+
+footer {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
 }
