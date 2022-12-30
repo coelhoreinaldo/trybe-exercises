@@ -9,33 +9,36 @@
   box-sizing: inherit;
 }
 body {
-  margin: 8px 16px;
-  font-size:larger;
+  font-size: 1.2em;
+  margin: 0 8px;
+  background-color: aqua;
 }
 article {
+  text-align: justify;
 }
 h1 {
-  font-size: x-large;
+  font-size: 1.4em;
 }
 h2 {
-  font-size: large;
+  font-size: 1.3em;
 }
 img {
 	max-width: 100%;
 }
 main {
+  border: 3px solid green;
 }
 section {
+  border: 1px solid black;
+  display: flex;
+  flex-flow: row wrap;
 }
 figure {
-	margin: 16px;
+  border: 1px solid blue;
+	width: 45%;
+  text-align: center;
+  margin: 8px;
 }
 figcaption {
   font-size: .8em;
 }
-
-/* max-width: 600px: Telas de celular. (Mobile devices)
-min-width: 600px: iPads, Tablets
-min-width: 768px: Telas menores, laptops
-min-width: 992px: Desktops
-min-width: 1200px — Telas grandes, screens e TV. */
