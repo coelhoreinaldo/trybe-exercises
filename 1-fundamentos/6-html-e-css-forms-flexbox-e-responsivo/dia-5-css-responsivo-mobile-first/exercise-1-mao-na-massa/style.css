@@ -80,3 +80,9 @@ Sem alterar a classe trick, faça com que o texto dela apareça somente quando a
     display: block;
   }
 }
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .card:nth-of-type(2) {
+    display: block;
+  }
+}
