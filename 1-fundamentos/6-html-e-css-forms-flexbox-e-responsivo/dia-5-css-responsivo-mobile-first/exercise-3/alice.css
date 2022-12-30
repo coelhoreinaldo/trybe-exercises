@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-color: rgb(183, 237, 237);
+    margin: 8px 16px;
+    font-size: 1.0em;
+    line-height: 1.5;
+
+  }
+
+  header {
+    background-color: black;
+    color: cyan;
+    margin: -8px -16px;
+    padding: 4px 4px;
+  }
+
+  aside {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    max-width: 100%;
+    display: flex;
+    margin: 0 6px;
+  }
+  .nav-menu li:nth-child(1) {
+    flex-grow: 1;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  article {
+    margin: 0 auto;
+    text-align: justify;
+    max-width: 80%;
+  }
+
+  footer {
+    margin: 0 auto;
+    text-align: justify;
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-color: rgb(199, 225, 199);
+    margin: 8px 16px;
+    font-size: 1.2em;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  header {
+    background-color: black;
+    color: rgb(175, 255, 178);
+    margin: -8px -16px;
+    padding: 4px 4px;
+    
+  }
+  .nav-menu {
+    margin: 8px 16px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    max-width: 100%;
+    display: flex;
+    margin: 0 6px;
+  }
+  .nav-menu li:nth-child(1) {
+    flex-grow: 1;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    background-color: rgb(235, 212, 235);
+    margin: 8px 16px;
+  }
+  header {
+    background-color: black;
+    color: rgb(255, 91, 192);
+    margin: -8px -16px;
+    padding: 4px 4px;
+    
+  }
+  .nav-menu {
+    margin: 8px 16px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    max-width: 100%;
+    display: flex;
+    margin: 0 6px;
+  }
+  .nav-menu li:nth-child(1) {
+    flex-grow: 1;
+  }
+  .container {
+    flex-wrap: nowrap;
+  }
+}
+
+/* Utilizando a abordagem mobile first e media queries, crie três versões de layout diferentes para essa página. Cada layout deve corresponder a um tamanho diferente de página (pequeno, médio e grande). Faça pelo menos um commit para cada layout;
+
+Para fazer isso de forma adequada, você deve prestar atenção no conteúdo da página e pensar em como mostrá-lo em cada um dos tamanhos de tela:
+
+Onde a lista de capítulos deve estar posicionada?
+
+Como a história deve ser mostrada?
+
+Como o cabeçalho deve ser posicionado?
+
+O que fazer com as informações do autor em cada tamanho de tela?
+
+Talvez você precise alterar o HTML um pouco, adicionando elementos para facilitar a estilização, ou talvez mudando um bloco de lugar dentro da página. */
