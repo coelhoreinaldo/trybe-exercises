@@ -69,11 +69,40 @@ html {
     margin: 8px 16px;
     font-size: 1.2em;
   }
+  .container {
+    flex-wrap: wrap;
+  }
+  header {
+    background-color: black;
+    color: rgb(175, 255, 178);
+    margin: -8px -16px;
+    padding: 4px 4px;
+    
+  }
+  .nav-menu {
+    margin: 8px 16px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    max-width: 100%;
+    display: flex;
+    margin: 0 6px;
+  }
+  .nav-menu li:nth-child(1) {
+    flex-grow: 1;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
   body {
     background-color: rgb(235, 212, 235);
+  }
+  .container {
+    flex-wrap: nowrap;
   }
 }
 
