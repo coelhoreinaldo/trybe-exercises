@@ -98,3 +98,9 @@ Sem alterar a classe trick, faça com que o texto dela apareça somente quando a
     display: block;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .trick{
+    color: black !important;
+  }
+}
