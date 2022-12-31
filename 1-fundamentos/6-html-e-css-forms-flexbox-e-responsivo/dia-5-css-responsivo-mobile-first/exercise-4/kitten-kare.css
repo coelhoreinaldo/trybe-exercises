@@ -104,7 +104,7 @@ body {
 
 @media screen and (max-width: 360px) and (max-height: 640px) {
   img {
-    border-radius: 50%;
+    border-radius: 10%;
     width: 100%;
   }
 
@@ -115,6 +115,11 @@ body {
   body {
     padding: 0;
     text-align: justify;
+  }
+
+  #content {
+    margin: 0 auto;
+    width: 90%;
   }
 
   #navigation {
