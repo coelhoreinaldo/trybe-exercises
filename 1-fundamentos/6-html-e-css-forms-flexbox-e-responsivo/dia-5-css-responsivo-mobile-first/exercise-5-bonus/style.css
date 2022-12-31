@@ -9,8 +9,8 @@
     text-align: right;
     margin-bottom: 64px;
     font-size: 20px;
-    padding-top: 16px;
-    border: 1px solid red;
+    padding: 16px;
+    border: 1px solid;
 }
 
 .nav-bar ul li{
@@ -56,8 +56,18 @@ main p{
     margin-bottom: 16px;
 }
 
-main table{
-    margin: auto;
+#table-container {
+    width: 30%;
+    margin: 0 auto;
+}
+
+table {
+    width: 30%;
+    margin: 0 auto;
+}
+
+table caption{
+    text-align: center;
 }
 
 #vision-pic{
