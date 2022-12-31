@@ -106,3 +106,18 @@ footer{
         width: 80%;
     }
 }
+
+@media print {
+    header, #references, footer {
+        display: none;
+    }
+
+    main {
+        margin: 0 16px ;
+        font-size: 1.2em;
+    }
+
+    #img-div {
+        width: 60%;
+    }
+}
