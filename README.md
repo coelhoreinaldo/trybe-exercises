@@ -1,6 +1,6 @@
 # Trybe
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Reinaldo Coelho](https://www.linkedin.com/in/coelhoreinaldo/) enquanto estudava na [Trybe](https://www.betrybe.com/).
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por [mim](https://www.linkedin.com/in/coelhoreinaldo/) enquanto estudava na [Trybe](https://www.betrybe.com/).
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
@@ -24,7 +24,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
-- [X] 3-5: _Projeto - Lessons Learned_
+- [X] 3-5: _[Projeto - Lessons Learned](https://github.com/coelhoreinaldo/trybe-projects/tree/main/3-5-lessons-learned)_
 
 ##### Bloco 4: Introdução à JavaScript
 
@@ -33,7 +33,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [X] 4-4: _JavaScript - Objetos e funções_
 - [X] 4-5: _JavaScript ES6 - let, const, arrow functions e tempalte literals_
-- [X] 4-6: _Projeto - Playground Functions_
+- [X] 4-6: _[Projeto - Playground Functions](https://github.com/coelhoreinaldo/trybe-projects/tree/main/4-6-playground-functions)_
 
 ##### Bloco 5: JavaScript: DOM, Eventos e Web Storage
 
@@ -41,8 +41,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-2: _JavaScript - Trabalhando com elementos_
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
-- [X] 5-5: _Projeto - Arte com Pixels_
-- [X] 5-6: _Projeto Bônus_
+- [X] 5-5: _[Projeto - Arte com Pixels](https://coelhoreinaldo.github.io/)_
+- [X] 5-6: _[Projetos Bônus](https://coelhoreinaldo.github.io/)_
 
 ##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
 
