@@ -47,26 +47,26 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
 
 - [x] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [ ] 6-3: _CSS Flexbox - Parte 1_
-- [ ] 6-4: _CSS Flexbox - Parte 2_
-- [ ] 6-5: _CSS Responsivo - Mobile First_
+- [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [x] 6-3: _CSS Flexbox - Parte 1_
+- [x] 6-4: _CSS Flexbox - Parte 2_
+- [x] 6-5: _CSS Responsivo - Mobile First_
 - [ ] 6-6: _Projeto - Trybewarts_
 
 ##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
 
-- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [ ] 7-2: _JavaScript ES6 - Fluxo de exceção e Objetos_
-- [ ] 7-3: _Primeiros passos em Jest_
+- [ ] 7-1: _Fluxo de exceções e manipulação de objetos_
+- [ ] 7-2: _Primeiros passos em Jest_
+- [ ] 7-3: _Matchers e cobertura de código_
 - [ ] 7-4: _Projeto - JavaScript Testes Unitários_
 
 ##### Bloco 8: Higher Order Functions do JavaScript ES6
 
-- [ ] 8-1: _JavaScript ES6 - Introdução a Higher Order FUnctions_
-- [ ] 8-2: _JavaScript ES6 - High order Functions - forEach, find, some, every, sort_
-- [ ] 8-3: _JavaScript ES6 - High order Functions - map e filter_
-- [ ] 8-4: _JavaScript ES6 - High order Functions - reduce_
-- [ ] 8-5: _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
+- [ ] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
+- [ ] 8-2: _JavaScript ES6 - High order Functions - sort e map_
+- [ ] 8-3: _JavaScript ES6 - High order Functions - filter e reduce_
+- [ ] 8-4: _JavaScript ES6 - spread operator, rest parameters e object destructuring_
+- [ ] 8-5: _JavaScript ES6 - Array destructuring, Default destructuring, Object property shorthand e default parameters_
 - [ ] 8-6: _Projeto - Zoo functions_
 
 ## Front-end :hourglass_flowing_sand:
