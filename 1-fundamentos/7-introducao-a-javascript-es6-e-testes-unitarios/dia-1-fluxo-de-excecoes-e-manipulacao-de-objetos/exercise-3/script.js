@@ -28,8 +28,11 @@ listKeys(lesson1)
 
 const objectLength = (object) => Object.keys(object).length;
 
-console.log(objectLength(lesson1));
+objectLength(lesson1);
 
 const objectValues = (object) => Object.values(object);
 
-console.log(objectValues(lesson1))
+objectValues(lesson1)
+
+const allLessons = Object.assign({},{lesson1, lesson2, lesson3})
+console.log(allLessons);
