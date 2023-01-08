@@ -18,18 +18,18 @@ const lesson3 = {
   turno: 'noite',
 };
 
-const addPropriety = (object, key, value) => {
-  object[key] = value;
-};
+const addPropriety = (object, key, value) => object[key] = value;
 
 addPropriety(lesson2, 'turno', 'noite');
 
-const listKeys = (object) => {
-  Object.keys(object);
-};
+const listKeys = (object) => Object.keys(object);
 
 listKeys(lesson1)
 
 const objectLength = (object) => Object.keys(object).length;
 
 console.log(objectLength(lesson1));
+
+const objectValues = (object) => Object.values(object);
+
+console.log(objectValues(lesson1))
