@@ -1,43 +1,50 @@
 <!DOCTYPE html>
-<html lang='pt-BR'>
-<head>
-  <meta charset='UTF-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>Calculadora</title>
-</head>
-<body>
-  <p>Informe dois números para realizar a soma:</p>
-  <label for='value1'>Valor 1:</label>
-  <input type='text' id='value1'>
-  <label for='value2'>Valor 2:</label>
-  <input type='text' id='value2'>
-  <button id='button'>Somar</button>
-  <p id='result'></p>
-  <script>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <p>Informe dois números para realizar a soma:</p>
+    <label for="value1">Valor 1:</label>
+    <input type="text" id="value1" />
+    <label for="value2">Valor 2:</label>
+    <input type="text" id="value2" />
+    <button id="button">Somar</button>
+    <p id="result"></p>
+    <script>
+      const verifyNumber = (value1, value2) => {
+        if (isNaN(value1) || isNaN(value2)) {
+          throw new Error("Os valores devem ser numéricos");
+        }
+        if (!value1 || !value2) {
+          throw new Error("Os valores devem ser numéricos");
+        }
+      };
 
-    const verifyNumber = (value1, value2) => {
-      if (isNaN(value1) || isNaN(value2)) {
-        throw new Error ('Os valores devem ser numéricos')
+      function sum() {
+        const value1 = document.getElementById("value1").value;
+        const value2 = document.getElementById("value2").value;
+        const resultId = document.getElementById("result");
+        let result = Number(value1) + Number(value2);
+
+        try {
+          verifyNumber(value1, value2);
+          return result;
+        } catch (error) {
+         result = error.message;
+        } finally {
+          resultId.innerHTML = `Resultado: ${result}`;
+          value1.value = "";
+          value2.value = "";
+        }
       }
- 
-    };
-
-    function sum() {
-      const value1 = document.getElementById('value1').value;
-      const value2 = document.getElementById('value2').value;
-      const result = Number(value1) + Number(value2);
-
-      verifyNumber(value1, value2)
-
-      document.getElementById('result').innerHTML = `Resultado: ${result}`;
-      document.getElementById('value1').value = '';
-      document.getElementById('value2').value = '';
-    }
-    window.onload = () => {
-      const button = document.getElementById('button');
-      button.addEventListener('click', sum);
-    }
-  </script>
-</body>
+      window.onload = () => {
+        const button = document.getElementById("button");
+        button.addEventListener("click", sum);
+      };
+    </script>
+  </body>
 </html>
