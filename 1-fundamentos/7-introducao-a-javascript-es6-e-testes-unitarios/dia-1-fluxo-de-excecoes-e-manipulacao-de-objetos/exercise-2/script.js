@@ -35,8 +35,13 @@ const order = {
 };
 
 const customerInfo = (order) => {
-  // 'Olá Ana Silveira, entrega para: Rafael Andrade, Telefone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701' Adicione abaixo as informações necessárias.
-  console.log(`Olá ${order.order.delivery.deliveryPerson}, entrega para: ${order.name}, Telefone: ${order.phoneNumber}, R. ${order.address.street}, Nº: ${order.address.number}, AP: ${order.address.apartment}.`)
+  const deliveryPerson = order.order.delivery.deliveryPerson
+  const customerName = order['name'];
+  const phoneNumber = order.phoneNumber;
+  const street = order['address'].street;
+  const number = order.address['number'];
+  const apartment = order['address']['apartment'];
+  console.log(`Olá ${deliveryPerson}, entrega para: ${customerName}, Telefone: ${phoneNumber}, R. ${street}, Nº: ${number}, AP: ${apartment}.`)
 };
 
 customerInfo(order);
