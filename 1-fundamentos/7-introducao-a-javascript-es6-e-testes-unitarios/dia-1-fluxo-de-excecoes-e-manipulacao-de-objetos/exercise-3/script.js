@@ -67,7 +67,6 @@ const getNumbersOfStudentsMath = (object) => {
   const keys = Object.keys(object);
   let students = 0;
   for (let i in keys) {
-    console.log(object[keys[i]]);
     if (object[keys[i]].materia === 'Matemática') {
       students += object[keys[i]].numeroEstudantes;
     }
@@ -75,4 +74,20 @@ const getNumbersOfStudentsMath = (object) => {
   return students
 }
 
-console.log(getNumbersOfStudentsMath(allLessons));
+getNumbersOfStudentsMath(allLessons);
+
+
+const createReport = (object, teacher) => {
+  const keys = Object.keys(object);
+  const result = {};
+  for (let i in keys) {
+    if (object[keys[i]].professor === teacher) {
+      result.professor = teacher;
+      result.aulas = [object[keys[i]].materia]
+      result.estudantes = getNumbersOfStudentsMath(allLessons);
+    };
+  }
+  return result
+}
+
+console.log(createReport(allLessons, 'Maria Clara'));
