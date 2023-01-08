@@ -77,17 +77,36 @@ const getNumbersOfStudentsMath = (object) => {
 getNumbersOfStudentsMath(allLessons);
 
 
-const createReport = (object, teacher) => {
-  const keys = Object.keys(object);
-  const result = {};
-  for (let i in keys) {
-    if (object[keys[i]].professor === teacher) {
-      result.professor = teacher;
-      result.aulas = [object[keys[i]].materia]
-      result.estudantes = getNumbersOfStudentsMath(allLessons);
-    };
+// const createReport = (object, teacher) => {
+//   const keys = Object.keys(object);
+//   const result = {};
+//   for (let i in keys) {
+//     if (object[keys[i]].professor === teacher) {
+//       result.professor = teacher;
+//       result.aulas = [object[keys[i]].materia]
+//       result.estudantes = getNumbersOfStudentsMath(allLessons);
+//     };
+//   }
+//   return result
+// }
+
+const getInfo = (obj, name) => {
+  const allLessons = [];
+  let allStudent = 0;
+  const values = Object.values(obj);
+  for (index in values) {
+    if (values[index].professor === name) {
+      allLessons.push(values[index].materia)
+      allStudent += values[index].numeroEstudantes;
+    }
   }
-  return result
+  return { aulas: allLessons, estudantes: allStudent };
 }
 
-console.log(createReport(allLessons, 'Maria Clara'));
+const createReport = (allLessons, name) => {
+  const report = {};
+  report.professor = name;
+  Object.assign(report, getInfo(allLessons, name));
+  return report;
+}
+console.log(createReport(allLessons, 'Carlos'));
