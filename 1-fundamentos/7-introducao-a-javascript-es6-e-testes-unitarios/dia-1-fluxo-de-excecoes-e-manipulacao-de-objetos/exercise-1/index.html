@@ -20,27 +20,27 @@
           throw new Error("Os valores devem ser numéricos");
         }
         if (!value1 || !value2) {
-          throw new Error("Os valores devem ser numéricos");
+          throw new Error("Preencha os dois campos");
         }
       };
 
       function sum() {
-        const value1 = document.getElementById("value1").value;
-        const value2 = document.getElementById("value2").value;
         const resultId = document.getElementById("result");
-        let result = Number(value1) + Number(value2);
 
         try {
+          let value1 = document.getElementById("value1").value;
+          let value2 = document.getElementById("value2").value;
           verifyNumber(value1, value2);
-          return result;
-        } catch (error) {
-         result = error.message;
-        } finally {
+          const result = Number(value1) + Number(value2);
           resultId.innerHTML = `Resultado: ${result}`;
-          value1.value = "";
-          value2.value = "";
+        } catch (error) {
+          resultId.innerHTML = `Erro: ${error.message}`;
+        } finally {
+          document.getElementById("value1").value = '';
+          document.getElementById("value2").value = '';
         }
       }
+
       window.onload = () => {
         const button = document.getElementById("button");
         button.addEventListener("click", sum);
