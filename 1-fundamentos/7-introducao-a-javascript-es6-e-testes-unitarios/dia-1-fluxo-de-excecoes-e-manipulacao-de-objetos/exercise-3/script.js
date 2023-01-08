@@ -48,4 +48,17 @@ studentsNumber(allLessons);
 
 const getValueByNumber = (object, n) => Object.values(object)[n];
 
-console.log(getValueByNumber(lesson1, 0));
+getValueByNumber(lesson1, 0);
+
+const verifyPair = (object, key, value) => {
+  const entries = Object.entries(object);
+  console.log(entries);
+  let isEqual = false;
+  for (let i in entries) {
+    if (entries[i][0] === key && entries[i][1] === value) isEqual = true;
+  }
+  return isEqual;
+}
+
+console.log(verifyPair(lesson3, 'turno', 'noite'));
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
