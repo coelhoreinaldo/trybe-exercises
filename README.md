@@ -55,7 +55,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
 
-- [ ] 7-1: _Fluxo de exceções e manipulação de objetos_
+- [X] 7-1: _Fluxo de exceções e manipulação de objetos_
 - [ ] 7-2: _Primeiros passos em Jest_
 - [ ] 7-3: _Matchers e cobertura de código_
 - [ ] 7-4: _Projeto - JavaScript Testes Unitários_
