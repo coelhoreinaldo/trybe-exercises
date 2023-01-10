@@ -1,10 +1,18 @@
 # Trybe
 
+
+
+### 🇧🇷
+
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por [mim](https://www.linkedin.com/in/coelhoreinaldo/) enquanto estudava na [Trybe](https://www.betrybe.com/).
 
-_"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
+A Trybe é uma escola de tecnologia que tem comprometimento genuíno com o sucesso profissional das pessoas estudantes. Com o Modelo de Sucesso Compartilhado, quem estuda na Trybe tem a opção de pagar apenas quando já estiver trabalhando. São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento web, desenvolvimento, front-end, back-end, ciência da computação, metodologias ágeis e habilidades comportamentais.
 
-O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
+### 🇺🇸
+
+This repository contains all the learning activities developed by [me](https://www.linkedin.com/in/coelhoreinaldo/) while studying at [Trybe](https://www.betrybe.com/).
+
+Trybe is a technology school that has a genuine commitment to the professional success of its students. With the Shared Success Model, those who study at Trybe have the option of paying only when they are already working. There are more than 1500 hours of training that covers fundamentals of web development, development, front-end, back-end, computer science, agile methodologies and soft skills.
 
 ## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
 
