@@ -5,13 +5,13 @@ describe ('as funções encode, decode e mapString', () => {
     expect(typeof encode).toBe('function');
     expect(typeof decode).toBe('function');
   });
-  it ('a função encode e decode deve funcionar corretamente', () => {
+  it ('should work fine', () => {
     expect(encode('a, e, i, o, u')).toBe('1, 2, 3, 4, 5');
     expect(decode('1, 2, 3, 4, 5')).toBe('a, e, i, o, u');
     expect(encode('a, b, c, d, e')).toBe('1, b, c, d, 2');
     expect(decode('1, b, c, d, 2')).toBe('a, b, c, d, e');
   });
-  it ('a string retornada pela função deve ter o mesmo numero de caracteres que a string passada como parâmetro', () => {
+  it ('should verifiy the length of both strings', () => {
     expect(encode('reinaldo').length).toEqual(8);
   });
   
