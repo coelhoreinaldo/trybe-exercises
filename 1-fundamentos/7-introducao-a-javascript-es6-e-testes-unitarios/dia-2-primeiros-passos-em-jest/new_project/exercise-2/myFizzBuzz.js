@@ -7,6 +7,6 @@ function myFizzBuzz(num) {
 }
 
 // implemente seus testes aqui
-console.log(myFizzBuzz(15));
+console.log(myFizzBuzz('15'));
 
 module.exports = myFizzBuzz;
