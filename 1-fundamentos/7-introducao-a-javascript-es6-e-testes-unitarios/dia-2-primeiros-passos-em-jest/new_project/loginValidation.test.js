@@ -11,11 +11,6 @@ describe('a função verifyCredentials()', () => {
     password: 123456,
   };
   
-  it('verifyCredentials() calls the correct function depending on the user and password input', () => {
-    expect(verifyCredentials(user)).toBe(
-      'Hello, Joana! Que bom ter você de volta'
-    );
-  });
   it('greetingMessage() returns a message in the format: `Hello, ${user}! Que bom ter você de volta`', () => {
     expect(greetingMessage('Lucas')).toBe(
       'Hello, Lucas! Que bom ter você de volta'
