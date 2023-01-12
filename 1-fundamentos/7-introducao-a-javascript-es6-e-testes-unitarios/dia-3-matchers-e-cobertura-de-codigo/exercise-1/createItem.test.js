@@ -6,7 +6,9 @@ describe('a função createItem', () => {
     expect(createItem('banana', 'kg', 1.99, 20)).toHaveProperty('unit', 'kg');
     expect(createItem('banana', 'kg', 1.99, 20)).toHaveProperty('price', 1.99);
   });
-  it.todo('utiliza zero como quantidade padrão');
+  it ('utiliza zero como quantidade padrão', () => {
+    expect(createItem('banana', 'kg', 1.99)).toHaveProperty('quantity', 0);
+  });
   it.todo('Lança um erro quando não recebe parâmetros');
   it.todo('Lança um erro se o nome do item não é uma string');
   it.todo('Lança um erro se o preço é negativo');
