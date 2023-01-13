@@ -10,5 +10,7 @@ describe('sum function', () => {
   it ('should throw a error when sum(4, "5")', () => {
     expect(() => sum(4, '5')).toThrow(Error);
   });
-  it.todo('should throw a error message "parameters must be numbers" when sum(4, "5")')
-})
+  it ('should throw a error message "parameters must be numbers" when sum(4, "5")', () => {
+    expect(() => sum(4,'5')).toThrow('parameters must be numbers')
+  });
+});
