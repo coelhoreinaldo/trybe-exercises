@@ -10,5 +10,6 @@ describe ('the printMessage function', () => {
   });
   it ('should throw a error when the parameter is not a object/not exist', () => {
     expect(() => printMessage()).toThrow(Error);
+    expect(() => printMessage(test.personagem)).toThrow(Error);
   });
 });
