@@ -45,16 +45,28 @@ const findDetail = (object, detail) => {
 
 const searchEmployee = (id, detail) => {
   let values = Object.values(professionalBoard);
-
+  let employee = '';
+  
   for (let i of values) {
     if (i.id === id) {
-      return findDetail(i, detail);
-    }
+      employee = i;
+    } 
   }
+
+  if (!employee) {
+    throw new Error ('ID não identificada');
+  }
+
+  if (!employee[detail]) {
+    throw new Error ('Informação indisponível');
+  }
+
+
+  return employee[detail];
 };
 
 
 
-searchEmployee('1256-4', 'specialities');
+console.log(searchEmployee('9852-2-2', 'specialities'));
 
 module.exports = { professionalBoard, searchEmployee }
