@@ -38,11 +38,6 @@ const professionalBoard = [
   },
 ];
 
-const findDetail = (object, detail) => {
-  return object[detail]
-}
-// Pesquisa
-
 const searchEmployee = (id, detail) => {
   let values = Object.values(professionalBoard);
   let employee = '';

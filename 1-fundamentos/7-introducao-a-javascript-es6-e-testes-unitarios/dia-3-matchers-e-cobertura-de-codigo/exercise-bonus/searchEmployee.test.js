@@ -13,5 +13,8 @@ describe ('the searchEmployee function ', () => {
     expect(() => searchEmployee('4002-8922', 'firstName')).toThrowError();
     expect(() => searchEmployee('4002-8922', 'firstName')).toThrowError('ID não identificada');
   });
-  it.todo('should return "Informação indisponível" when not find the detail')
+  it ('should return "Informação indisponível" when not find the detail', () => {
+    expect(() => searchEmployee('9852-2-2', 'meme')).toThrowError();
+    expect(() => searchEmployee('9852-2-2', 'meme')).toThrowError('Informação indisponível');
+  });
 });
