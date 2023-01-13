@@ -38,9 +38,22 @@ const professionalBoard = [
   },
 ];
 
+const findDetail = (object, detail) => {
+  return object[detail]
+}
 // Pesquisa
 const searchEmployee = (id, detail) => {
-  // Implemente seu código aqui
+  let values = Object.values(professionalBoard);
+
+  for (let i of values) {
+    if (i.id === id) {
+      return findDetail(i, detail);
+    }
+  }
 };
+
+
+
+console.log(searchEmployee('1256-4', 'specialities'));
 
 module.exports = { professionalBoard, searchEmployee }
