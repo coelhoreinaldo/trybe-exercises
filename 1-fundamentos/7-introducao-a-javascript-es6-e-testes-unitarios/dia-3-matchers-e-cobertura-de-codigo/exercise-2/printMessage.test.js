@@ -5,6 +5,7 @@ describe ('the printMessage function', () => {
     expect(info).toHaveProperty('personagem');
   });
   it ('should contains the info', () => {
-    expect(printMessage(info)).toMatch('Boas vindas,')
-  })
+    expect(printMessage(info)).toMatch('Boas vindas,');
+    expect(printMessage(info)).toMatch('Margarida');
+  });
 });
