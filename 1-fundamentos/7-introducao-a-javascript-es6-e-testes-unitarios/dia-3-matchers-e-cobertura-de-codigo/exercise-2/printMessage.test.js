@@ -8,4 +8,7 @@ describe ('the printMessage function', () => {
     expect(printMessage(info)).toMatch('Boas vindas,');
     expect(printMessage(info)).toMatch('Margarida');
   });
+  it ('should throw a error when the parameter is not a object/not exist', () => {
+    expect(() => printMessage()).toThrow(Error);
+  });
 });
