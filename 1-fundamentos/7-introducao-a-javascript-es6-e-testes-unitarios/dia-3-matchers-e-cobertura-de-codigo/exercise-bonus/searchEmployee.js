@@ -42,6 +42,7 @@ const findDetail = (object, detail) => {
   return object[detail]
 }
 // Pesquisa
+
 const searchEmployee = (id, detail) => {
   let values = Object.values(professionalBoard);
 
@@ -54,6 +55,6 @@ const searchEmployee = (id, detail) => {
 
 
 
-console.log(searchEmployee('1256-4', 'specialities'));
+searchEmployee('1256-4', 'specialities');
 
 module.exports = { professionalBoard, searchEmployee }
