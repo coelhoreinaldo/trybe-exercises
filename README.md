@@ -64,8 +64,8 @@ Trybe is a technology school that has a genuine commitment to the professional s
 ##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
 
 - [X] 7-1: _Fluxo de exceções e manipulação de objetos_
-- [ ] 7-2: _Primeiros passos em Jest_
-- [ ] 7-3: _Matchers e cobertura de código_
+- [X] 7-2: _Primeiros passos em Jest_
+- [X] 7-3: _Matchers e cobertura de código_
 - [ ] 7-4: _Projeto - JavaScript Testes Unitários_
 
 ##### Bloco 8: Higher Order Functions do JavaScript ES6
