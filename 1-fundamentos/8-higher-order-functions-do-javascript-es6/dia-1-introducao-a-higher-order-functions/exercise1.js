@@ -5,8 +5,10 @@ const emailListInData = [
   'fabiano@email.com',
 ];
 
-emailListInData.forEach((email) => {
-  console.log(`O email ${email} está cadastrado em nosso banco de dados!`);
-})
+// emailListInData.forEach((email) => {
+//   console.log(`O email ${email} está cadastrado em nosso banco de dados!`);
+// })
 
-// Adicione seu código aqui
+const sendEmail = (email) => console.log(`O email ${email} está cadastrado em nosso banco de dados!`);
+
+emailListInData.forEach(sendEmail);
