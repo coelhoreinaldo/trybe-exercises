@@ -68,8 +68,6 @@ const authorBornIn1947 = () => {
 
 authorBornIn1947(); //Stephen King
 
-const expectedResult = 'Duna';
-
 const smallerName = () => {
   let nameBook;
   books.forEach((item) => {
@@ -80,4 +78,16 @@ const smallerName = () => {
   return nameBook;
 }
 
-console.log(smallerName());
+smallerName();
+
+const getNamedBook = () => {
+  let object;
+  books.forEach((item) => {
+    if (item.name.length === 26) {
+      object = item
+    }
+  });
+  return object
+}
+
+console.log(getNamedBook());
