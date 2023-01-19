@@ -94,3 +94,11 @@ getNamedBook(); // o objeto que tem As crônicas de Gelo e Fogo
 const getNamedBook2 = () => books.find((book) => book.name.length === 26);
 
 getNamedBook2(); // o objeto que tem As crônicas de Gelo e Fogo
+
+const expectedResult = false;
+
+function someBookWasReleaseOnThe80s() {
+  return books.some((book) => {book.releaseYear < 1990 && book.releaseYear > 1980});
+}
+
+console.log(someBookWasReleaseOnThe80s());
