@@ -4,7 +4,7 @@ const employeeGenerator = (fullName) => {
   return {fullName, email: `${email}@trybe.com`};
 }
 
-const newEmployees = () => {
+const newEmployees = (employeeGenerator) => {
   const employees = {
     id1: employeeGenerator('Pedro Guerra'), 
     id2: employeeGenerator('Luiza Drumond'), 
@@ -13,4 +13,4 @@ const newEmployees = () => {
   return employees;
 };
 
-console.log(newEmployees());
+console.log(newEmployees(employeeGenerator));
