@@ -78,7 +78,7 @@ const smallerName = () => {
   return nameBook;
 }
 
-smallerName();
+smallerName(); //Duna
 
 const getNamedBook = () => {
   let object;
@@ -89,7 +89,8 @@ const getNamedBook = () => {
   });
   return object
 }
+getNamedBook(); // o objeto que tem As crônicas de Gelo e Fogo
 
 const getNamedBook2 = () => books.find((book) => book.name.length === 26);
 
-console.log(getNamedBook2());
+getNamedBook2(); // o objeto que tem As crônicas de Gelo e Fogo
