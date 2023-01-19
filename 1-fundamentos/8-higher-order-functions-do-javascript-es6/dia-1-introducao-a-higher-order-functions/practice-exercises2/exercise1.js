@@ -90,4 +90,6 @@ const getNamedBook = () => {
   return object
 }
 
-console.log(getNamedBook());
+const getNamedBook2 = () => books.find((book) => book.name.length === 26);
+
+console.log(getNamedBook2());
