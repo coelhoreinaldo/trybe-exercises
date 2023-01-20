@@ -27,4 +27,13 @@ const dragonDamage = () => {
   return maxDamage > minDamage ? maxDamage : minDamage
 };
 
-console.log(dragonDamage());
+dragonDamage();
+
+const warriorDamage = () => {
+  const minDamage = warrior.strength
+  const maxDamage = Math.ceil(Math.random() * (minDamage * warrior.weaponDmg))
+
+  return maxDamage > minDamage ? maxDamage : minDamage
+}
+
+console.log(warriorDamage());
