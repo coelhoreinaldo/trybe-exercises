@@ -20,14 +20,14 @@ const dragon = {
 
 const battleMembers = { mage, warrior, dragon };
 
-const dragonDamage = (dragon) => {
+const dragonAttack = (dragon) => {
   const minDamage = 15;
   const maxDamage = Math.ceil(Math.random() * dragon.strength)
 
   return maxDamage > minDamage ? maxDamage : minDamage
 };
 
-dragonDamage(dragon)
+dragonAttack(dragon)
 
 const warriorAttack = (warrior) => {
   const minDamage = warrior.strength
@@ -60,16 +60,20 @@ const gameActions = {
   warrior.damage = warriorDamage;
   // Crie as HOFs neste objeto.
   },
-  mageTurn : (mageAttack) => {
+  mageTurn: (mageAttack) => {
   const mageDamage = mageAttack(mage);
   dragon.healthPoints -= mageDamage.damageDealt;
   mage.damage = mageDamage.damageDealt;
   mage.mana -= mageDamage.manaSpent;
-  }
+  },
+  dragonTurn: (dragonAttack) => {
+  const dragonDamage = dragonAttack(dragon);
+  warrior.healthPoints -= dragonDamage;
+  mage.healthPoints -= dragonDamage;
+  dragon.damage = dragonDamage
+  },
 };
 
 gameActions.warriorTurn(warriorAttack)
-
 gameActions.mageTurn((mageAttack))
-
-console.log(dragon);
+gameActions.dragonTurn((dragonAttack));
