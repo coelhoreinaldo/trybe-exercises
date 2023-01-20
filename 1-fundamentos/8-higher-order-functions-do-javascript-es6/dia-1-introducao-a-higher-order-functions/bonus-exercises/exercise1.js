@@ -20,14 +20,14 @@ const dragon = {
 
 const battleMembers = { mage, warrior, dragon };
 
-const dragonDamage = () => {
+const dragonDamage = (dragon) => {
   const minDamage = 15;
   const maxDamage = Math.ceil(Math.random() * dragon.strength)
 
   return maxDamage > minDamage ? maxDamage : minDamage
 };
 
-dragonDamage();
+dragonDamage(dragon);
 
 const warriorAttack = () => {
   const minDamage = warrior.strength
