@@ -27,16 +27,12 @@ const dragonDamage = (dragon) => {
   return maxDamage > minDamage ? maxDamage : minDamage
 };
 
-dragonDamage(dragon);
-
-const warriorAttack = () => {
+const warriorAttack = (warrior) => {
   const minDamage = warrior.strength
   const maxDamage = Math.ceil(Math.random() * (minDamage * warrior.weaponDmg))
 
   return maxDamage > minDamage ? maxDamage : minDamage
 }
-
-warriorAttack();
 
 const mageAttack = () => {
   let obj = {}
