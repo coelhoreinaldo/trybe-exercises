@@ -59,10 +59,17 @@ const gameActions = {
   dragon.healthPoints -= warriorDamage;
   warrior.damage = warriorDamage;
   // Crie as HOFs neste objeto.
+  },
+  mageTurn : (mageAttack) => {
+  const mageDamage = mageAttack(mage);
+  dragon.healthPoints -= mageDamage.damageDealt;
+  mage.damage = mageDamage.damageDealt;
+  mage.mana -= mageDamage.manaSpent;
   }
 };
 
 gameActions.warriorTurn(warriorAttack)
 
-console.log(dragon.healthPoints);
-console.log(warrior.damage);
+gameActions.mageTurn((mageAttack))
+
+console.log(dragon);
