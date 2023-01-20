@@ -51,4 +51,4 @@ const mageStats = () => {
   return Object.assign(obj, damageDealt, manaSpent)
 }
 
-console.log(mageStats());
+mageStats();
