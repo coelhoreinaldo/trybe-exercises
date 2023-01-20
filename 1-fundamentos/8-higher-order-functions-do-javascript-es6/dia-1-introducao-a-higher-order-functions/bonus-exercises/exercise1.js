@@ -34,7 +34,7 @@ const warriorAttack = (warrior) => {
   return maxDamage > minDamage ? maxDamage : minDamage
 }
 
-const mageAttack = () => {
+const mageAttack = (mage) => {
   let obj = {}
   const minDmg = mage.intelligence;
   const maxDmg = Math.ceil(Math.random() * (minDmg * 2));
@@ -46,8 +46,6 @@ const mageAttack = () => {
   }
   return Object.assign(obj, damageDealt, manaSpent)
 }
-
-mageAttack();
 
 const gameActions = {
   warriorTurn: (warriorAttack) => {
