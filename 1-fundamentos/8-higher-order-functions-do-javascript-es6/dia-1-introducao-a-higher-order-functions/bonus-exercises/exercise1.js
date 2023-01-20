@@ -1,7 +1,7 @@
 const mage = {
   healthPoints: 130,
   intelligence: 45,
-  mana: 125,
+  mana: 3,
   damage: undefined,
 };
 
@@ -36,4 +36,19 @@ const warriorDamage = () => {
   return maxDamage > minDamage ? maxDamage : minDamage
 }
 
-console.log(warriorDamage());
+warriorDamage();
+
+const mageStats = () => {
+  let obj = {}
+  const minDmg = mage.intelligence;
+  const maxDmg = Math.ceil(Math.random() * (minDmg * 2));
+  const damageDealt = {damageDealt: maxDmg > minDmg ? maxDmg : minDmg}
+  const manaSpent = {manaSpent: mage.mana >= 15 ? 15 : 0}
+
+  if (mage.mana < 15) {
+    damageDealt.damageDealt = 'Não possui mana suficiente'
+  }
+  return Object.assign(obj, damageDealt, manaSpent)
+}
+
+console.log(mageStats());
