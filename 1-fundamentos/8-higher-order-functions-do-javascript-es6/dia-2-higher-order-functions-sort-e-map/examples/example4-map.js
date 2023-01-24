@@ -1,9 +1,5 @@
-const persons = [
-  { firstName: 'Maria', lastName: 'Ferreira' },
-  { firstName: 'João', lastName: 'Silva' },
-  { firstName: 'Antonio', lastName: 'Cabral' },
-];
+const numbers = [10, 20, 30, 40, 50];
 
-const fullNames = persons.map((person) => `${person.firstName} ${person.lastName}`);
+const mult = numbers.map((number) => number * 2);
 
-console.log(fullNames); // [ 'Maria Ferreira', 'João Silva', 'Antonio Cabral' ]
+console.log(mult);

@@ -1,5 +1,6 @@
-const numbers = [10, 20, 30, 40, 50];
+const numbers = [1, 2, 3, 4, -5];
 
-const mult = numbers.map((number) => number * 2);
+const negativeNumbers = numbers.map((number) => ((number > 0) ? number * (-1) : number));
 
-console.log(mult);
+console.log(negativeNumbers); // [ -1, -2, -3, -4, -5 ]
+console.log(numbers); // [ 1, 2, 3, 4, -5 ]
