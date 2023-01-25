@@ -70,3 +70,13 @@ formatedBookNames(books);
 const formatedAuthorNamesBirth = (object) => object.map((book) => `${book.author.name} - ${book.author.birthYear}`);
 
 formatedAuthorNamesBirth(books);
+
+
+const nameAndAge = (object) => object.map((book) => {
+    const authorAges = {};
+    authorAges.author = book.author.name;
+    authorAges.age = book.releaseYear - book.author.birthYear;
+    console.log(authorAges);
+  });
+
+console.log(nameAndAge(books));
