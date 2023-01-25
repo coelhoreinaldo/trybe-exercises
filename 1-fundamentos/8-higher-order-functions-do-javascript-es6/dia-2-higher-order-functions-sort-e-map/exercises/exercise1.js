@@ -81,4 +81,8 @@ const nameAndAge = (object) => {
   .sort((a, b) => a.age - b.age)
 }
 
-console.log(nameAndAge(books));
+nameAndAge(books);
+
+const livroGenreAuthor = books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
+
+console.log(livroGenreAuthor);
