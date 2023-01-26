@@ -45,12 +45,10 @@ const oldBooks = () => {
 
 oldBooks()
 
-const expectedResult = 'O Senhor dos Anéis';
-
 const authorWith3DotsOnName = () => {
   const getBook = data.books.find((book) => (
     book.author.name[1] === '.' && book.author.name[4] === '.' && book.author.name[7] === '.'));
-  return getBook.author.name;
+  return getBook.name;
 }
 
-console.log(authorWith3DotsOnName());
+authorWith3DotsOnName();
