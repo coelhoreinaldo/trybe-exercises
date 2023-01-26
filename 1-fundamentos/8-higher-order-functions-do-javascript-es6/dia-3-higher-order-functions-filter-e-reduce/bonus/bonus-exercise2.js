@@ -1,6 +1,6 @@
 const data = require('../data');
-
-const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
+const currDate = new Date();
+const currYear = currDate.getFullYear();
 
 const reduceNames = () => {
   const names = data.books.map((book) => book.author.name);
@@ -12,4 +12,11 @@ const reduceNames = () => {
   }, '');
 }
 
-console.log(reduceNames());
+reduceNames();
+
+const averageAge = () => {
+  const ages = data.books.map((book) => book.releaseYear - book.author.birthYear);
+  return ages.reduce((curr, acc) => curr + acc ,0) / ages.length;
+}
+
+averageAge();
