@@ -14,17 +14,24 @@ const getTotalArea = () => {
 
 getTotalArea(); //area total
 
-const expectedResult = {
-  name: 'American Samoa',
-  region: 'Oceania',
-  currencies: [{ code: 'USD', name: 'United States Dollar' }],
-  capital: 'Pago Pago',
-  population: 55197,
-  area: 199
-}
 
 const longestName = () => {
   return data.countries.reduce((acc, curr) => acc.name.length > curr.name.length ? acc : curr);
-} //país com maior numero de caracteres no nome
+} 
 
-console.log(longestName()); 
+longestName(); //país com maior numero de caracteres no nome
+
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
+
+const countA = () => {
+  const names = data.countries.map((element) => element.name);
+  const namesLetters = names.join('').toLowerCase().split('');
+  console.log(namesLetters);
+  return namesLetters.reduce((acc, curr) => curr === 'a' ? acc += 1 : acc, 0)
+}
+
+countA();
