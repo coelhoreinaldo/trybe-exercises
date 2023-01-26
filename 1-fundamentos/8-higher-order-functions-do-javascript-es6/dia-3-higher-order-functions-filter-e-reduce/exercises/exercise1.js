@@ -2,7 +2,7 @@ const data = require('../data');
 
 
 const fantasyOrScienceFiction = () => data.books
-.filter((element) => element.genre === 'Fantasia' || element.genre === 'Ficção Científica');
+  .filter((element) => element.genre === 'Fantasia' || element.genre === 'Ficção Científica');
 
 fantasyOrScienceFiction(); //Livros de fantasia e ficção científica
 
@@ -17,15 +17,22 @@ const oldBooksOrdered = () => {
 
 oldBooksOrdered(); //Livros com mais de 60 anos ordenados do mais velho pro mais novo
 
-const expectedResult = [ 'Fundação', 'Duna' ];
-
 const booksByAuthorBirthYear = (birthYear) => {
   const array = [];
   data.books.forEach((book) => {
-    if(book.author.birthYear === birthYear)
-     array.push(book.name);
+    if (book.author.birthYear === birthYear)
+      array.push(book.name);
   });
   return array
 }
 
-console.log(booksByAuthorBirthYear(1920));
+booksByAuthorBirthYear(1920); //Livros dado o nascimento das pessoas autoras
+
+const fantasyOrScienceFictionAuthors = () => {
+  const array = [];
+  const fantasyFiction = data.books
+    .filter((element) => element.genre === 'Fantasia' || element.genre === 'Ficção Científica');
+  const forEached = fantasyFiction.forEach((book) => array.push(book.author.name));
+  return array.sort();
+}
+fantasyOrScienceFictionAuthors(); //Autores de ficção e fantasia ordenados
