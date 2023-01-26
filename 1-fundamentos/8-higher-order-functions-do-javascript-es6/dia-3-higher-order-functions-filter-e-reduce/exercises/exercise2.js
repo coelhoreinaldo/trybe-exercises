@@ -5,14 +5,14 @@ const getPopulation = () => {
   return maped.reduce((acc, curr) => acc + curr, 0);
 };
 
-getPopulation();
+getPopulation(); //população total
 
 const getTotalArea = () => {
   const maped = data.countries.map((element) => element.area)
   return maped.reduce((acc, curr) => acc + curr, 0);
 };
 
-getTotalArea();
+getTotalArea(); //area total
 
 const expectedResult = {
   name: 'American Samoa',
@@ -24,8 +24,7 @@ const expectedResult = {
 }
 
 const longestName = () => {
-  const maped = data.countries.map((element) => element.name)
   return data.countries.reduce((acc, curr) => acc.name.length > curr.name.length ? acc : curr);
-}
+} //país com maior numero de caracteres no nome
 
 console.log(longestName()); 
