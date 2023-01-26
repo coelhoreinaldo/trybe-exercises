@@ -61,7 +61,6 @@ module.exports = {
       releaseYear: 1928,
     },
   ],
-  // Fonte: <https://restcountries.com/v2/all>
 
   // Fonte: <https://restcountries.com/v2/all>
   countries: [
