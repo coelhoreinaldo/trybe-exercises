@@ -37,12 +37,6 @@ const fantasyOrScienceFictionAuthors = () => {
 
 fantasyOrScienceFictionAuthors(); //Autores de ficção e fantasia ordenados
 
-const expectedResult = [
-  'O Senhor dos Anéis',
-  'Fundação',
-  'O Chamado de Cthulhu',
-];
-
 const oldBooks = () => {
   const oldBooks = oldBooksOrdered();
   return oldBooks.map((book) => book.name).sort();
@@ -50,3 +44,13 @@ const oldBooks = () => {
 }
 
 oldBooks()
+
+const expectedResult = 'O Senhor dos Anéis';
+
+const authorWith3DotsOnName = () => {
+  const getBook = data.books.find((book) => (
+    book.author.name[1] === '.' && book.author.name[4] === '.' && book.author.name[7] === '.'));
+  return getBook.author.name;
+}
+
+console.log(authorWith3DotsOnName());
