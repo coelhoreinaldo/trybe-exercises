@@ -1,13 +1,12 @@
 const data = require('../data');
+const currDate = new Date();
+const currYear = currDate.getFullYear();
 
 
 const fantasyOrScienceFiction = () => data.books
   .filter((element) => element.genre === 'Fantasia' || element.genre === 'Ficção Científica');
 
 fantasyOrScienceFiction(); //Livros de fantasia e ficção científica
-
-const currDate = new Date();
-const currYear = currDate.getFullYear();
 
 const oldBooksOrdered = () => {
   const filtered = data.books.filter((book) => currYear - book.releaseYear > 60);
@@ -35,4 +34,19 @@ const fantasyOrScienceFictionAuthors = () => {
   const forEached = fantasyFiction.forEach((book) => array.push(book.author.name));
   return array.sort();
 }
+
 fantasyOrScienceFictionAuthors(); //Autores de ficção e fantasia ordenados
+
+const expectedResult = [
+  'O Senhor dos Anéis',
+  'Fundação',
+  'O Chamado de Cthulhu',
+];
+
+const oldBooks = () => {
+  const oldBooks = oldBooksOrdered();
+  return oldBooks.map((book) => book.name).sort();
+  // escreva seu código aqui
+}
+
+oldBooks()
