@@ -21,12 +21,6 @@ const longestName = () => {
 
 longestName(); //país com maior numero de caracteres no nome
 
-const names = [
-  'Aanemarie', 'Adervandes', 'Akifusa',
-  'Abegildo', 'Adicellia', 'Aladonata',
-  'Abeladerco', 'Adieidy', 'Alarucha',
-];
-
 const countA = () => {
   const names = data.countries.map((element) => element.name);
   const namesLetters = names.join('').toLowerCase().split('');
@@ -34,4 +28,4 @@ const countA = () => {
   return namesLetters.reduce((acc, curr) => curr === 'a' ? acc += 1 : acc, 0)
 }
 
-countA();
+countA(); //conta as letras A dos nomes dos países
