@@ -15,4 +15,17 @@ const oldBooksOrdered = () => {
   return sorted
 }
 
-console.log(oldBooksOrdered()); //Livros com mais de 60 anos ordenados do mais velho pro mais novo
+oldBooksOrdered(); //Livros com mais de 60 anos ordenados do mais velho pro mais novo
+
+const expectedResult = [ 'Fundação', 'Duna' ];
+
+const booksByAuthorBirthYear = (birthYear) => {
+  const array = [];
+  data.books.forEach((book) => {
+    if(book.author.birthYear === birthYear)
+     array.push(book.name);
+  });
+  return array
+}
+
+console.log(booksByAuthorBirthYear(1920));
