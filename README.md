@@ -10,11 +10,11 @@ A Trybe é uma escola de tecnologia que tem comprometimento genuíno com o suces
 
 ### 🇺🇸
 
-This repository contains all the learning activities developed by [me](https://www.linkedin.com/in/coelhoreinaldo/) while studying at [Trybe](https://www.betrybe.com/).
+This repository contains all the learning exercises developed by [me](https://www.linkedin.com/in/coelhoreinaldo/) while studying at [Trybe](https://www.betrybe.com/).
 
 Trybe is a technology school that has a genuine commitment to the professional success of its students. With the Shared Success Model, those who study at Trybe have the option of paying only when they are already working. There are more than 1500 hours of training that covers fundamentals of web development, development, front-end, back-end, computer science, agile methodologies and soft skills.
 
-## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
+## Fundamentos do Desenvolvimento Web ✅
 
 ##### Bloco 1: Introdução - Unix & Shell
 
@@ -59,23 +59,23 @@ Trybe is a technology school that has a genuine commitment to the professional s
 - [x] 6-3: _CSS Flexbox - Parte 1_
 - [x] 6-4: _CSS Flexbox - Parte 2_
 - [x] 6-5: _CSS Responsivo - Mobile First_
-- [x] 6-6: _Projeto - Trybewarts_
+- [x] 6-6: _[Projeto - Trybewarts](https://coelhoreinaldo.github.io/)_
 
 ##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
 
 - [X] 7-1: _Fluxo de exceções e manipulação de objetos_
 - [X] 7-2: _Primeiros passos em Jest_
 - [X] 7-3: _Matchers e cobertura de código_
-- [ ] 7-4: _Projeto - JavaScript Testes Unitários_
+- [X] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/coelhoreinaldo/js-unit-tests)_
 
 ##### Bloco 8: Higher Order Functions do JavaScript ES6
 
-- [ ] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
-- [ ] 8-2: _JavaScript ES6 - High order Functions - sort e map_
-- [ ] 8-3: _JavaScript ES6 - High order Functions - filter e reduce_
-- [ ] 8-4: _JavaScript ES6 - spread operator, rest parameters e object destructuring_
-- [ ] 8-5: _JavaScript ES6 - Array destructuring, Default destructuring, Object property shorthand e default parameters_
-- [ ] 8-6: _Projeto - Zoo functions_
+- [X] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
+- [X] 8-2: _JavaScript ES6 - High order Functions - sort e map_
+- [X] 8-3: _JavaScript ES6 - High order Functions - filter e reduce_
+- [X] 8-4: _JavaScript ES6 - spread operator, rest parameters e object destructuring_
+- [X] 8-5: _JavaScript ES6 - Array destructuring, Default destructuring, Object property shorthand e default parameters_
+- [X] 8-6: _[Projeto - Zoo Functions](https://github.com/coelhoreinaldo/zoo-functions)_
 
 ## Front-end :hourglass_flowing_sand:
 
