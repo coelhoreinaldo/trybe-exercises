@@ -5,21 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Field Validator</title>
+  <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
+  <main>
+    <div>
   <form action="" method="get">
-    <label for="input-text"></label>
-    <input type="text" name="input-text" id="input-text" placeholder="Digite aqui...">
-    <select name="type-selected" id="type-selected">
-      <option value="cpf">cpf</option>
-      <option value="email">email</option>
-      <option value="password">password</option>
-      <option value="number">number</option>
-      <option value="lowercase">lowercase</option>
+    <h1>Validador de campos</h1>
+    <input type="text" name="input-text" 
+    class="inputs" id="input-text" placeholder="Digite aqui...">
+    <select class="inputs" name="type-selected" id="type-selected">
+      <option value="cpf">CPF</option>
+      <option value="email">E-mail</option>
+      <option value="password">Password</option>
+      <option value="number">Number is divisible by 2?</option>
+      <option value="lowercase">Is lowercase?</option>
     </select>
-    <button id="validate-btn">Validar</button>
+    <button class="inputs" id="validate-btn">Validar</button>
   </form>
   <p id="answer">Digite o valor, escolha a opção e clique em validar</p>
+</div>
+</main>
   <script src="src/main.js" type="module"></script>
 </body>
 </html>
