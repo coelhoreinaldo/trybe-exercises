@@ -8,15 +8,18 @@
 </head>
 <body>
   <form action="" method="get">
-    <label for="text"></label>
-    <input type="text" name="text" id="text" placeholder="Digite aqui...">
-    <select name="type-validate" id="type-validate">
+    <label for="input-text"></label>
+    <input type="text" name="input-text" id="input-text" placeholder="Digite aqui...">
+    <select name="type-selected" id="type-selected">
       <option value="cpf">cpf</option>
       <option value="email">email</option>
       <option value="password">password</option>
-      <option value="username">username</option>
-      <option value="nickname">nickname</option>
+      <option value="number">number</option>
+      <option value="lowercase">lowercase</option>
     </select>
+    <button id="validate-btn">Validar</button>
   </form>
+  <p id="answer">Digite o valor, escolha a opção e clique em validar</p>
+  <script src="src/main.js" type="module"></script>
 </body>
 </html>
