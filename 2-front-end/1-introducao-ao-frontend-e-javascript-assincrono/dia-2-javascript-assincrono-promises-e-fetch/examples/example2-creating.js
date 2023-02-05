@@ -19,18 +19,35 @@ const rejectedPromise = () =>
     }, 1000);
   });
 
-resolvedPromise()
-  .then((response) => {
-    console.log(`resolvedPromise: o número gerado é ${response}.`);
-  })
-  .catch((error) => {
-    console.log(`Com a promise resolvida, não irá passar pelo catch`);
-  });
+// resolvedPromise()
+//   .then((response) => {
+//     console.log(`resolvedPromise: o número gerado é ${response}.`);
+//   })
+//   .catch((error) => {
+//     console.log(`Com a promise resolvida, não irá passar pelo catch`);
+//   });
 
-rejectedPromise()
+// rejectedPromise()
+//   .then((response) => {
+//     console.log(`Com a promise rejeitada, não irá passar pelo then`);
+//   })
+//   .catch((error) => {
+//     console.log(`rejectedPromise: ${error.message}`);
+//   });
+
+
+randomPromise = () =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const randomNumber = generateRandomNumber();
+      randomNumber % 2 === 0 ? resolve(randomNumber) : reject(new Error('O número não é válido'))
+    }, 1000)
+  })
+
+randomPromise()
   .then((response) => {
-    console.log(`Com a promise rejeitada, não irá passar pelo then`);
+    console.log(`Resolvida: ${response}`)
   })
   .catch((error) => {
-    console.log(`rejectedPromise: ${error.message}`);
-  });
+    console.log(`Rejeitada: ${error}`)
+  })
