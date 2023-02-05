@@ -51,3 +51,4 @@ randomPromise()
   .catch((error) => {
     console.log(`Rejeitada: ${error}`)
   })
+  .finally(() => console.log('Fim da execução da promise.'));
