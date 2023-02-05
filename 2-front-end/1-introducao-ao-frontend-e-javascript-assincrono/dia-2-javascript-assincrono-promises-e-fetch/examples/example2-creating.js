@@ -9,3 +9,11 @@ const resolvedPromise = () =>
       resolve(randomNumber);
     }, 1000);
   });
+  
+  const rejectedPromise = () =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const randomNumber = generateRandomNumber();
+      reject(new Error(`O número ${randomNumber} é inválido.`));
+    }, 1000);
+  });
