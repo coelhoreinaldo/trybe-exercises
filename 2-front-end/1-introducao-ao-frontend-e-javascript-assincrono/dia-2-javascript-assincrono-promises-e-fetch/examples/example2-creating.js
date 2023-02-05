@@ -52,3 +52,7 @@ randomPromise()
     console.log(`Rejeitada: ${error}`)
   })
   .finally(() => console.log('Fim da execução da promise.'));
+
+  console.log(
+    `Esse número não foi gerado por um código assíncrono: ${generateRandomNumber()}`
+  );
