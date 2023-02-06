@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 98vh;
   background-image: url(Snow.svg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@ button {
 }
 
 button:hover {
-  background-color: #0c0b31;
+  background-color: #5EC8F5;
 }
 
 main {
@@ -66,9 +66,25 @@ footer {
   margin-top: auto;
   margin-bottom: 0;
   align-items: center;
-  background-color: rgba(12, 11, 49, 0.76);
-  padding: 16px 0;
+  padding: 8px 0;
+  gap: 3px;
+  font-size: x-small;
 }
+
+a {
+text-decoration: none;
+color: #5EC8F5;
+transition: color 0.5s;
+}
+
+a:hover {
+  color: #1E4D7C;
+}
+
+footer div {
+  margin-top: 8px;
+}
+
 
 @media only screen and (max-width: 1068px)
 {
