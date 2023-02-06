@@ -12,5 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "vite": "^4.1.1"
-  }
+  },
+  "type": "module"
 }
