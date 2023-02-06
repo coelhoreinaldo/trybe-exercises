@@ -2,16 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 } 
 
 body {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-color: #91ace5;
-  color: rgb(25, 18, 58);
+  background-image: url(Snow.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: rgb(179, 237, 245);
   display: flex;
   margin-top: 16px;
-  justify-content: center;
+}
+
+h1 {
+  font-size: 2.3em
 }
 
 .buttons-container {
@@ -20,9 +29,24 @@ body {
   gap: 16px;
 }
 
+button {
+  border: none;
+  background-color: #333333;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: #0c0b31;
+}
+
 main {
   display: flex;
   flex-direction: column;
+  align-self: center;
   align-items: center;
   max-width: 60%;
   max-height: 60%;
@@ -34,4 +58,38 @@ main {
   border-radius: 10px;
   box-shadow: 3px 3px 12px #333;
   width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: 0;
+  align-items: center;
+  background-color: rgba(12, 11, 49, 0.76);
+  padding: 16px 0;
+}
+
+@media only screen and (max-width: 1068px)
+{
+  body {
+    background-size: 1000px;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+  }
+
+  button {
+    width: 200px;
+  }
+  
 }
