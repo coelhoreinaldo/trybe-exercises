@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: url(Snow.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: rgb(179, 237, 245);
+  display: flex;
+  margin-top: 16px;
+}
+
+h1 {
+  font-size: 2.3em
+}
+
+.buttons-container {
+  display: flex;
+  margin: 8px 0;
+  gap: 16px;
+}
+
+button {
+  border: none;
+  background-color: #333333;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: #5EC8F5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  max-width: 60%;
+  max-height: 60%;
+  position: absolute;
+}
+
+#random-pet {
+  margin: 16px;
+  border: 3px solid #8484ca;
+  border-radius: 10px;
+  box-shadow: 3px 3px 12px #333;
+  width: 100%;
+  max-height: 600px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: 0;
+  align-items: center;
+  padding: 8px 0;
+  gap: 3px;
+  font-size: x-small;
+}
+
+a {
+text-decoration: none;
+color: #5EC8F5;
+transition: color 0.5s;
+}
+
+a:hover {
+  color: #1E4D7C;
+}
+
+footer div {
+  margin-top: 8px;
+}
+
+
+@media only screen and (max-width: 1068px)
+{
+  body {
+    background-size: 1400px;
+  }
+
+  h1 {
+    font-size: large;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+  }
+
+  button {
+    width: 200px;
+  }
+  
+}
