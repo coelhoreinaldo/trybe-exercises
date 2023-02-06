@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 98vh;
+  height: 100vh;
   background-image: url(Snow.svg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -50,6 +50,7 @@ main {
   align-items: center;
   max-width: 60%;
   max-height: 60%;
+  position: absolute;
 }
 
 #random-pet {
@@ -58,6 +59,7 @@ main {
   border-radius: 10px;
   box-shadow: 3px 3px 12px #333;
   width: 100%;
+  max-height: 600px;
 }
 
 footer {
@@ -89,11 +91,11 @@ footer div {
 @media only screen and (max-width: 1068px)
 {
   body {
-    background-size: 1000px;
+    background-size: 1400px;
   }
 
   h1 {
-    font-size: x-large;
+    font-size: large;
   }
 
   main {
