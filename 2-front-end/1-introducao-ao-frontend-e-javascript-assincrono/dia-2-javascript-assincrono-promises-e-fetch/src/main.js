@@ -24,6 +24,6 @@ button.addEventListener('click', (event) => {
       title: 'Personagem não encontrado',
       text: error.message,
       icon: 'error',
-      confirmButtonText:'Cool',
+      confirmButtonText:'Cool'
     }))
 });
