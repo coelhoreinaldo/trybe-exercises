@@ -1,3 +1,5 @@
+import "./style.css"
+
 const dogBtn = document.getElementById('random-dog');
 const catBtn = document.getElementById('random-cat');
 const surpriseBtn = document.getElementById('surprise');
