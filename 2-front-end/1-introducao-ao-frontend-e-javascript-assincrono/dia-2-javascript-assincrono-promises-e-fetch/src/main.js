@@ -1,4 +1,5 @@
 import Swal from 'sweetalert2';
+import './style.css';
 
 const button = document.getElementById('button');
 const cardImg = document.getElementById('image');
