@@ -1,0 +1,21 @@
+{
+  "name": "dia-2-javascript-assincrono-promises-e-fetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercise.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^11.7.1",
+    "vite": "^4.1.1"
+  },
+  "type": "module"
+}
