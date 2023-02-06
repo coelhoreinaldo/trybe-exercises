@@ -9,3 +9,10 @@ dogBtn.addEventListener(('click'), () => {
     .then((response) => response.json())
     .then((data) => image.src = data.message)
 });
+
+catBtn.addEventListener(('click'), () => {
+
+  fetch('https://aws.random.cat/meow')
+    .then((response) => response.json())
+    .then((data) => image.src = data.file)
+});
