@@ -11,5 +11,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^11.7.1"
+  },
+  "type": "module"
 }
