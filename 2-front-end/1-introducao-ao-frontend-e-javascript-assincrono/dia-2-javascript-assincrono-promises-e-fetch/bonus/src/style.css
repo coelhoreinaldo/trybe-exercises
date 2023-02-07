@@ -15,7 +15,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   color: rgb(179, 237, 245);
-  display: flex;
   margin-top: 16px;
 }
 
@@ -50,7 +49,7 @@ main {
   align-items: center;
   max-width: 60%;
   max-height: 60%;
-  position: absolute;
+  margin-bottom: 240px;
 }
 
 #random-pet {
@@ -63,14 +62,12 @@ main {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
-  margin-bottom: 0;
-  align-items: center;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
   padding: 8px 0;
-  gap: 3px;
   font-size: x-small;
+  line-height: 1.5;
 }
 
 a {
@@ -84,7 +81,7 @@ a:hover {
 }
 
 footer div {
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 
@@ -110,4 +107,9 @@ footer div {
     width: 200px;
   }
   
+}
+@media only screen and (min-width:768px) and (max-width: 968px) {
+  body {
+    background-size: 2000px;
+  }
 }
