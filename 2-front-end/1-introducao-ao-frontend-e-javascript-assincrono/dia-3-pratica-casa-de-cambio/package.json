@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite --open"
+    "dev": "vite --open",
+    "lint": "eslint ./src"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,6 @@
   },
   "type": "module",
   "devDependencies": {
-    "eslint": "^8.33.0"
+    "@trybe/eslint-config-frontend": "^1.8.3"
   }
 }
