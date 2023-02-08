@@ -17,9 +17,5 @@ searchButton.addEventListener('click', (event) => {
         currencyUl.appendChild(moedas);
         moedas.innerHTML = `${key} ${value}`;
       }
-      // Object.entries(rates).forEach((m, index) => {
-      //   moedas.innerHTML = `${m}`;
-      //   console.log(m);
-      // });
     });
 });
