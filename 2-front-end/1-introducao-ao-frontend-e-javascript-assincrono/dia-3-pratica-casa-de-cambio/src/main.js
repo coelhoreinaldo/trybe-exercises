@@ -12,10 +12,10 @@ searchButton.addEventListener('click', (event) => {
     .then((data) => {
       resultH1.innerHTML = `Valores referentes a 1 ${moeda}`;
       const { rates } = data;
-      for (const [key, value] of Object.entries(rates)) {
+      Object.entries(rates).forEach(([key, value]) => {
         const moedas = document.createElement('li');
         currencyUl.appendChild(moedas);
         moedas.innerHTML = `${key} ${value}`;
-      }
+      });
     });
 });
