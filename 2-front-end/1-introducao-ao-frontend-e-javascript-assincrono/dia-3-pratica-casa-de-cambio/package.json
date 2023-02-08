@@ -13,5 +13,8 @@
   "dependencies": {
     "vite": "^4.1.1"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.33.0"
+  }
 }
