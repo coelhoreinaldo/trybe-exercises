@@ -16,7 +16,6 @@
   },
   "type": "module",
   "devDependencies": {
-    "@trybe/eslint-config-frontend": "^1.8.3",
-    "eslint": "^8.33.0"
+    "@trybe/eslint-config-frontend": "^1.8.3"
   }
 }
