@@ -56,6 +56,7 @@ button {
   height: 48px;
   align-self: flex-end;
   transition: 0.7s;
+  cursor: pointer;
 }
 
 button:hover {
@@ -114,6 +115,18 @@ img {
   height: 14px;
 }
 
+i {
+  color: #72aee6;
+  bottom: 0;
+  margin-top: 32px;
+  transition: 0.7s;
+}
+
+i:hover {
+  color: #1281e9;
+}
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #currency-section {
@@ -128,7 +141,6 @@ img {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 992px) {
 
   #currency-section {
@@ -142,12 +154,3 @@ img {
     justify-content: space-evenly;
   }
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...} */
