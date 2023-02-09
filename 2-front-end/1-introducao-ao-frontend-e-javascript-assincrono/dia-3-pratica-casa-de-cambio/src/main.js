@@ -8,7 +8,7 @@ const resultH1 = document.getElementById('result');
 searchButton.addEventListener('click', (event) => {
   event.preventDefault();
 
-  const moeda = document.getElementById('moeda').value;
+  const moeda = document.getElementById('currency').value;
 
   fetch(`https://api.exchangerate.host/latest?base=${moeda}`)
     .then((response) => response.json())
@@ -32,7 +32,7 @@ searchButton.addEventListener('click', (event) => {
         const float = 3;
         span1.innerHTML = ` ${key} `;
         span2.innerHTML = value.toFixed(float);
-        span2.style.color = 'yellow';
+        span2.style.color = '#f1f168';
         moedas.appendChild(coinsImg);
         moedas.appendChild(span1);
         moedas.appendChild(span2);
@@ -43,5 +43,6 @@ searchButton.addEventListener('click', (event) => {
       text: error.message,
       icon: 'error',
       confirmButtonText: 'OK',
+      color: '#282C33',
     }));
 });

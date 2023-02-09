@@ -38,7 +38,7 @@ h1 span {
   gap: 8px;
 }
 
-#moeda {
+#currency {
   border: none;
   padding: 8px;
   width: 171px;
@@ -89,6 +89,7 @@ li {
   align-items: center;
   gap: 4px;
   padding-left: 8px;
+  font-size: 15px;
 }
 
 img {
