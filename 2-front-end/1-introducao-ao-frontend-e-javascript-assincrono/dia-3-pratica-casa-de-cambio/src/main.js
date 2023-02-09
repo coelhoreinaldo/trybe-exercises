@@ -1,4 +1,3 @@
-import Swal from 'sweetalert2';
 import './style.css';
 
 const searchButton = document.getElementById('search');

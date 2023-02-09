@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Casa de Câmbio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-</head>
-<body>
-  <header>
-    <h1>Casa de <span>Câmbio</span></h1>
-  </header>
-  <main>
-    <section class="currency-form-container">
-      <div class="currency-form">
-      <label for="currency">Digite a moeda:</label>
-      <input id="currency" type="text" placeholder="USD">
-    </div>
-    <button id="search">Pesquisar</button>
-  </section>
-    <section id="currency-section">
-      <h1 id="result"></h1>
-      <ul id="currency-ul">
-      </ul>
-    </section>
-  </main>
-  <script type="module" src="./src/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa de Câmbio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8cfb226973.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </head>
+  <body>
+    <header>
+      <h1>Casa de <span>Câmbio</span></h1>
+    </header>
+    <main>
+      <section class="currency-form-container">
+        <div class="currency-form">
+          <label for="currency">Digite a moeda:</label>
+          <input id="currency" type="text" placeholder="USD" />
+        </div>
+        <button id="search">Pesquisar</button>
+      </section>
+      <section id="currency-section">
+        <h1 id="result"></h1>
+        <ul id="currency-ul"></ul>
+      </section>
+    </main>
+    <footer>
+      <a href="https://github.com/coelhoreinaldo" target="_blank"
+        ><i class="fa-brands fa-square-github fa-2xl" title="GitHub"></i
+      ></a>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
