@@ -55,6 +55,12 @@ button {
   width: 171px;
   height: 48px;
   align-self: flex-end;
+  transition: 0.7s;
+}
+
+button:hover {
+  background-color: #1281e9;
+  border: 1px solid #1281e9;
 }
 
 #currency-section {

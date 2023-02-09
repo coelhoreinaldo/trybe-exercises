@@ -8,7 +8,7 @@ const resultH1 = document.getElementById('result');
 searchButton.addEventListener('click', (event) => {
   event.preventDefault();
 
-  const moeda = document.getElementById('currency').value;
+  const moeda = document.getElementById('currency').value.toUpperCase();
 
   fetch(`https://api.exchangerate.host/latest?base=${moeda}`)
     .then((response) => response.json())
