@@ -12,6 +12,10 @@ body {
   min-width: 100vw;
 }
 
+#currency-section h1 {
+  text-align: center;
+}
+
 h1 span {
   color: #72aee6;
 }
@@ -19,6 +23,7 @@ h1 span {
 header {
   margin: 63px 306px 0;
 }
+
 main {
   margin: 0 306px;
 }
@@ -37,6 +42,8 @@ main {
 }
 
 #moeda {
+  border: none;
+  padding: 8px;
   width: 171px;
   height: 48px;
   background: rgba(217, 217, 217, 0.1);
@@ -50,4 +57,34 @@ button {
   width: 171px;
   height: 48px;
   align-self: flex-end;
+}
+
+#currency-section {
+  width: 900px;
+  height: 600px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.06);
+  margin-top: 16px;
+  border-radius: 26px;
+}
+
+#currency-ul {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(20px, 160px));
+  justify-content: space-between;
+  gap: 8px;
+  margin: 8px;
+  overflow: scroll;
+  height: 600px;
+  padding-bottom: 32px;
+}
+
+li {
+  column-span: 1;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 150px;
+  height: 44px;
+  text-align: center;
+  list-style: none;
 }
