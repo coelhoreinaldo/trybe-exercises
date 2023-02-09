@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "sweetalert2": "^11.4.38",
     "vite": "^4.1.1"
   },
   "type": "module",
