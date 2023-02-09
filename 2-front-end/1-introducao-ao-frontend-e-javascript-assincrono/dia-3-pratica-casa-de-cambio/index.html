@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Casa de Câmbio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
@@ -12,11 +13,13 @@
     <h1>Casa de <span>Câmbio</span></h1>
   </header>
   <main>
-    <section>
+    <section class="currency-form-container">
+      <div class="currency-form">
       <label for="moeda">Digite a moeda:</label>
-      <input id="moeda" type="text">
-      <button id="search">Pesquisar</button>
-    </section>
+      <input id="moeda" type="text" placeholder="USD">
+    </div>
+    <button id="search">Pesquisar</button>
+  </section>
     <section id="currency-container">
       <h1 id="result"></h1>
       <ul id="currency-ul">
