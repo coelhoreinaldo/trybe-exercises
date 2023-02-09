@@ -24,8 +24,15 @@ searchButton.addEventListener('click', (event) => {
       currencyUl.innerHTML = '';
       Object.entries(rates).forEach(([key, value]) => {
         const moedas = document.createElement('li');
+        const span1 = document.createElement('span');
+        const span2 = document.createElement('span');
         currencyUl.appendChild(moedas);
-        moedas.innerHTML = `${key} ${value}`;
+        const float = 3;
+        span1.innerHTML = `${key} `;
+        span2.innerHTML = value.toFixed(float);
+        span2.style.color = 'yellow';
+        moedas.appendChild(span1);
+        moedas.appendChild(span2);
       });
     })
     .catch((error) => Swal.fire({
