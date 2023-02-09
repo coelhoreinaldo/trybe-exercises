@@ -26,11 +26,14 @@ searchButton.addEventListener('click', (event) => {
         const moedas = document.createElement('li');
         const span1 = document.createElement('span');
         const span2 = document.createElement('span');
+        const coinsImg = document.createElement('img');
+        coinsImg.src = './img/coins.svg';
         currencyUl.appendChild(moedas);
         const float = 3;
-        span1.innerHTML = `${key} `;
+        span1.innerHTML = ` ${key} `;
         span2.innerHTML = value.toFixed(float);
         span2.style.color = 'yellow';
+        moedas.appendChild(coinsImg);
         moedas.appendChild(span1);
         moedas.appendChild(span2);
       });
