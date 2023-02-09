@@ -10,6 +10,10 @@ body {
   color: white;
   min-height: 100vh;
   min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #currency-section h1 {
@@ -19,14 +23,14 @@ body {
 h1 span {
   color: #72aee6;
 }
-
+/* 
 header {
-  margin: 63px 306px 0;
+  margin: 0px 306px 0;
 }
 
 main {
   margin: 0 306px;
-}
+} */
 
 .currency-form-container {
   display: flex;
@@ -88,3 +92,41 @@ li {
   text-align: center;
   list-style: none;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #currency-section {
+    width: 100%;
+    height: 100%;
+  }
+
+  #currency-ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20px, 160px));
+    justify-content: space-evenly;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+
+  #currency-section {
+    width: 100%;
+    height: 100%;
+  }
+
+  #currency-ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20px, 160px));
+    justify-content: space-evenly;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
