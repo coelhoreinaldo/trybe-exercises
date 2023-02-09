@@ -13,8 +13,11 @@ searchButton.addEventListener('click', (event) => {
     .then((response) => response.json())
     .then((data) => {
       const { rates } = data;
+      if (!moeda) {
+        throw new Error('Você precisa passar uma moeda');
+      }
       if (!Object.keys(rates).includes(moeda)) {
-        throw new Error('Escreva o nome válido.');
+        throw new Error('Moeda não existente');
       }
       resultH1.innerHTML = `Valores referentes a 1 ${moeda}`;
       currencyUl.innerHTML = '';
@@ -25,9 +28,9 @@ searchButton.addEventListener('click', (event) => {
       });
     })
     .catch((error) => Swal.fire({
-      title: 'Moeda não encontrada',
+      title: 'Oops',
       text: error.message,
       icon: 'error',
-      confirmButtonText: 'Cool',
+      confirmButtonText: 'OK',
     }));
 });
