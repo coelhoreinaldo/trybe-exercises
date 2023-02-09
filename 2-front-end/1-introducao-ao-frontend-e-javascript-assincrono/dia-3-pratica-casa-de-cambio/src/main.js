@@ -27,7 +27,7 @@ searchButton.addEventListener('click', (event) => {
         const span1 = document.createElement('span');
         const span2 = document.createElement('span');
         const coinsImg = document.createElement('img');
-        coinsImg.src = './img/coins.svg';
+        coinsImg.src = './img/coins.png';
         currencyUl.appendChild(moedas);
         const float = 3;
         span1.innerHTML = ` ${key} `;

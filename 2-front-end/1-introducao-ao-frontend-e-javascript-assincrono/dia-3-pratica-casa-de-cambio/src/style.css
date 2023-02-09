@@ -45,6 +45,7 @@ h1 span {
   height: 48px;
   background: rgba(217, 217, 217, 0.1);
   border-radius: 10px;
+  color: white;
 }
 
 button {
@@ -79,11 +80,21 @@ button {
 li {
   column-span: 1;
   background: rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 10px;
   width: 150px;
   height: 44px;
   text-align: center;
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 8px;
+}
+
+img {
+  display: flex;
+  width: 14px;
+  height: 14px;
 }
 
 /* Extra small devices (phones, 600px and down) */
