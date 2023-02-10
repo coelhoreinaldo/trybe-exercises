@@ -1,5 +1,3 @@
-import './style.css';
-
 const searchButton = document.getElementById('search');
 const currencyUl = document.getElementById('currency-ul');
 const resultH1 = document.getElementById('result');
