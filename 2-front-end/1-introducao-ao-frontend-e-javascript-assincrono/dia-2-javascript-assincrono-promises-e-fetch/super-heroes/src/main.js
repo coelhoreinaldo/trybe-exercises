@@ -15,5 +15,10 @@ button.addEventListener('click', (event) => {
     cardImg.src = data.images.sm;
     herosName.innerHTML = data.name
   })
+  .catch((error) => Swal.fire({
+    title: 'Personagem não encontrado',
+    text: error.message,
+    icon: 'error',
+    confirmButtonText:'Cool'
+  }))
 })
-
