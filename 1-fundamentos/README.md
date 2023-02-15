@@ -1,4 +1,4 @@
-## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
+## Fundamentos do Desenvolvimento Web ✅
 
 ##### Bloco 1: Introdução - Unix & Shell
 
