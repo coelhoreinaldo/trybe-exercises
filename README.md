@@ -89,7 +89,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 2: Introdução ao React
 
-- [ ] 2-1: _'Hello, World!' no React_
+- [X] 2-1: _'Hello, World!' no React_
 - [ ] 2-2: _Componentes React_
 - [ ] 2-3: _Projeto - Solar System_
 
