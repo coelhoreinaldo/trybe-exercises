@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+// arquivo App.js, criado pelo create-react-app, modificado
+import React from 'react';
 import './App.css';
+import UserProfile from './components/UserProfile';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    const joao = {
+      id: 102,
+      name: 'João',
+      email: 'joao@gmail.com',
+      avatar: 'https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_640.png'
+    };
+
+    const amelia = {
+      id: 77,
+      name: 'Amélia',
+      email: 'amelia@gmail.com',
+      avatar: 'https://cdn.pixabay.com/photo/2017/01/31/13/05/cameo-2023867_640.png'
+    };
+
+    return (
+      <div className="App">
+        <UserProfile user={ joao } />
+        <UserProfile user={ amelia } />
+      </div>
+    );
+  }
 }
 
 export default App;
