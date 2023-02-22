@@ -1,4 +1,4 @@
-## Fundamentos do Desenvolvimento Web ⏳
+## Front-end ⏳
 
 ##### Bloco 1: Introdução ao Frontend e JavaScript assíncrono
 
