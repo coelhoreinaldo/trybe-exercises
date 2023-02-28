@@ -2,8 +2,13 @@ import './App.css';
 import React from 'react';
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.handleClick = this.handleClick.bind(this)
+  }
    handleClick () {
     console.log(Math.round(Math.random() * 10));
+    console.log(this);
   };
   render(){
 
