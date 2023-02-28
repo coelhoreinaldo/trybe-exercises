@@ -9,7 +9,9 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <button onClick={handleClick}>Imprima algo</button>
+        <button onClick={handleClick}>onClick</button>
+        <button onMouseOver={handleClick}>onMouseOver</button>
+        <button onMouseLeave={handleClick}>onMouseLeave</button>
       </div>
     );
   }
