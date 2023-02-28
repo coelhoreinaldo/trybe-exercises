@@ -2,11 +2,13 @@ import './App.css';
 import React from 'react';
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.handleClick = this.handleClick.bind(this)
-  }
-   handleClick () {
+  // constructor() {
+  //   super();
+  //   this.handleClick = this.handleClick.bind(this)
+  // }
+
+  //não precisa do constructor pois foi usada a sintaxe de arrow function
+   handleClick = () => {
     console.log(Math.round(Math.random() * 10));
     console.log(this);
   };
