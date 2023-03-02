@@ -8,13 +8,15 @@ export default class Form extends React.Component {
     this.handleChange = this.handleChange.bind(this);
 
     this.state = {
-      food: false,
+      food: 'pizza',
     };
   }
 
-  handleChange(event) {
+  handleChange({target}) {
+    const { name } = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
     this.setState({
-      food: event.target.value,
+      [name]: value,
     });
   }
 
@@ -33,15 +35,15 @@ export default class Form extends React.Component {
             </select>
           </label>
 
-          <label htmlFor="name">Qual seu nome?
+          <label htmlFor="name" value={this.state.name} onChange={this.handleChange}>Qual seu nome?
             <input type="text" name="name" id="name"/>
           </label> 
-          <label htmlFor="color">Qual sua cor favorita?
+          <label htmlFor="color" value={this.state.color} onChange={this.handleChange}>Qual sua cor favorita?
           <input type="color" name="color" id="color" />
           </label>
           
-          <label htmlFor="hobby">Qual seu hobby favorito?
-          <textarea name="" id="hobby" cols="30" rows="10"></textarea>
+          <label htmlFor="hobby" value={this.state.hobby} onChange={this.handleChange}>Qual seu hobby favorito?
+          <textarea name="hobby" id="hobby" cols="30" rows="10"></textarea>
           </label>
         </form>
       </div>
