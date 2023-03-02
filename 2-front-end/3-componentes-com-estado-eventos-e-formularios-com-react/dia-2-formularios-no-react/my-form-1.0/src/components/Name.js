@@ -2,10 +2,12 @@ import React from "react";
 
 export default class Name extends React.Component {
   render() {
-    const { handleChange, value } = this.props;
+    const { handleChange, name } = this.props;
     return (
-      <label htmlFor="name" value={ value } onChange={handleChange}>Qual seu nome?
+      <label htmlFor="name" value={name} onChange={handleChange}>Qual seu nome?
         <input type="text" name="name" id="name" />
+        {!name ? 'O nome precisa ser preenchido' : ''}
+        {name.length <= 1 ? 'Insira mais caracteres' : ''}
       </label>
     )
   }

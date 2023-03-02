@@ -14,9 +14,27 @@ export default class Form extends React.Component {
       color: '',
       hobby: '',
       study: false,
+      formularioComErros: true,
     };
 
     this.fileInput = React.createRef();
+  }
+
+  handleError(){
+    const { name } = this.state;
+
+    const errorCases = [
+      !name,
+      !name.length,
+    ]
+
+    const formularioPreenchido = errorCases.every((error) => error !== true);
+
+    this.setState({
+      // Armazenamos o valor inverso no nosso estado
+      // para sabermos se o formulário possui erros
+      formularioComErros: !formularioPreenchido,
+    });
   }
 
   handleChange({ target }) {
@@ -24,7 +42,7 @@ export default class Form extends React.Component {
     const value = target.type === 'checkbox' ? target.checked : target.value;
     this.setState({
       [name]: value,
-    });
+    }, this.handleError);
   }
 
   render() {
@@ -41,7 +59,7 @@ export default class Form extends React.Component {
               <option value="hamburgue  r">hamburguer</option>
             </select>
           </label>
-          <Name handleChange={this.handleChange} value={this.state.name}/>
+          <Name handleChange={this.handleChange} name={this.state.name}/>
           <label htmlFor="color" value={this.state.color} onChange={this.handleChange}>Qual sua cor favorita?
             <input type="color" name="color" id="color" />
           </label>
