@@ -2,17 +2,21 @@ import React from "react";
 import './App.css';
 
 export default class Form extends React.Component {
-  constructor(){
+  constructor() {
     super();
 
     this.handleChange = this.handleChange.bind(this);
 
     this.state = {
       food: 'pizza',
+      name: '',
+      color: '',
+      hobby: '',
+      study: false,
     };
   }
 
-  handleChange({target}) {
+  handleChange({ target }) {
     const { name } = target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     this.setState({
@@ -36,14 +40,18 @@ export default class Form extends React.Component {
           </label>
 
           <label htmlFor="name" value={this.state.name} onChange={this.handleChange}>Qual seu nome?
-            <input type="text" name="name" id="name"/>
-          </label> 
-          <label htmlFor="color" value={this.state.color} onChange={this.handleChange}>Qual sua cor favorita?
-          <input type="color" name="color" id="color" />
+            <input type="text" name="name" id="name" />
           </label>
-          
+          <label htmlFor="color" value={this.state.color} onChange={this.handleChange}>Qual sua cor favorita?
+            <input type="color" name="color" id="color" />
+          </label>
+
           <label htmlFor="hobby" value={this.state.hobby} onChange={this.handleChange}>Qual seu hobby favorito?
-          <textarea name="hobby" id="hobby" cols="30" rows="10"></textarea>
+            <textarea name="hobby" id="hobby" cols="30" rows="10"></textarea>
+          </label>
+
+          <label htmlFor="study" value={this.state.study} onChange={this.handleChange}>Conseguirá estudar todas as manhãs?
+            <input type='checkbox' name="study" id="study"></input>
           </label>
         </form>
       </div>
