@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+import Name from "./Name";
 
 export default class Form extends React.Component {
   constructor() {
@@ -40,10 +41,7 @@ export default class Form extends React.Component {
               <option value="hamburgue  r">hamburguer</option>
             </select>
           </label>
-
-          <label htmlFor="name" value={this.state.name} onChange={this.handleChange}>Qual seu nome?
-            <input type="text" name="name" id="name" />
-          </label>
+          <Name handleChange={this.handleChange} value={this.state.name}/>
           <label htmlFor="color" value={this.state.color} onChange={this.handleChange}>Qual sua cor favorita?
             <input type="color" name="color" id="color" />
           </label>
