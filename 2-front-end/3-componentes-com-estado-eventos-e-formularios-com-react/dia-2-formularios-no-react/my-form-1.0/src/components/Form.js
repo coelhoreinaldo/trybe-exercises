@@ -14,6 +14,8 @@ export default class Form extends React.Component {
       hobby: '',
       study: false,
     };
+
+    this.fileInput = React.createRef();
   }
 
   handleChange({ target }) {
@@ -35,7 +37,7 @@ export default class Form extends React.Component {
               <option value="pizza">pizza</option>
               <option value="hot-dog">hot-dog</option>
               <option value="milkshake">milkshake</option>
-              <option value="hamburguer">hamburguer</option>
+              <option value="hamburgue  r">hamburguer</option>
             </select>
           </label>
 
@@ -52,6 +54,10 @@ export default class Form extends React.Component {
 
           <label htmlFor="study" value={this.state.study} onChange={this.handleChange}>Conseguirá estudar todas as manhãs?
             <input type='checkbox' name="study" id="study"></input>
+          </label>
+
+          <label>Uma fotinha do seu pet
+            <input type='file' ref={this.fileInput}></input>
           </label>
         </form>
       </div>
