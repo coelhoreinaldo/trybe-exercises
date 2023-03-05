@@ -91,7 +91,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 - [X] 2-1: _'Hello, World!' no React_
 - [X] 2-2: _Componentes React_
-- [ ] 2-3: _Projeto - Solar System_
+- [X] 2-3: _Projeto - Solar System_
 
 ##### Bloco 3: Componentes com Estado, Eventos e Formulários com React
 
