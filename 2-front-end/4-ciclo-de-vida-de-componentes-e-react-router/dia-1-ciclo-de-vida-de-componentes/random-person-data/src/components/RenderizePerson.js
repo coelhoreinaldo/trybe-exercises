@@ -27,9 +27,18 @@ export default class RenderizePerson extends React.Component {
     return (
       <div>
         {
-          loading ? <span>Loading...</span> : randomPerson.map(({ name, login }) => {
-          return (<p key={login.uuid}>Nome: {name.title} {name.first} {name.last}</p>)
-        })
+          loading ? <span>Loading...</span> : randomPerson.map(({
+             name, login, picture, email, dob 
+            }) => {
+            return (
+              <div>
+                <img src={picture.large} alt="foto"/>
+                <p key={login.uuid}>Nome: {name.title} {name.first} {name.last}</p>
+                <p>Email: {email}</p>
+                <p>Idade: {dob.age}</p>
+              </div>
+            )
+          })
         }
       </div>
     )
