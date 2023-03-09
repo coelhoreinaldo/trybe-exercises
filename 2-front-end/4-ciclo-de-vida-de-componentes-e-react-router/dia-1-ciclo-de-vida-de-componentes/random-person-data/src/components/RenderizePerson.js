@@ -22,6 +22,14 @@ export default class RenderizePerson extends React.Component {
     )
   }
 
+  // shouldComponentUpdate(){
+  //   const { randomPerson } = this.state
+  //   if(randomPerson[0].dob.age > 50){
+  //     return false
+  //   }
+  //   return true;
+  // }
+
   render() {
     const { loading, randomPerson } = this.state;
     return (
@@ -31,9 +39,9 @@ export default class RenderizePerson extends React.Component {
              name, login, picture, email, dob 
             }) => {
             return (
-              <div>
+              <div key={login.uuid}>
                 <img src={picture.large} alt="foto"/>
-                <p key={login.uuid}>Nome: {name.title} {name.first} {name.last}</p>
+                <p>Nome: {name.title} {name.first} {name.last}</p>
                 <p>Email: {email}</p>
                 <p>Idade: {dob.age}</p>
               </div>
