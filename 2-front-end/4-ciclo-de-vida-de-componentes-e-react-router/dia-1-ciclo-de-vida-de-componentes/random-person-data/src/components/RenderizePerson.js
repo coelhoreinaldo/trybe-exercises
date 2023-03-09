@@ -1,29 +1,36 @@
 import React from "react";
 
 export default class RenderizePerson extends React.Component {
-  constructor(){
+  constructor() {
     super()
 
     this.state = {
-      randomPerson: []
+      randomPerson: [],
+      loading: true,
     }
 
 
   }
 
-  async componentDidMount(){
-    const fetchApi = await fetch('https://api.randomuser.me/');
-    const response = await fetchApi.json();
-    this.setState({ randomPerson: response.results})
+  async componentDidMount() {
+    this.setState({ loading: true }, async () => {
+
+      const fetchApi = await fetch('https://api.randomuser.me/');
+      const response = await fetchApi.json();
+      this.setState({ randomPerson: response.results, loading: false })
+    }
+    )
   }
 
-  render(){
-    const { randomPerson } = this.state;
-    console.log(randomPerson);
+  render() {
+    const { loading, randomPerson } = this.state;
     return (
       <div>
-        { randomPerson.map(({ name, login }) => {
-        return(<p key={login.uuid}>Nome: {name.title} {name.first} {name.last}</p>)})}
+        {
+          loading ? <span>Loading...</span> : randomPerson.map(({ name, login }) => {
+          return (<p key={login.uuid}>Nome: {name.title} {name.first} {name.last}</p>)
+        })
+        }
       </div>
     )
   }
