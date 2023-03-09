@@ -1,6 +1,7 @@
 // App.js
 import React, { Component } from 'react';
 import './App.css';
+import DadJoke from './components/DadJoke';
 
 class App extends Component {
   constructor(props){
@@ -35,6 +36,7 @@ class App extends Component {
             )
           })}
         </div>
+          <aside><DadJoke/></aside>
       </div>
     );
   }
