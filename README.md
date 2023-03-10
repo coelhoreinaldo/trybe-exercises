@@ -95,7 +95,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 3: Componentes com Estado, Eventos e Formulários com React
 
-- [X] 3-1: _Componentes com estado e eventos_
+- [X] 3-1: _[Componentes com estado e eventos](https://github.com/coelhoreinaldo/pokedex-exercise)_
 - [X] 3-2: _Formulários no React_
 - [X] 3-3: _Projeto - Tryunfo_
 
