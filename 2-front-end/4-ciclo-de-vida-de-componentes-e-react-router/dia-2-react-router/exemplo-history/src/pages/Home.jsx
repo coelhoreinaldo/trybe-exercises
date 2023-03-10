@@ -1,6 +1,14 @@
 import React from 'react';
 
 class Home extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      userName: 'Tryber',
+      role: 'Admin',
+    };
+  }
+
   render() {
     const { history } = this.props;
     return (
@@ -8,7 +16,7 @@ class Home extends React.Component {
         <h1>Home Page</h1>
         <button
           type="button"
-          onClick={ () => history.push('/welcome') }
+          onClick={ () => history.push('/welcome', this.state) }
         >
           Acesse a página de Boas-Vindas
         </button>
