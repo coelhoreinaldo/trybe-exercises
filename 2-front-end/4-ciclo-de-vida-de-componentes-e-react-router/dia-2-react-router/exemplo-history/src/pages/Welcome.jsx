@@ -14,7 +14,7 @@ class Welcome extends React.Component {
         </h2>
         <button
           type="button"
-          onClick={ () => console.log(history) }
+          onClick={ () => console.log(location.pathname) }
         >
           History
         </button>
