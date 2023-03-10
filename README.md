@@ -97,7 +97,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 - [X] 3-1: _[Componentes com estado e eventos](https://github.com/coelhoreinaldo/pokedex-exercise)_
 - [X] 3-2: _[Formulários no React](https://github.com/coelhoreinaldo/react-form-exercise)_
-- [X] 3-3: _Projeto - Tryunfo_
+- [X] 3-3: _[Projeto - Tryunfo](https://github.com/coelhoreinaldo/tryunfo)_
 
 ##### Bloco 4: Ciclo de Vida de Componentes e React Router
 
