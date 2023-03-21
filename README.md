@@ -107,7 +107,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 5: Metodologias Ágeis
 
-- [ ] 5-1: _Metodologias Ágeis_
+- [X] 5-1: _Metodologias Ágeis_
 - [ ] 5-2: _Projeto - Front-end Online Store_
 
 ##### Bloco 6: Testes automatizados com React Testing Library
