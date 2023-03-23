@@ -1,8 +1,18 @@
+// App.test.js
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('Verificando se existe o campo Email.', () => {
   render(<App />);
-  const linkElement = screen.getByText(/algo que não aparece/i);
-  expect(linkElement).toBeInTheDocument();
+  const inputEmail = screen.getByLabelText('Email');
+  expect(inputEmail).toBeInTheDocument();
+  expect(inputEmail).toHaveProperty('type', 'email');
 });
+
+test('Verificando se existe um botão', () => {
+  render(<App />);
+  const btn = screen.getByRole('button');
+  expect(btn).toBeInTheDocument();
+});
+
