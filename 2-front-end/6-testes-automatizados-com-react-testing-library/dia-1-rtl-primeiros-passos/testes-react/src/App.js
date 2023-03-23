@@ -12,11 +12,11 @@ class App extends Component {
     };
   }
 
-  changeEmail(value) {
+  changeEmail = (value) => {
     this.setState({ email: value });
   }
 
-  changeSaveEmail(value) {
+  changeSaveEmail = (value) => {
     this.setState({ saveEmail: value, email: '' });
   }
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import App from './App';
-// import userEvent from '@testing-library/user-event';
+import userEvent from '@testing-library/user-event';
 
 
 test('Verificando se existe o campo Email.', () => {
@@ -25,20 +25,22 @@ test('Verificando se existe um botão de enviar', () => {
   expect(btnSend).toHaveValue('Enviar');
 });
 
-// test('Verificando se o botão e o campo email estão funcionando.', () => {
-//   render(<App />);
+test('Verificando se o botão e o campo email estão funcionando.', async () => {
+  render(<App />);
 
-//   const EMAIL_USER = 'email@email.com';
+  const EMAIL_USER = 'email@email.com';
 
-//   const textEmail = screen.getByTestId('id-email-user');
-//   expect(textEmail).toBeInTheDocument();
-//   expect(textEmail).toHaveTextContent('Valor:');
+  const textEmail = screen.getByTestId('id-email-user');
+  expect(textEmail).toBeInTheDocument();
+  expect(textEmail).toHaveTextContent('Valor:');
 
-//   const btnSend = screen.getByTestId('id-send');
-//   const inputEmail = screen.getByLabelText('Email');
-//   userEvent.type(inputEmail, EMAIL_USER);
-//   userEvent.click(btnSend);
+  const btnSend = screen.getByTestId('id-send');
+  const inputEmail = screen.getByLabelText('Email');
+  userEvent.type(inputEmail, EMAIL_USER);
+  userEvent.click(btnSend);
 
-//   expect(inputEmail).toHaveValue('');
-//   expect(textEmail).toHaveTextContent(`Valor: ${ EMAIL_USER }`);
-// });
+  await waitFor(() => {
+    expect(inputEmail).toHaveValue('');
+  })
+  expect(textEmail).toHaveTextContent(`Valor: ${ EMAIL_USER }`);
+});
