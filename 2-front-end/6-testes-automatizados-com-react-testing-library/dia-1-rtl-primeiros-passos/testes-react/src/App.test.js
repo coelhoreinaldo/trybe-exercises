@@ -1,4 +1,3 @@
-// App.test.js
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
@@ -10,9 +9,16 @@ test('Verificando se existe o campo Email.', () => {
   expect(inputEmail).toHaveProperty('type', 'email');
 });
 
-test('Verificando se existe um botão', () => {
+test('Verificando se existem dois botões', () => {
   render(<App />);
-  const btn = screen.getByRole('button');
-  expect(btn).toBeInTheDocument();
+  const buttons = screen.getAllByRole('button');
+  expect(buttons).toHaveLength(2);
 });
 
+test('Verificando se existe um botão de enviar', () => {
+  render(<App />);
+  const btnSend = screen.getByTestId('id-send');
+  expect(btnSend).toBeInTheDocument();
+  expect(btnSend).toHaveProperty('type', 'button');
+  expect(btnSend).toHaveValue('Enviar');
+});
