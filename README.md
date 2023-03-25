@@ -108,12 +108,12 @@ Trybe is a technology school that has a genuine commitment to the professional s
 ##### Bloco 5: Metodologias Ágeis
 
 - [X] 5-1: _Metodologias Ágeis_
-- [X] 5-2: _Projeto - Front-end Online Store_
+- [X] 5-2: _[Projeto - Front-end Online Store](https://github.com/coelhoreinaldo/online-store)_
 
 ##### Bloco 6: Testes automatizados com React Testing Library
 
-- [ ] 6-1: _RTL - Primeiros passos_
-- [ ] 6-2: _RTL - Mocks e Inputs_
+- [X] 6-1: _RTL - Primeiros passos_
+- [X] 6-2: _RTL - Mocks e Inputs_
 - [ ] 6-3: _RTL - Testando React Router_
 - [ ] 6-4: _Projeto - Testes em React_
 
