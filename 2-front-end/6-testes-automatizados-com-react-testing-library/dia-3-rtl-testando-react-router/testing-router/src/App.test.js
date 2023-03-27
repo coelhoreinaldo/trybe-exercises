@@ -24,7 +24,9 @@ describe('teste da aplicação toda', () => {
     const { pathname } = history.location;
     expect(pathname).toBe('/about');
 
-    const aboutTitle = screen.getByRole('heading', { name: /Você está na página Sobre/i, level: 1 });
+    const aboutTitle = screen.getByRole('heading', {
+      name: /você está na página sobre/i
+    });
     expect(aboutTitle).toBeInTheDocument();
   });
 
