@@ -16,16 +16,15 @@ describe('teste da aplicação toda', () => {
 
   it('deve renderizar o componente Sobre', () => {
     const { history } = renderWithRouter(<App />);
-
-    const aboutLink = screen.getByRole('link', { name: 'Sobre' });
+    const aboutLink = screen.getByRole('link', { name: /sobre/i });
     expect(aboutLink).toBeInTheDocument();
+
     userEvent.click(aboutLink);
 
     const { pathname } = history.location;
     expect(pathname).toBe('/about');
 
-    const aboutTitle = screen.getByRole('heading',
-      { name: 'Você está na página Sobre' });
+    const aboutTitle = screen.getByRole('heading', { name: /Você está na página Sobre/i, level: 1 });
     expect(aboutTitle).toBeInTheDocument();
   });
 
@@ -43,7 +42,7 @@ describe('teste da aplicação toda', () => {
 
   it('deve renderizar o componente About (apenas componente)', () => {
     renderWithRouter(<About />);
-  
+
     const aboutTitle = screen.getByRole('heading',
       { name: 'Você está na página Sobre' });
     expect(aboutTitle).toBeInTheDocument();
