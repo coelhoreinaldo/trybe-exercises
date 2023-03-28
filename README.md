@@ -114,7 +114,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 - [X] 6-1: _RTL - Primeiros passos_
 - [X] 6-2: _RTL - Mocks e Inputs_
-- [ ] 6-3: _RTL - Testando React Router_
+- [X] 6-3: _RTL - Testando React Router_
 - [ ] 6-4: _Projeto - Testes em React_
 
 ##### Bloco 7: Gerenciamento de estado com Redux
