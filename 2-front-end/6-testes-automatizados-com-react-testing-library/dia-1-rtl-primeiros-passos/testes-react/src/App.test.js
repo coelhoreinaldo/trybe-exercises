@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import App from './App';
 import userEvent from '@testing-library/user-event';
 
@@ -36,11 +36,11 @@ test('Verificando se o botão e o campo email estão funcionando.', async () => 
 
   const btnSend = screen.getByTestId('id-send');
   const inputEmail = screen.getByLabelText('Email');
-  userEvent.type(inputEmail, EMAIL_USER);
-  userEvent.click(btnSend);
-
-  await waitFor(() => {
-    expect(inputEmail).toHaveValue('');
+  // eslint-disable-next-line testing-library/no-unnecessary-act
+  act(() => {
+    userEvent.type(inputEmail, EMAIL_USER);
+    userEvent.click(btnSend);
   })
-  expect(textEmail).toHaveTextContent(`Valor: ${ EMAIL_USER }`);
+  expect(inputEmail).toHaveValue('');
+  expect(textEmail).toHaveTextContent(`Valor: ${EMAIL_USER}`);
 });
