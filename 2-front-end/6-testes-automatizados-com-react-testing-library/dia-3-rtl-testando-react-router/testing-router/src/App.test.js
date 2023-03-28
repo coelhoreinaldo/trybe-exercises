@@ -14,21 +14,21 @@ describe('teste da aplicação toda', () => {
     expect(homeTitle).toBeInTheDocument();
   });
 
-  it('deve renderizar o componente Sobre', () => {
-    const { history } = renderWithRouter(<App />);
-    const aboutLink = screen.getByRole('link', { name: /sobre/i });
-    expect(aboutLink).toBeInTheDocument();
+  it('deve renderizar o componente Sobre', async () => {
+  const { history } = renderWithRouter(<App />);
+  const aboutLink = screen.getByRole('link', { name: /sobre/i });
+  expect(aboutLink).toBeInTheDocument();
+  
+  userEvent.click(aboutLink);
 
-    userEvent.click(aboutLink);
+  const { pathname } = history.location;
+  expect(pathname).toBe('/about');
 
-    const { pathname } = history.location;
-    expect(pathname).toBe('/about');
-
-    const aboutTitle = screen.getByRole('heading', {
-      name: /você está na página sobre/i
-    });
-    expect(aboutTitle).toBeInTheDocument();
+  const aboutTitle = await screen.findByRole('heading', {
+    name: /você está na página sobre/i
   });
+  expect(aboutTitle).toBeInTheDocument();
+});
 
   it('deve testar um caminho não existente e a renderização do Not Found', () => {
     const { history } = renderWithRouter(<App />);
