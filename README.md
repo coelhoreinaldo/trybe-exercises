@@ -103,7 +103,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 - [X] 4-1: _Ciclo de vida de componentes_
 - [X] 4-2: _[React Router](https://github.com/coelhoreinaldo/exercise-react-router)_
-- [x] 4-3: _Projeto - TrybeTunes_
+- [x] 4-3: _[Projeto - TrybeTunes](https://github.com/coelhoreinaldo/trybetunes)_
 
 ##### Bloco 5: Metodologias Ágeis
 
@@ -115,7 +115,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 - [X] 6-1: _RTL - Primeiros passos_
 - [X] 6-2: _RTL - Mocks e Inputs_
 - [X] 6-3: _RTL - Testando React Router_
-- [ ] 6-4: _Projeto - Testes em React_
+- [x] 6-4: _[Projeto - Testes em React](https://github.com/coelhoreinaldo/react-testing-library-project)_
 
 ##### Bloco 7: Gerenciamento de estado com Redux
 
