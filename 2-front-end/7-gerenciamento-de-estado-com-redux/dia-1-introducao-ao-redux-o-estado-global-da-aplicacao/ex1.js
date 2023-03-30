@@ -1,3 +1,5 @@
+import { legacy_createStore as createStore } from 'redux';
+
 // Criando a nossa store:
 const store = createStore(reducer);
 
