@@ -18,3 +18,12 @@ const incrementButton = document.querySelector('button');
 incrementButton.addEventListener('click', () => {
   store.dispatch(action);
 })
+
+store.subscribe(() => {
+  
+  const globalState = store.getState();
+  console.log(globalState);
+
+  const counterEl = document.querySelector('#counter');
+  counterEl.innerHTML = globalState.count;
+})
