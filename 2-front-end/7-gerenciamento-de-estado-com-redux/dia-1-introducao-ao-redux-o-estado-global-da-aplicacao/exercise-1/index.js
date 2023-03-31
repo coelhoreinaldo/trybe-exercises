@@ -67,6 +67,15 @@ function criarCor() {
   for (let i = 0; i < 6; i += 1) {
       cor += oneChar[aleatorio()];
   }
+  const globalState = store.getState();
+  globalState.colors.push(cor);
+
+  const currColor = document.getElementById('value');
+  const backgroundColor = document.getElementById('container');
+  currColor.innerHTML = cor;
+  backgroundColor.style.backgroundColor = cor;
+  console.log(globalState);
+  
   return cor;
 }
 
