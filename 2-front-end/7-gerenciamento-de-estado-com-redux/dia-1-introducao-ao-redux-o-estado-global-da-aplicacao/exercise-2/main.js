@@ -15,6 +15,9 @@ const reducer = (state = INITIAL_STATE, action) => {
   }
 }
 
+// 2 - Crie uma store com o reducer criado.
+
+const store = createStore(reducer, composeWithDevTools());
 
 const themeButton = document.getElementById('toggle-theme');
 const statusButton = document.getElementById('toggle-status');
