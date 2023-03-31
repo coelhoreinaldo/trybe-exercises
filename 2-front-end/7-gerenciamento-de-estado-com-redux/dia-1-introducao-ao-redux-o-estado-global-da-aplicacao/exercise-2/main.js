@@ -9,59 +9,40 @@ const INITIAL_STATE = {
 // 1 - Crie um reducer com os estados iniciais.
 
 const reducer = (state = INITIAL_STATE, action) => {
-  // 3 - Adicione um case dentro do switch do reducer para alterar os estados theme e status. O case do estado theme deve alterná-lo entre ‘light’ e ‘dark’. O case do estado status deve alterná-lo entre ‘online’ e ‘offline’.
   switch (action.type) {
-    case 'online':
+    case 'TOGGLE_STATUS':
       return {
         ...state,
-        status: 'online'
+        status: state.status === 'offline' ? 'online' : 'offline',
       }
-    case 'offline':
+    case 'TOGGLE_THEME':
       return {
         ...state,
-        status: 'offline'
-      }
-    case 'light':
-      return {
-        ...state,
-        theme: 'light'
-      }
-    case 'dark':
-      return {
-        ...state,
-        theme: 'dark'
+        theme: state.theme === 'light' ? 'dark' : 'light'
       }
     default:
       return state
   }
 }
 
-// 2 - Crie uma store com o reducer criado.
-
 const store = createStore(reducer, composeWithDevTools());
-
-
-// 4 - Faça o dispatch de cada uma das actions ao clicar nos respectivos botões.
 
 const themeButton = document.getElementById('toggle-theme');
 const statusButton = document.getElementById('toggle-status');
 
 themeButton.addEventListener('click', () => {
-  const { theme } = store.getState()
-  store.dispatch({type: theme === 'light' ? 'dark' : 'light'})
+  store.dispatch({type: 'TOGGLE_THEME'})
 });
 
 statusButton.addEventListener('click', () => {
-  const { status } = store.getState()
-  store.dispatch({type: status === 'offline' ? 'online' : 'offline'})
+  store.dispatch({type: 'TOGGLE_STATUS'})
 });
-
-// 5 - Adicione um store.subscribe() para atualizar as seguintes informações na página:
 
 store.subscribe(() => {
   const { theme, status } = store.getState();
   const body = document.querySelector('body');
-  console.log(body);
+  const statusEl = document.getElementById('status')
+
   if(theme === 'dark') {
     body.style.backgroundColor = 'darkBlue';
     body.style.color = 'aliceBlue';
@@ -72,7 +53,6 @@ store.subscribe(() => {
     themeButton.innerHTML = 'Dark Mode'
   }
 
-  const statusEl = document.getElementById('status')
   if(status === 'online'){
     statusButton.innerHTML = 'Ficar Offline'
     statusEl.innerHTML = 'Online'
