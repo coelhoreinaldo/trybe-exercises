@@ -1,3 +1,4 @@
+import { composeWithDevTools } from "@redux-devtools/extension";
 import { legacy_createStore as createStore } from "redux";
 
 const INITIAL_STATE = {
@@ -6,5 +7,14 @@ const INITIAL_STATE = {
 };
 
 const reducer = (state = INITIAL_STATE, action) => {
-  return state
+  switch (action) {
+    case value:
+      
+      break;
+  
+    default:
+      return state
+  }
 }
+
+const store = createStore(reducer, composeWithDevTools)
