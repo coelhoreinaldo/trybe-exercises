@@ -9,11 +9,11 @@ const INITIAL_STATE = {
 const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'NEXT_COLOR' && state.index < colors.length:
-      { index: state.index + 1 }
+      return { index: state.index + 1 }
       break;
 
     case 'PREVIOUS_COLOR' && state.index > 0:
-      { index: state.index - 1 }
+      return { index: state.index - 1 }
       break;
 
     default:
@@ -22,3 +22,16 @@ const reducer = (state = INITIAL_STATE, action) => {
 }
 
 const store = createStore(reducer, composeWithDevTools)
+
+const previousButton = document.getElementById("previous")
+const nextButton = document.getElementById("next")
+
+previousButton.addEventListener('click', () => {
+  const action = { type: "PREVIOUS_COLOR"}
+  store.dispatch(action)
+})
+
+nextButton.addEventListener('click', () => {
+  const action = { type: "NEXT_COLOR"}
+  store.dispatch(action)
+})
