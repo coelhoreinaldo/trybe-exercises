@@ -60,5 +60,17 @@ store.subscribe(() => {
 
 // 6 - Crie um botão com o texto Random color, um eventListener e uma action no reducer, adicionando uma cor aleatória ao array colors guardado em nosso estado inicial. Faça também com que essa cor seja mostrada ao ser criada, alterando o estado index para a posição dela.
 
+function criarCor() {
+  const oneChar = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+  let cor = '#';
+  const aleatorio = () => Math.floor(Math.random() * oneChar.length);
+  for (let i = 0; i < 6; i += 1) {
+      cor += oneChar[aleatorio()];
+  }
+  return cor;
+}
+
+const randomButton = document.getElementById("random")
+randomButton.addEventListener('click', criarCor);
 
 
