@@ -55,3 +55,18 @@ statusButton.addEventListener('click', () => {
   const { status } = store.getState()
   store.dispatch({type: status === 'offline' ? 'online' : 'offline'})
 });
+
+// 5 - Adicione um store.subscribe() para atualizar as seguintes informações na página:
+
+store.subscribe(() => {
+  const { theme, status } = store.getState();
+  const body = document.querySelector('body');
+  console.log(body);
+  if(theme === 'dark') {
+    body.style.backgroundColor = 'darkBlue';
+    body.style.color = 'aliceBlue';
+  } else {
+    body.style.backgroundColor = 'aliceBlue'
+    body.style.color = 'darkBlue';
+  }
+})
