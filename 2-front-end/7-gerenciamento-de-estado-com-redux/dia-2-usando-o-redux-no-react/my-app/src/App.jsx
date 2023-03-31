@@ -20,6 +20,4 @@ const mapStateToProps = (state) => ({
   countState: state.count,
 });
 
-const banana = 'meme'; 
-
 export default connect(mapStateToProps)(App);
