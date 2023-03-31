@@ -49,10 +49,9 @@ const statusButton = document.getElementById('toggle-status');
 themeButton.addEventListener('click', () => {
   const { theme } = store.getState()
   store.dispatch({type: theme === 'light' ? 'dark' : 'light'})
-  console.log(theme);
-  // coloque o código aqui.
 });
 
 statusButton.addEventListener('click', () => {
-  // coloque o código aqui.
+  const { status } = store.getState()
+  store.dispatch({type: status === 'offline' ? 'online' : 'offline'})
 });
