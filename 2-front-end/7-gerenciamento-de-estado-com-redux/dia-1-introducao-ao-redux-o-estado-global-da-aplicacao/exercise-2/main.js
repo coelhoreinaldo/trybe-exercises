@@ -65,8 +65,19 @@ store.subscribe(() => {
   if(theme === 'dark') {
     body.style.backgroundColor = 'darkBlue';
     body.style.color = 'aliceBlue';
+    themeButton.innerHTML = 'Light Mode'
   } else {
     body.style.backgroundColor = 'aliceBlue'
     body.style.color = 'darkBlue';
+    themeButton.innerHTML = 'Dark Mode'
+  }
+
+  const statusEl = document.getElementById('status')
+  if(status === 'online'){
+    statusButton.innerHTML = 'Ficar Offline'
+    statusEl.innerHTML = 'Online'
+  } else {
+    statusButton.innerHTML = 'Ficar Online'
+    statusEl.innerHTML = 'Offline'
   }
 })
