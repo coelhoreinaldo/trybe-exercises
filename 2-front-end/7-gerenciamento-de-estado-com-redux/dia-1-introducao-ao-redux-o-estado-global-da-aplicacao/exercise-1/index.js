@@ -7,11 +7,15 @@ const INITIAL_STATE = {
 };
 
 const reducer = (state = INITIAL_STATE, action) => {
-  switch (action) {
-    case value:
-      
+  switch (action.type) {
+    case 'NEXT_COLOR' && state.index < colors.length:
+      { index: state.index + 1 }
       break;
-  
+
+    case 'PREVIOUS_COLOR' && state.index > 0:
+      { index: state.index - 1 }
+      break;
+
     default:
       return state
   }
