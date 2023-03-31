@@ -24,12 +24,12 @@ const reducer = (state = INITIAL_STATE, action) => {
     case 'light':
       return {
         ...state,
-        status: 'light'
+        theme: 'light'
       }
     case 'dark':
       return {
         ...state,
-        status: 'dark'
+        theme: 'dark'
       }
     default:
       return state
@@ -41,10 +41,15 @@ const reducer = (state = INITIAL_STATE, action) => {
 const store = createStore(reducer, composeWithDevTools());
 
 
+// 4 - Faça o dispatch de cada uma das actions ao clicar nos respectivos botões.
+
 const themeButton = document.getElementById('toggle-theme');
 const statusButton = document.getElementById('toggle-status');
 
 themeButton.addEventListener('click', () => {
+  const { theme } = store.getState()
+  store.dispatch({type: theme === 'light' ? 'dark' : 'light'})
+  console.log(theme);
   // coloque o código aqui.
 });
 
