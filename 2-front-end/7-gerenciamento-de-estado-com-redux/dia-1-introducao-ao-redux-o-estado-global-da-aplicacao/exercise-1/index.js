@@ -23,6 +23,12 @@ const reducer = (state = INITIAL_STATE, action) => {
         ...state,
         index: state.index === 0 ? state.colors.length - 1 : state.index - 1
       }
+    case 'RANDOM_COLOR':
+      return {
+        ...state,
+        colors: [...state.colors, criarCor()],
+        index: state.colors.length,
+      }
 
     default:
       return state
@@ -47,16 +53,6 @@ nextButton.addEventListener('click', () => {
   store.dispatch({ type: "NEXT_COLOR" })
 })
 
-// 5 - Faça o subscribe da store, alterando o innerHTML da tag com id value para a cor atual e o style do elemento com id container. Você deverá ser capaz de ver as cores mudando ao fundo e o nome da cor exibida.
-
-store.subscribe(() => {
-  const globalState = store.getState();
-
-  const currColor = document.getElementById('value');
-  const backgroundColor = document.getElementById('container');
-  currColor.innerHTML = globalState.colors[globalState.index];
-  backgroundColor.style.backgroundColor = globalState.colors[globalState.index];
-})
 
 // 6 - Crie um botão com o texto Random color, um eventListener e uma action no reducer, adicionando uma cor aleatória ao array colors guardado em nosso estado inicial. Faça também com que essa cor seja mostrada ao ser criada, alterando o estado index para a posição dela.
 
@@ -66,20 +62,25 @@ function criarCor() {
   const aleatorio = () => Math.floor(Math.random() * oneChar.length);
   for (let i = 0; i < 6; i += 1) {
       cor += oneChar[aleatorio()];
-  }
-  const globalState = store.getState();
-  globalState.colors.push(cor);
-
-  const currColor = document.getElementById('value');
-  const backgroundColor = document.getElementById('container');
-  currColor.innerHTML = cor;
-  backgroundColor.style.backgroundColor = cor;
-  console.log(globalState);
+    }
   
   return cor;
 }
 
 const randomButton = document.getElementById("random")
-randomButton.addEventListener('click', criarCor);
+randomButton.addEventListener('click', () => {
+  store.dispatch({type: 'RANDOM_COLOR'});
+});
 
+// 5 - Faça o subscribe da store, alterando o innerHTML da tag com id value para a cor atual e o style do elemento com id container. Você deverá ser capaz de ver as cores mudando ao fundo e o nome da cor exibida.
+
+store.subscribe(() => {
+
+  const { colors, index} = store.getState();
+
+  const currColor = document.getElementById('value');
+  const backgroundColor = document.getElementById('container');
+  currColor.innerHTML = colors[index];
+  backgroundColor.style.backgroundColor = colors[index];
+})
 
