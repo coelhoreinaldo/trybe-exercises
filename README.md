@@ -119,8 +119,8 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 7: Gerenciamento de estado com Redux
 
-- [ ] 7-1: _Introdução ao Redux - O estado global da aplicação_
-- [ ] 7-2: _Usando o Redux no React_
+- [X] 7-1: _Introdução ao Redux - O estado global da aplicação_
+- [X] 7-2: _Usando o Redux no React_
 - [ ] 7-3: _Usando o Redux no React - Prática_
 - [ ] 7-4: _Usando o Redux no React - Actions Assíncronas_
 - [ ] 7-5: _Testes em React-Redux_
