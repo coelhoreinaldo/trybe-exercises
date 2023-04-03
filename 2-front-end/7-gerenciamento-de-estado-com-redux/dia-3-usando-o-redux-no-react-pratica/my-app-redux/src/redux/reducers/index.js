@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 
-const INITIAL_STATE = { theme: "light" }
+const INITIAL_STATE = { email: '' }
 
 const exampleReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
