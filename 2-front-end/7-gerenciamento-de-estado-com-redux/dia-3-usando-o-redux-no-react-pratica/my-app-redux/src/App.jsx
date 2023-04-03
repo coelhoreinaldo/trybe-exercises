@@ -1,13 +1,17 @@
 import React from 'react'
 import './App.css'
 import { connect } from 'react-redux'
+import { addEmail } from './redux/actions';
 
 class App extends React.Component {
   render() {
-
+    const { email, dispatch } = this.props;
     return (
       <div className="App">
-        <h1>Hahahaha</h1>
+        <label>Email <input
+          type="email"
+          onChange={({target}) => dispatch(addEmail(target.value))} />
+        </label>
       </div>
     )
   }
