@@ -1,12 +1,37 @@
 import './App.css'
+import React from 'react';
+import { connect } from 'react-redux';
+import { fetchDogImage } from "./redux/actions";
 
-function App() {
+class App extends React.Component {
+  render() {
+    const { isFetching, imageURL, dispatch } = this.props;
 
-  return (
-    <div className="App">
-      <h1>Doguinhos app</h1>
-    </div>
-  )
+    if (isFetching) return <p>Carregando...</p>;
+
+    return (
+      <div>
+        <button
+          onClick={() => { dispatch(fetchDogImage()) }}
+          type="button"
+        >
+          Novo Doguinho
+        </button>
+        {
+          imageURL &&
+          <img
+            src={imageURL}
+            alt="Imagem de um cachorro aleatório"
+          />
+        }
+      </div>
+    );
+  }
 }
 
-export default App
+const mapStateToProps = (state) => ({
+  imageURL: state.imageURL,
+  isFetching: state.isFetching,
+});
+
+export default connect(mapStateToProps)(App);
