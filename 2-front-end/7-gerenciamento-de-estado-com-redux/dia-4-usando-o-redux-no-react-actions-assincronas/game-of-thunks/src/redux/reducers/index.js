@@ -1,9 +1,10 @@
 import { combineReducers } from "redux";
-import { REQUEST_STARTED, REQUEST_SUCCESSFUL } from "../actions";
+import { REQUEST_FAILED, REQUEST_STARTED, REQUEST_SUCCESSFUL } from "../actions";
 
 const INITIAL_STATE = {
   isFetching: false,
-  characterName: 'hahahaha'
+  characterName: 'hahahaha',
+  errorMessage: '',
 };
 
 const exampleReducer = (state = INITIAL_STATE, action) => {
@@ -18,7 +19,15 @@ const exampleReducer = (state = INITIAL_STATE, action) => {
         ...state,
         isFetching: false,
         characterName: action.payload,
+        errorMessage: ''
       }
+      case REQUEST_FAILED:
+        return {
+          ...state,
+          isFetching: false,
+          characterName: '',
+          errorMessage: action.payload,
+        }
     default:
       return state;
   }

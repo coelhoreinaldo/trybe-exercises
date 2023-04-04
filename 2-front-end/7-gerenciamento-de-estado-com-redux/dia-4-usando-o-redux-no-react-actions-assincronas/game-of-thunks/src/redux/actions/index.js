@@ -10,9 +10,15 @@ const requestFailed = (error) => ({ type: REQUEST_FAILED, payload: error });
 
 export const fetchGotCharacter = (input) => {
   return async (dispatch) => {
-    dispatch(requestStarted());
-    const response = await fetch(`https://anapioficeandfire.com/api/characters?name=${input}`);
-    const data = await response.json();
-    dispatch(requestSuccessful(data.name));
+    try {
+      dispatch(requestStarted());
+      const response = await fetch(`https://anapioficeandfire.com/api/characters?name=${input}`);
+      const data = await response.json();
+      console.log(data);
+      dispatch(requestSuccessful(data[0].name));  
+    } 
+    catch (error) {
+      dispatch(requestFailed(error.message))
+    }
   }
 }
