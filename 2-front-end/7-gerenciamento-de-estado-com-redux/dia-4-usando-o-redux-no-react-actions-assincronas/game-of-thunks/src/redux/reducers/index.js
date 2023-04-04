@@ -3,7 +3,10 @@ import { REQUEST_FAILED, REQUEST_STARTED, REQUEST_SUCCESSFUL } from "../actions"
 
 const INITIAL_STATE = {
   isFetching: false,
-  characterName: 'hahahaha',
+  characterInfo: {
+    name: 'Reinaldo Coelho',
+    titles: ['JavaScripter', 'Reacter.js', 'Tailwinder']
+  },
   errorMessage: '',
 };
 
@@ -18,14 +21,14 @@ const exampleReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         isFetching: false,
-        characterName: action.payload,
+        characterInfo: action.payload,
         errorMessage: ''
       }
       case REQUEST_FAILED:
         return {
           ...state,
           isFetching: false,
-          characterName: '',
+          characterInfo: '',
           errorMessage: action.payload,
         }
     default:

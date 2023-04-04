@@ -15,7 +15,7 @@ export const fetchGotCharacter = (input) => {
       const response = await fetch(`https://anapioficeandfire.com/api/characters?name=${input}`);
       const data = await response.json();
       console.log(data);
-      dispatch(requestSuccessful(data[0].name));  
+      dispatch(requestSuccessful(data[0]));  
     } 
     catch (error) {
       dispatch(requestFailed(error.message))

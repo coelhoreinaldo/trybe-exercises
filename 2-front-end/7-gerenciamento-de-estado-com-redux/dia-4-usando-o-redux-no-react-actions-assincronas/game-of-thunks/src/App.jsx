@@ -9,7 +9,9 @@ class App extends Component {
   }
   render() {
     const { input } = this.state;
-    const { dispatch, characterName, errorMessage } = this.props;
+    const { dispatch, characterInfo, errorMessage } = this.props;
+    console.log(characterInfo);
+    const { name, titles } = characterInfo;
     return (
       <div className="App">
         <h1>Game of Thunks</h1>
@@ -18,7 +20,8 @@ class App extends Component {
           placeholder='Nome e sobrenome' />
         <button type='button' onClick={() => dispatch(fetchGotCharacter(input))}>Encontrar</button>
         <section>
-          <h2>{`Nome: ${characterName && characterName}`}</h2>
+          <h2>{`Nome: ${name}`}</h2>
+          <h3>Títulos: {titles.map((title, index) => index !== titles.length -1 ? title + ', ' : title + '.')}</h3>
         </section>
         <p>{errorMessage}</p>
       </div>
@@ -28,7 +31,7 @@ class App extends Component {
 
 const mapStateToProps = (state) => ({
   isFetching: state.isFetching,
-  characterName: state.characterName,
+  characterInfo: state.characterInfo,
   errorMessage: state.errorMessage,
 })
 
