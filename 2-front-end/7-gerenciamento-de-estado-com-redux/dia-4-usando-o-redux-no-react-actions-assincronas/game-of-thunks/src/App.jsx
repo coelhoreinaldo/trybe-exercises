@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import './App.css'
+import { fetchGotCharacter } from './redux/actions';
 
 import React, { Component } from 'react';
 
