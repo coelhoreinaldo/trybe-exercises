@@ -29,9 +29,9 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  isFetching: state.isFetching,
-  characterInfo: state.characterInfo,
-  errorMessage: state.errorMessage,
+  isFetching: state.characterReducer.isFetching,
+  characterInfo: state.characterReducer.characterInfo,
+  errorMessage: state.characterReducer.errorMessage,
 })
 
 export default connect(mapStateToProps)(App);

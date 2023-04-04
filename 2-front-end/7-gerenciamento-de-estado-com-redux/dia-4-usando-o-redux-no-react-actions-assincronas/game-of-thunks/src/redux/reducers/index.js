@@ -36,4 +36,7 @@ const characterReducer = (state = INITIAL_STATE, action) => {
   }
 }
 
-export default characterReducer;
+
+const rootReducer = combineReducers({characterReducer})
+
+export default rootReducer;
