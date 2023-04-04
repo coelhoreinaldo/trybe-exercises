@@ -10,7 +10,6 @@ class App extends Component {
   render() {
     const { input } = this.state;
     const { dispatch, characterInfo, errorMessage } = this.props;
-    console.log(characterInfo);
     const { name, titles } = characterInfo;
     return (
       <div className="App">

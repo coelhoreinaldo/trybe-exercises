@@ -10,7 +10,7 @@ const INITIAL_STATE = {
   errorMessage: '',
 };
 
-const exampleReducer = (state = INITIAL_STATE, action) => {
+const characterReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case REQUEST_STARTED:
       return {
@@ -36,4 +36,4 @@ const exampleReducer = (state = INITIAL_STATE, action) => {
   }
 }
 
-export default exampleReducer;
+export default characterReducer;
