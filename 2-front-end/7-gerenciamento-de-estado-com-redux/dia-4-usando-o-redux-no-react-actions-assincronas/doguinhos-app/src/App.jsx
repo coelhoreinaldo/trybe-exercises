@@ -1,4 +1,4 @@
-import './App.css'
+import './style.css'
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchDogImage } from "./redux/actions";
