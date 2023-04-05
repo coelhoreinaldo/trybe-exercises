@@ -115,15 +115,15 @@ Trybe is a technology school that has a genuine commitment to the professional s
 - [X] 6-1: _RTL - Primeiros passos_
 - [X] 6-2: _RTL - Mocks e Inputs_
 - [X] 6-3: _RTL - Testando React Router_
-- [x] 6-4: _[Projeto - Testes em React](https://github.com/coelhoreinaldo/react-testing-library-project)_
+- [X] 6-4: _[Projeto - Testes em React](https://github.com/coelhoreinaldo/react-testing-library-project)_
 
 ##### Bloco 7: Gerenciamento de estado com Redux
 
 - [X] 7-1: _Introdução ao Redux - O estado global da aplicação_
 - [X] 7-2: _Usando o Redux no React_
-- [ ] 7-3: _Usando o Redux no React - Prática_
-- [ ] 7-4: _Usando o Redux no React - Actions Assíncronas_
-- [ ] 7-5: _Testes em React-Redux_
+- [] 7-3: _Usando o Redux no React - Prática_
+- [X] 7-4: _Usando o Redux no React - Actions Assíncronas_
+- [] 7-5: _Testes em React-Redux_
 - [ ] 7-6: _Projeto - Trybe Wallet_
 
 ##### Bloco 8: Projeto Jogo de Trivia
