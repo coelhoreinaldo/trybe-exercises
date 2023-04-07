@@ -5,7 +5,7 @@ function App() {
   const [name, setName] = useState('');
   const [age, setAge] = useState(0);
   const [city, setCity] = useState('');
-  const [module, setModule] = useState('');
+  const [module, setModule] = useState();
 
   return (
     <div className="App">
