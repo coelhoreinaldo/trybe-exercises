@@ -9,3 +9,11 @@ li {
   display: flex;
   justify-content: space-between;
 }
+
+.message-read {
+  background-color: greenyellow;
+}
+
+.message-unread {
+  background-color: red;
+}
