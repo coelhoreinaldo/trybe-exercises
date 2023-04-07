@@ -7,16 +7,16 @@ import emailsList from "./data/emailsList";
 function App() {
   const [messages, setMessages] = useState(emailsList)
 
-  // const setMessageStatus = (emailId, newStatus) => {
-  //   const updatedMessages = emailsList.map((currEmail) => {
-  //     if (currEmail.id === emailId) {
-  //       return { ...currEmail, status: newStatus };
-  //     }
-  //     return currEmail;
-  //   });
+  const setMessageStatus = (emailId, newStatus) => {
+    const updatedMessages = emailsList.map((currEmail) => {
+      if (currEmail.id === emailId) {
+        return { ...currEmail, status: newStatus };
+      }
+      return currEmail;
+    });
 
-  //   setMessages(updatedMessages);
-  // }
+    setMessages(updatedMessages);
+  }
 
   return (
     <div className="App">
@@ -26,6 +26,7 @@ function App() {
 
       <Emails
         emailsList={messages}
+        setMessageStatus={setMessageStatus}
       />
     </div>
   )
