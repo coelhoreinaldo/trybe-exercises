@@ -2,15 +2,26 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [name, setName] = useState('');
+  const [age, setAge] = useState(0);
+  const [city, setCity] = useState('');
+  const [module, setModule] = useState('');
+
   return (
     <div className="App">
       <h1>Hello World!</h1>
-      <forms>
-        <input type="text" placeholder="Nome completo" />
+      <form>
+        <input
+          name="name"
+          value={ name }
+          type="text"
+          placeholder="Nome completo"
+          onChange={ ({ target }) => setName(target.value) }
+        />
         <input type="number" placeholder="Idade" />
         <input type="text" placeholder="Cidade" />
         <label htmlFor="module">
-          Módulo
+          <h2>Módulo</h2>
           <input type="radio" id="fundaments" name="module" value="fundaments" />
           <label htmlFor="fundaments">Fundamentos</label>
           <input type="radio" id="frontend" name="module" value="frontend" />
@@ -21,7 +32,7 @@ function App() {
           <label htmlFor="science">Ciência da Computação</label>
         </label>
         <button type="button">Enviar</button>
-      </forms>
+      </form>
     </div>
   );
 }
