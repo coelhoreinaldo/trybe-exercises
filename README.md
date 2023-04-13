@@ -124,7 +124,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 - [X] 7-3: _Usando o Redux no React - Prática_
 - [X] 7-4: _Usando o Redux no React - Actions Assíncronas_
 - [X] 7-5: _Testes em React-Redux_
-- [ ] 7-6: _Projeto - Trybe Wallet_
+- [X] 7-6: _Projeto - Trybe Wallet_
 
 ##### Bloco 8: Projeto Jogo de Trivia
 
