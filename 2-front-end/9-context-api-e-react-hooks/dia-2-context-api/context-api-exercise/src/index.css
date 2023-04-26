@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-.app {
+div.dark, div.light {
   transition: all 500ms;
   display: flex;
   flex-direction: column;
