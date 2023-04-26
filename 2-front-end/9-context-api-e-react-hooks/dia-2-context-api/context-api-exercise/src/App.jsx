@@ -1,12 +1,17 @@
-import './App.css'
 
-function App() {
+import ThemeContext from './context/ThemeContext';
+import Header from './components/Header';
+import Image from './components/Image';
+import Footer from './components/Footer';
 
+export default function App() {
   return (
-    <>
-    <h1>Exercise</h1>
-    </>
-  )
+    <ThemeContext.Provider value={{ color: 'dark' }}>
+      <div>
+        <Header />
+        <Image />
+        <Footer />
+      </div>
+    </ThemeContext.Provider>
+  );
 }
-
-export default App
