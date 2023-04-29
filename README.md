@@ -133,7 +133,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 ##### Bloco 9: Context API e React Hooks
 
 - [X] 9-1: React Hooks - useState e useEffect
-- [ ] 9-2: Context API 
+- [X] 9-2: Context API 
 - [ ] 9-3: Custom Hooks
 - [ ] 9-4: Projeto - StarWars Datatable com Context API e Hooks
 
