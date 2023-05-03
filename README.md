@@ -128,7 +128,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 8: Projeto Jogo de Trivia
 
-- [ ] 8-1: _Projeto - Jogo de Trivia_
+- [X] 8-1: _[Projeto - Jogo de Trivia](https://github.com/coelhoreinaldo/trivia-game)_
 
 ##### Bloco 9: Context API e React Hooks
 
