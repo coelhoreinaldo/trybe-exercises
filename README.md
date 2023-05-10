@@ -134,7 +134,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 - [X] 9-1: React Hooks - useState e useEffect
 - [X] 9-2: Context API 
-- [X] 9-3: Custom Hooks
+- [X] 9-3: _[Custom Hooks](https://github.com/coelhoreinaldo/ghibli-animations-exercise)_
 - [X] 9-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://github.com/coelhoreinaldo/starwars-planets)_
 
 ##### Bloco 10: Projeto App de Receitas
