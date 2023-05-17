@@ -77,7 +77,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 - [X] 8-5: _JavaScript ES6 - Array destructuring, Default destructuring, Object property shorthand e default parameters_
 - [X] 8-6: _[Projeto - Zoo Functions](https://github.com/coelhoreinaldo/zoo-functions)_
 
-## Front-end :hourglass_flowing_sand:
+## Front-end ✅
 
 ##### Bloco 1: Introdução ao Frontend e JavaScript assíncrono
 
@@ -139,7 +139,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 10: Projeto App de Receitas
 
-- [X] 10-1: Projeto - App de Receitas
+- [X] 10-1: _[Projeto - App de Receitas(https://github.com/coelhoreinaldo/cook-script)_
 
 ## Back-end :hourglass_flowing_sand:
 
