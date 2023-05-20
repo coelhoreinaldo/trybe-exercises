@@ -145,7 +145,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 1: Docker: Utilizando Containers
 
-- [ ] 1-1: _Utilizando Containers - Docker_
+- [X] 1-1: _Utilizando Containers - Docker_
 - [ ] 1-2: _Manipulando Imagens no Docker_
 - [ ] 1-3: _Orquestrando Containers com Docker Compose_
 - [ ] 1-4: _Projeto - Docker Todo-List_
