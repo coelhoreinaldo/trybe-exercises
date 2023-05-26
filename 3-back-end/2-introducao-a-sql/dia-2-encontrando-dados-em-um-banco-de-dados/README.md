@@ -74,3 +74,15 @@ SELECT COUNT(password) FROM sakila.staff;
 SELECT COUNT(staff_id) FROM sakila.staff
 
 ```
+
+## Exercícios ```LIMIT```, ```OFFSET```, ```ORDER BY```
+
+```sql
+
+SELECT * FROM sakila.rental LIMIT 10;
+
+SELECT * FROM sakila.actor  LIMIT 10 OFFSET 4;
+
+SELECT * FROM sakila.address
+ORDER BY district ASC, address DESC;
+```
