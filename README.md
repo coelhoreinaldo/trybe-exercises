@@ -139,7 +139,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 10: Projeto App de Receitas
 
-- [X] 10-1: _[Projeto - App de Receitas(https://github.com/coelhoreinaldo/cook-script)_
+- [X] 10-1: _[Projeto - App de Receitas](https://github.com/coelhoreinaldo/cook-script)_
 
 ## Back-end :hourglass_flowing_sand:
 
