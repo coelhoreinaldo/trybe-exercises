@@ -64,3 +64,13 @@ SELECT DISTINCT Nome FROM Escola.Estudantes
 SELECT DISTINCT Idade FROM Escola.Estudantes
 
 ```
+
+## Exercícios ```COUNT```
+
+```sql
+
+SELECT COUNT(password) FROM sakila.staff;
+
+SELECT COUNT(staff_id) FROM sakila.staff
+
+```
