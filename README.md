@@ -148,7 +148,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 - [X] 1-1: _Utilizando Containers - Docker_
 - [X] 1-2: _Manipulando Imagens no Docker_
 - [X] 1-3: _Orquestrando Containers com Docker Compose_
-- [ ] 1-4: _Projeto - Docker Todo-List_
+- [X] 1-4: _[Projeto - Docker Todo-List](https://github.com/coelhoreinaldo/docker-todo-list)_
 
 ##### Bloco 2: Introdução à SQL
 
