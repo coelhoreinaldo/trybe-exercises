@@ -152,7 +152,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 2: Introdução à SQL
 
-- [ ] 2-1: _Banco de dados SQL_
+- [X] 2-1: _Banco de dados SQL_
 - [ ] 2-2: _Encontrando dados em um banco de dados_
 - [ ] 2-3: _Filtrando dados de forma específica_
 - [ ] 2-4: _Manipulando tabelas_
