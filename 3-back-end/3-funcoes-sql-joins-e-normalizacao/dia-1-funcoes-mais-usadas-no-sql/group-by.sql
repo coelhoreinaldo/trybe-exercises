@@ -38,5 +38,5 @@ GROUP BY rating
 ORDER BY avg_rental_duration DESC;
 -- 4
 SELECT district, COUNT(address) AS district_quant FROM sakila.address
-GROUP BY (district)
+GROUP BY district
 ORDER BY district_quant DESC;
