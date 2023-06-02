@@ -23,7 +23,9 @@ SELECT t.*, m.title AS films_on_theater
 FROM pixar.theater AS t
 RIGHT JOIN pixar.movies AS m ON m.theater_id = t.id
 ORDER BY t.name;
+-- 6
+SELECT m.*, b.rating
+FROM pixar.movies AS m
+INNER JOIN pixar.box_office AS b ON m.id = b.movie_id
+WHERE m.theater_id IS NOT NULL AND b.rating > 8;
 
-SELECT * FROM box_office;
-SELECT * FROM pixar.movies;
-SELECT * FROM theater;
