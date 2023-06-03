@@ -153,10 +153,10 @@ Trybe is a technology school that has a genuine commitment to the professional s
 ##### Bloco 2: Introdução à SQL
 
 - [X] 2-1: _Banco de dados SQL_
-- [ ] 2-2: _Encontrando dados em um banco de dados_
-- [ ] 2-3: _Filtrando dados de forma específica_
-- [ ] 2-4: _Manipulando tabelas_
-- [ ] 2-5: _Projeto - All For One_
+- [X] 2-2: _Encontrando dados em um banco de dados_
+- [X] 2-3: _Filtrando dados de forma específica_
+- [X] 2-4: _Manipulando tabelas_
+- [X] 2-5: _[Projeto - All For One](https://github.com/coelhoreinaldo/mysql-all-for-one)_
 
 ##### Bloco 3: Funções SQL, JOINs e Normalização
 
