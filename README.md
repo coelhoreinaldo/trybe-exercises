@@ -160,9 +160,9 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 3: Funções SQL, JOINs e Normalização
 
-- [ ] 3-1: _Funções mais usadas no SQL_
-- [ ] 3-2: _Descomplicando JOINs_
-- [ ] 3-3: _Transformando ideias em um modelo de banco de dados_
+- [X] 3-1: _Funções mais usadas no SQL_
+- [X] 3-2: _Descomplicando JOINs_
+- [X] 3-3: _Transformando ideias em um modelo de banco de dados_
 - [ ] 3-4: _Aula ao vivo + Projeto - One For All_
 
 ##### Bloco 4: Introdução ao desenvolvimento Web com Node.js
