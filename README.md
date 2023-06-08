@@ -163,7 +163,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 - [X] 3-1: _Funções mais usadas no SQL_
 - [X] 3-2: _Descomplicando JOINs_
 - [X] 3-3: _Transformando ideias em um modelo de banco de dados_
-- [ ] 3-4: _Aula ao vivo + Projeto - One For All_
+- [X] 3-4: _[Projeto - One For All](https://github.com/coelhoreinaldo/mysql-one-for-all)_
 
 ##### Bloco 4: Introdução ao desenvolvimento Web com Node.js
 
