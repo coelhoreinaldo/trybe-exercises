@@ -38,17 +38,17 @@ const removeCharactersFromJson = async () => {
   }
 }
 
-removeCharactersFromJson()
+// removeCharactersFromJson()
 
-// const getTwoSimpsons = async () => {
-//   try {
-//     const response = JSON.parse(await fs.readFile('./simpsons.json'))
-//     const data = response.filter((id) => id === 1 || id === 4)
-//     await fs.writeFile('./simpsons.json', JSON.stringify(data))
-//     return data
-//   } catch (error) {
-//     console.error(error)
-//   }
-// }
+const getTwoSimpsons = async () => {
+  try {
+    const response = JSON.parse(await fs.readFile('./simpsons.json'))
+    const data = response.filter(({ id }) => +id === 1 || +id === 4)
+    await fs.writeFile('./simpsons.json', JSON.stringify(data))
+    return data
+  } catch (error) {
+    console.error(error)
+  }
+}
 
-// getTwoSimpsons()
+getTwoSimpsons()
