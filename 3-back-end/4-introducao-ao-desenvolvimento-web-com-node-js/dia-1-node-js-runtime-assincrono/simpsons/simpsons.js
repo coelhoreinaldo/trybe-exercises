@@ -3,7 +3,7 @@ const fs = require('fs').promises;
 const readAll = async () => {
   try {
     const response = JSON.parse(await fs.readFile('./simpsons.json'))
-    const data = response.map((e) => `${e.id} - ${e.name}`)
+    const data = response.map((character) => `${character.id} - ${character.name}`)
     console.log(data)
     return data
   } catch (error) {
@@ -11,4 +11,18 @@ const readAll = async () => {
   }
 }
 
-readAll()
+// readAll()
+
+const readCharacterInfoById = async (id) => {
+  try {
+    const response = JSON.parse(await fs.readFile('./simpsons.json'))
+    const characterInfo = response.find((character) => +character.id === id)
+    if (!characterInfo) throw new Error('Personagem não encontrado')
+    console.log(characterInfo)
+    return characterInfo
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+// readCharacterInfoById(7)
