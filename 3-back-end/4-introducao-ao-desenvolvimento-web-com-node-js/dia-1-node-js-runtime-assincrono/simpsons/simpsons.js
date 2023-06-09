@@ -51,4 +51,35 @@ const getTwoSimpsons = async () => {
   }
 }
 
-getTwoSimpsons()
+// getTwoSimpsons()
+
+const addNewSimpson = async () => {
+  try {
+    const response = JSON.parse(await fs.readFile('./simpsons.json'))
+    const simpsonNelson = {
+      id: `${response.length}`, name: 'Nelson Muntz'
+    }
+    const data = [...response, simpsonNelson]
+    await fs.writeFile('./simpsons.json', JSON.stringify(data))
+    return data
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+// addNewSimpson()
+
+const replaceASimpson = async () => {
+  try {
+    const response = JSON.parse(await fs.readFile('./simpsons.json'))
+    const data = response.filter((character) => !character.name.includes('Nelson'));
+    const maggie = { "id": "3", "name": "Maggie Simpson" }
+    const newData = [...data, maggie]
+    await fs.writeFile('./simpsons.json', JSON.stringify(newData))
+    return data
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+replaceASimpson()
