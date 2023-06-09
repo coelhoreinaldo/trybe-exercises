@@ -10,11 +10,6 @@ function dividirNumeros(num1, num2) {
   return promise;
 }
 
-// dividirNumeros(2, 1)
-//   .then(result => console.log(`sucesso: ${result}`))
-//   .catch(err => console.log(`erro: ${err.message}`));
-
-const doSomething = async () => {
-  console.log(await dividirNumeros(2, 2));
-};
-
+dividirNumeros(2, 1)
+  .then(result => console.log(`sucesso: ${result}`))
+  .catch(err => console.log(`erro: ${err.message}`));
