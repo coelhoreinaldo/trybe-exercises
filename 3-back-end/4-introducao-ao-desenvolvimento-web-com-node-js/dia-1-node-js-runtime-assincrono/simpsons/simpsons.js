@@ -26,3 +26,16 @@ const readCharacterInfoById = async (id) => {
 }
 
 // readCharacterInfoById(7)
+
+const removeCharactersFromJson = async () => {
+  try {
+    const response = JSON.parse(await fs.readFile('./simpsons.json'))
+    const data = response.filter((id) => id !== 10 && id !== 6)
+    await fs.writeFile('./simpsons.json', JSON.stringify(data))
+    return data
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+removeCharactersFromJson()
