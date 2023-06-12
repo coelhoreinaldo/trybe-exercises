@@ -29,4 +29,6 @@ app.get('/movies/:id', async (req, res) => {
   }
 });
 
+app.get('/movies', async (req, res) => res.json(await readFile()));
+
 module.exports = app;
