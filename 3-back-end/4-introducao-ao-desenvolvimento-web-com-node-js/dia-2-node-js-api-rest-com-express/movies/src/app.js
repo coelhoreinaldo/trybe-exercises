@@ -15,6 +15,18 @@ const readFile = async () => {
   }
 };
 
-readFile();
+app.get('/movies/:id', async (req, res) => {
+  const currMovie = { ...req.params };
+  const movies = await readFile();
+  try {
+    const findMovie = movies.find((movie) => movie.id === +currMovie.id);
+    if (!findMovie) {
+      throw new Error('meme');
+    }
+    res.status(200).json(findMovie);
+  } catch (error) {
+    res.status(404).json({ message: 'Movie not found' });
+  }
+});
 
 module.exports = app;
