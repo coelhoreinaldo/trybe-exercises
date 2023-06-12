@@ -53,4 +53,12 @@ app.get('/teams/:id', (req, res) => {
   res.status(200).json(currTeam);
 });
 
+app.delete('/teams/:id', (req, res) => {
+  const { id } = req.params;
+  const arrayPosition = teams.findIndex((team) => team.id === +id);
+  teams.splice(arrayPosition, 1);
+
+  res.status(200).end();
+});
+
 module.exports = app;
