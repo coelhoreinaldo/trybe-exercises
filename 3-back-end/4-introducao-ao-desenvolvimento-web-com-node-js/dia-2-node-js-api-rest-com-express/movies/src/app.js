@@ -51,4 +51,24 @@ app.post('/movies', async (req, res) => {
   }
 });
 
+app.put('/movies/:id', async (req, res) => {
+  try {
+    const currMovie = { ...req.params };
+    const { movie, price } = req.body;
+    const movies = await readFile();
+
+    const updatedMovie = movies.find((mov) => mov.id === +currMovie.id);
+    updatedMovie.movie = movie;
+    updatedMovie.price = price;
+
+    const updatedMovies = JSON.stringify(movies, null, 2);
+    await fs.writeFile(moviesPath, updatedMovies);
+
+    res.status(200).json(updatedMovie);
+    console.log(updatedMovie);
+  } catch (error) {
+    res.status(404).json({ message: 'Movie not found' });
+  }
+});
+
 module.exports = app;
