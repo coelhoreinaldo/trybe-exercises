@@ -3,6 +3,7 @@ const fs = require('fs').promises;
 const path = require('path');
 
 const app = express();
+app.use(express.json());
 
 const moviesPath = path.resolve(__dirname, './movies.json');
 
@@ -30,5 +31,24 @@ app.get('/movies/:id', async (req, res) => {
 });
 
 app.get('/movies', async (req, res) => res.json(await readFile()));
+
+app.post('/movies', async (req, res) => {
+  try {
+    const { movie, price } = req.body;
+
+    const movies = await readFile();
+    const newMovie = {
+      id: movies.length + 1,
+      movie,
+      price,
+    };
+    const updateMovies = JSON.stringify([...movies, newMovie]);
+    await fs.writeFile(moviesPath, updateMovies);
+
+    res.status(201).json(newMovie);
+  } catch (error) {
+    res.status(404).json({ message: 'Movie not found' });
+  }
+});
 
 module.exports = app;
