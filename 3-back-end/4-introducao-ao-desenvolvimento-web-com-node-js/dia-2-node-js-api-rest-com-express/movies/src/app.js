@@ -7,6 +7,8 @@ app.use(express.json());
 
 const moviesPath = path.resolve(__dirname, './movies.json');
 
+const errMessage = { message: 'Movie not found' };
+
 const readFile = async () => {
   try {
     const data = await fs.readFile(moviesPath);
@@ -15,6 +17,20 @@ const readFile = async () => {
     console.error('Arquivo não encontrado.');
   }
 };
+
+app.get('/movies/search', async (req, res) => {
+  try {
+    const { q } = req.query;
+    const movies = await readFile();
+
+    if (q) {
+      const filteredMovies = movies.filter((mov) => mov.movie.includes(q));
+      return res.status(200).json(filteredMovies);
+    }
+  } catch (err) {
+    res.status(404).json(errMessage);
+  }
+});
 
 app.get('/movies/:id', async (req, res) => {
   const currMovie = { ...req.params };
@@ -26,7 +42,7 @@ app.get('/movies/:id', async (req, res) => {
     }
     res.status(200).json(findMovie);
   } catch (error) {
-    res.status(404).json({ message: 'Movie not found' });
+    res.status(404).json(errMessage);
   }
 });
 
@@ -47,7 +63,7 @@ app.post('/movies', async (req, res) => {
 
     res.status(201).json(newMovie);
   } catch (error) {
-    res.status(404).json({ message: 'Movie not found' });
+    res.status(404).json(errMessage);
   }
 });
 
@@ -67,7 +83,7 @@ app.put('/movies/:id', async (req, res) => {
     res.status(200).json(updatedMovie);
     console.log(updatedMovie);
   } catch (error) {
-    res.status(404).json({ message: 'Movie not found' });
+    res.status(404).json(errMessage);
   }
 });
 
@@ -80,7 +96,7 @@ app.delete('/movies/:id', async (req, res) => {
     await fs.writeFile(moviesPath, updatedMovies);
     res.status(204).end();
   } catch (error) {
-    res.status(404).json({ message: 'Movie not found' });
+    res.status(404).json(errMessage);
   }
 });
 
