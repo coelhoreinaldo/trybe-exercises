@@ -149,7 +149,7 @@ describe('Testando a API Cacau Trybe', function () {
 
       const response = await chai
         .request(app)
-        .get('/chocolates');
+        .get('/chocolates/search?name=Mo');
 
       expect(response.status).to.be.equal(200);
       expect(response.body.chocolates).to.deep.equal(output)
@@ -160,7 +160,7 @@ describe('Testando a API Cacau Trybe', function () {
     it('Retorna o status 404 com a mensagem "Chocolate not found"', async function () {
       const response = await chai
         .request(app)
-        .get('/chocolates');
+        .get('/chocolates/search?name=ZZZ');
 
       expect(response.status).to.be.equal(404);
       expect(response.body).to.deep.equal([]);
