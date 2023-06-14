@@ -185,11 +185,9 @@ describe('Testando a API Cacau Trybe', function () {
         .put('/chocolates/1').send(input);
 
       expect(response.status).to.be.equal(200);
-      expect(response.body.chocolate).to.deep.equal(output.chocolate)
+      expect(response.body.chocolate).to.deep.equal(output)
     })
-  });
 
-  describe('Usando o método PUT em /chocolates/999', function () {
     it('Retorna o status 404 com a mensagem "Chocolate not found"', async function () {
       const input = {
         "name": "Mint Pretty Good",
