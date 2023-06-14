@@ -125,7 +125,7 @@ describe('Testando a API Cacau Trybe', function () {
         .get('/chocolates/total');
 
       expect(response.status).to.be.equal(200);
-      expect(response.body.total).to.deep.equal({
+      expect(response.body).to.deep.equal({
         totalChocolates: 4
       })
     })
