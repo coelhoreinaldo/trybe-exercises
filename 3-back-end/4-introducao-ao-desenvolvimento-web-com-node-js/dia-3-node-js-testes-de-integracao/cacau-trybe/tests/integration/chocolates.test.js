@@ -167,4 +167,42 @@ describe('Testando a API Cacau Trybe', function () {
     })
   })
 
+  describe('Usando o método PUT em /chocolates/1', function () {
+    it('Retorna o chocolate com ID 1 atualizado com as novas informações', async function () {
+      const input = {
+        "name": "Mint Pretty Good",
+        "brandId": 2
+      };
+
+      const output = {
+        "id": 1,
+        "name": "Mint Pretty Good",
+        "brandId": 2
+      };
+
+      const response = await chai
+        .request(app)
+        .put('/chocolates/1').send(input);
+
+      expect(response.status).to.be.equal(200);
+      expect(response.body.chocolate).to.deep.equal(output.chocolate)
+    })
+  });
+
+  describe('Usando o método PUT em /chocolates/999', function () {
+    it('Retorna o status 404 com a mensagem "Chocolate not found"', async function () {
+      const input = {
+        "name": "Mint Pretty Good",
+        "brandId": 2
+      };
+
+      const response = await chai
+        .request(app)
+        .put('/chocolates/999').send(input);
+
+      expect(response.status).to.be.equal(404);
+      expect(response.body).to.deep.equal({ message: "chocolate not found" })
+    })
+  });
+
 });
