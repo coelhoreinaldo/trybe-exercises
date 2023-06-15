@@ -1,6 +1,8 @@
 // src/app.js
 
 const express = require('express');
+const rateLimit = require("express-rate-limit");
+const helmet = require("helmet");
 const morgan = require('morgan');
 const validateTeam = require('./middlewares/validateTeam');
 const existingId = require('./middlewares/existingId');
@@ -10,11 +12,18 @@ const app = express();
 const cors = require('cors');
 
 
+const limiter = rateLimit({
+  max: 100, // número máximo de requisições
+  windowMs: 15 * 60 * 1000, // intervalo de tempo, em milissegundos, para atingir o número máximo de requisições
+  message: "Muitas requisições originadas desta IP" // mensagem personalizada quando atinge o limit rate
+});
 
 let nextId = 3;
 
+app.use(limiter);
 app.use(cors());
 app.use(express.json());
+app.use(helmet());
 app.use(apiCredentials);
 app.use(morgan('dev'));
 
