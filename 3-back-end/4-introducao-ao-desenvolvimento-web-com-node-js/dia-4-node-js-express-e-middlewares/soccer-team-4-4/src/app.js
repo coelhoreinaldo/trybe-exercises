@@ -1,21 +1,22 @@
 // src/app.js
 
 const express = require('express');
-const rateLimit = require("express-rate-limit");
-const helmet = require("helmet");
+require('express-async-errors');
+const rateLimit = require('express-rate-limit');
+const helmet = require('helmet');
+const cors = require('cors');
 const morgan = require('morgan');
 const validateTeam = require('./middlewares/validateTeam');
 const existingId = require('./middlewares/existingId');
 const teams = require('./utils/teams');
 const apiCredentials = require('./middlewares/apiCredentials');
-const app = express();
-const cors = require('cors');
 
+const app = express();
 
 const limiter = rateLimit({
   max: 100, // número máximo de requisições
   windowMs: 15 * 60 * 1000, // intervalo de tempo, em milissegundos, para atingir o número máximo de requisições
-  message: "Muitas requisições originadas desta IP" // mensagem personalizada quando atinge o limit rate
+  message: 'Muitas requisições originadas desta IP', // mensagem personalizada quando atinge o limit rate
 });
 
 let nextId = 3;
@@ -31,7 +32,7 @@ app.get('/teams', (req, res) => res.json(teams));
 
 app.get('/teams/:id', existingId, (req, res) => {
   const id = Number(req.params.id);
-  const team = teams.find(t => t.id === id);
+  const team = teams.find((t) => t.id === id);
   res.json(team);
 });
 
@@ -52,7 +53,7 @@ app.post('/teams', validateTeam, (req, res) => {
 
 app.put('/teams/:id', existingId, validateTeam, (req, res) => {
   const id = Number(req.params.id);
-  const team = teams.find(t => t.id === id);
+  const team = teams.find((t) => t.id === id);
   const index = teams.indexOf(team);
   const updated = { id, ...req.body };
   teams.splice(index, 1, updated);
@@ -61,10 +62,19 @@ app.put('/teams/:id', existingId, validateTeam, (req, res) => {
 
 app.delete('/teams/:id', existingId, (req, res) => {
   const id = Number(req.params.id);
-  const team = teams.find(t => t.id === id);
+  const team = teams.find((t) => t.id === id);
   const index = teams.indexOf(team);
   teams.splice(index, 1);
   res.sendStatus(204);
+});
+
+app.use((err, _req, _res, next) => {
+  console.error(err.stack);
+  next(err);
+});
+
+app.use((err, _req, res, _next) => {
+  res.status(500).json({ message: `Algo deu errado! Mensagem: ${err.message}` });
 });
 
 module.exports = app;
