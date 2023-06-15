@@ -12,18 +12,6 @@ const teams = [
 
 app.use(express.json());
 
-app.get('/teams', (req, res) => res.json(teams));
-
-app.get('/teams/:id', (req, res) => {
-  const id = Number(req.params.id);
-  const team = teams.find(t => t.id === id);
-  if (team) {
-    res.json(team);
-  } else {
-    res.sendStatus(404);
-  }
-});
-
 const validateTeam = (req, res, next) => {
   const requiredProperties = ['nome', 'sigla'];
   if (requiredProperties.every((property) => property in req.body)) {
@@ -32,6 +20,24 @@ const validateTeam = (req, res, next) => {
     res.sendStatus(400); // Ou já responde avisando que deu errado
   }
 };
+
+const existingId = (req, res, next) => {
+  const id = Number(req.params.id);
+  const team = teams.find(t => t.id === id);
+  if (team) {
+    next();
+  } else {
+    res.status(404).send({ message: 'ID inexistente!' });
+  }
+}
+
+app.get('/teams', (req, res) => res.json(teams));
+
+app.get('/teams/:id', existingId, (req, res) => {
+  const id = Number(req.params.id);
+  const team = teams.find(t => t.id === id);
+  res.json(team);
+});
 
 app.post('/teams', validateTeam, (req, res) => {
   const team = { id: nextId, ...req.body };
