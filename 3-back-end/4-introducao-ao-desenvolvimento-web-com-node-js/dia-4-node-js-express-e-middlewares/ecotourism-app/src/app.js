@@ -5,6 +5,7 @@ const validateActivityDescription = require('./middlewares/validateActivityDescr
 const validateActivityDescFields = require('./middlewares/validateActivityDescFields');
 const validateSignupFields = require('./middlewares/validateSignupFields');
 const generateToken = require('./utils/generateToken');
+const apiCredentials = require('./middlewares/apiCredentials');
 
 const app = express();
 
@@ -14,7 +15,8 @@ app.post('/activities',
   validateActivityName,
   validateActivityPrice,
   validateActivityDescription,
-  validateActivityDescFields, (req, res) => {
+  validateActivityDescFields,
+  apiCredentials, (req, res) => {
     res.status(201).json({ message: 'Atividade cadastrada com sucesso!' });
   });
 
