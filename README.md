@@ -168,10 +168,10 @@ Trybe is a technology school that has a genuine commitment to the professional s
 ##### Bloco 4: Introdução ao desenvolvimento Web com Node.js
 
 - [X] 4-1: _Node.js: Runtime Assíncrono_
-- [ ] 4-2: _Node.js: API REST com Express_
-- [ ] 4-3: _Node.js: Testes de Integração_
-- [ ] 4-4: _Node.js: Express e Middlewares_
-- [ ] 4-5: _Node.js: Express e MySQL_
+- [X] 4-2: _Node.js: API REST com Express_
+- [X] 4-3: _Node.js: Testes de Integração_
+- [X] 4-4: _Node.js: Express e Middlewares_
+- [X] 4-5: _Node.js: Express e MySQL_
 - [ ] 4-6: _Projeto - Talker Manager_
 
 ##### Bloco 5: Arquitetura de Software: Model, Service e Controller
