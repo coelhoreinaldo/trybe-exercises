@@ -176,7 +176,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 5: Arquitetura de Software: Model, Service e Controller
 
-- [ ] 5-1: _Arquitetura de Software: Camada Model_
+- [X] 5-1: _Arquitetura de Software: Camada Model_
 - [ ] 5-2: _Arquitetura de Software: Camada Service_
 - [ ] 5-3: _Arquitetura de Software: Camada Controller_
 - [ ] 5-4: _Projeto - Store Manager_
