@@ -178,7 +178,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 - [X] 5-1: _Arquitetura de Software: Camada Model_
 - [X] 5-2: _Arquitetura de Software: Refatorando Camada Model_
-- [ ] 5-3: _Arquitetura de Software: Camada Service_
+- [X] 5-3: _Arquitetura de Software: Camada Service_
 - [ ] 5-4: _Arquitetura de Software: Refatorando Camada Service_
 - [ ] 5-5: _Arquitetura de Software: Refatorando Camada Controller_
 - [ ] 5-6: _Projeto - Store Manager_
