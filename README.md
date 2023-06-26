@@ -172,7 +172,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 - [X] 4-3: _Node.js: Testes de Integração_
 - [X] 4-4: _Node.js: Express e Middlewares_
 - [X] 4-5: _Node.js: Express e MySQL_
-- [ ] 4-6: _Projeto - Talker Manager_
+- [X] 4-6: _[Projeto - Talker Manager](https://github.com/coelhoreinaldo/talker-manager)_
 
 ##### Bloco 5: Arquitetura de Software: Model, Service e Controller
 
