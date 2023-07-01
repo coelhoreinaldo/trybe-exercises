@@ -197,10 +197,11 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 8: Introdução a TypeScript
 
-- [ ] 8-1: _Introdução ao TypeScript_
-- [ ] 8-2: _Tipagem Estática e Generics_
-- [ ] 8-3: _Express com TypeScript_
-- [ ] 8-4: _Projeto - Trybesmith_
+- [ ] 8-1: _Aprendendo TypeScript_
+- [ ] 8-2: _Introdução a Generics_
+- [ ] 8-3: _API REST com Express, JWT, Sequelize e TypeScript_
+- [ ] 8-4: _Testando Aplicações com TypeScript_
+- [ ] 8-5: _Projeto - Trybesmith_
 
 ##### Bloco 9: Programação Orientada a Objetos (POO) e Solid
 
