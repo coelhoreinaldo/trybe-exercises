@@ -216,30 +216,6 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 - [ ] 10-1: _Projeto - TFC - Trybe Futebol Clube_
 
-##### Bloco 11: Introdução ao MongoDB
-
-- [ ] 11-1: _MongoDB - Introdução_
-- [ ] 11-2: _Filter Operators_
-- [ ] 11-3: _Operadores de consulta_
-- [ ] 11-4: _Updates Simples_
-- [ ] 11-5: _Updates Complexos - Arrays_
-- [ ] 11-6: _Projeto - Commerce_
-
-##### Bloco 12: APIs OO e NoSQl
-
-- [ ] 12-1: _APIs orientadas a objetos e NoSQL: POO e ODMs_
-- [ ] 12-2: _APIs orientadas a objetos e NoSQL: Herança e Abstração_ 
-- [ ] 12-3: _Projeto - Car Shop_
-
-##### Bloco 13: Projeto - App de Delivery
-
-- [ ] 13-1: _Projeto - App de Delivery_
-
-##### Bloco 14: MasterClass - VPS, CI/CD
-
-- [ ] 14-1: VPS
-- [ ] 14-2: Dia 2
-
 ## Ciência da Computação :hourglass_flowing_sand:
 
 ##### Bloco 1: Introdução à Python
