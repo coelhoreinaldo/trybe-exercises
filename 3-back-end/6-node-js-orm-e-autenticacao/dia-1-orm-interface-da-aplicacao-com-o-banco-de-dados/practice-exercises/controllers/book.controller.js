@@ -24,9 +24,21 @@ const createBook = async (req, res) => {
     const newBook = await bookService.createBook(bookData)
     return res.status(201).json(newBook)
   } catch (error) {
-    console.error(error);
+    console.error(error.message);
     return res.status(500).json({ message: error500Message })
   }
 }
 
-module.exports = { getAll, getById, createBook };
+const updateBook = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const bookData = req.body;
+    const updatedBook = await bookService.updateBook(id, bookData)
+    return res.status(200).json(updatedBook)
+  } catch (error) {
+    console.error(error.message)
+    return res.status(500).json({ message: error500Message })
+  }
+}
+
+module.exports = { getAll, getById, createBook, updateBook };
