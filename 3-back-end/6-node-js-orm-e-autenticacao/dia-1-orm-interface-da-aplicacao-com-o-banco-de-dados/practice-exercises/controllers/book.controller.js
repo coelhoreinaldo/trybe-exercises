@@ -4,7 +4,12 @@ const error500Message = 'Algo deu errado';
 
 const getAll = async (req, res) => {
   try {
-    const books = await bookService.getAll();
+    let books = [];
+    if (req.query.author) {
+      books = await bookService.getByAuthor(req.query.author);
+    } else {
+      books = await bookService.getAll();
+    }
     return res.status(200).json(books)
   } catch (error) {
     return res.status(500).json({ message: error500Message })
