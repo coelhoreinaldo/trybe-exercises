@@ -1,9 +1,8 @@
-const bookModel = require("../models/book.model")
+const { book } = require("../models");
 
 const getAll = async () => {
-  const books = await bookModel.findAll()
-
+  const books = await book.findAll();
   return books;
-}
+};
 
-module.exports = { getAll }
+module.exports = { getAll };
