@@ -33,4 +33,9 @@ const removeBook = async (id) => {
   return deletedBook;
 }
 
-module.exports = { getAll, getById, createBook, updateBook, removeBook };
+const getByAuthor = async (author) => {
+  const books = await book.findAll({ where: { author } })
+  return books;
+}
+
+module.exports = { getAll, getById, createBook, updateBook, removeBook, getByAuthor };
