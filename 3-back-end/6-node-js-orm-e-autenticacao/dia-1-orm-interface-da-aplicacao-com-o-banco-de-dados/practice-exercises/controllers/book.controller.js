@@ -3,8 +3,12 @@ const { bookService } = require('../services')
 const error500Message = 'Algo deu errado';
 
 const getAll = async (req, res) => {
-  const books = await bookService.getAll();
-  return res.status(200).json(books)
+  try {
+    const books = await bookService.getAll();
+    return res.status(200).json(books)
+  } catch (error) {
+    return res.status(500).json({ message: error500Message })
+  }
 }
 
 const getById = async (req, res) => {
@@ -41,4 +45,14 @@ const updateBook = async (req, res) => {
   }
 }
 
-module.exports = { getAll, getById, createBook, updateBook };
+const removeBook = async (req, res) => {
+  try {
+    const { id } = req.params;
+    await bookService.removeBook(id);
+    return res.status(200).json({ message: 'Book deleted' })
+  } catch (error) {
+    console.error(error.message);
+    return res.status(500).json({ message: error500Message })
+  }
+}
+module.exports = { getAll, getById, createBook, updateBook, removeBook };
