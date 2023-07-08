@@ -185,7 +185,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 6: Node.js: ORM e Autenticação
 
-- [ ] 6-1: _ORM - Interface da aplicação com o banco de dados_
+- [X] 6-1: _ORM - Interface da aplicação com o banco de dados_
 - [ ] 6-2: _ORM - Associations 1:1 e 1:N_
 - [ ] 6-3: _ORM - Associations N:N e Transactions_
 - [ ] 6-4: _JWT - (JSON Web Token)_
