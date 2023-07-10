@@ -1,11 +1,13 @@
+// src/app.js
+
 const express = require('express');
+
+const employee = require('./controller/employee.controller');
 
 const app = express();
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  return res.send(200).json({ message: 'foi' })
-});
+app.get('/employees', employee.getAll);
 
 module.exports = app;
