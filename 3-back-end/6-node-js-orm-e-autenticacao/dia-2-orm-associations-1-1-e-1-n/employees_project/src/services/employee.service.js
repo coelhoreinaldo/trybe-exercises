@@ -15,6 +15,13 @@ const getById = async (id) => {
   return employee;
 }
 
+const insert = async ({ firstName, lastName, age, city, street, number }) => {
+  const employee = await Employee.create({ firstName, lastName, age });
+
+  await Address.create({ city, street, number, employeeId: employee.id });
+  return employee;
+};
+
 module.exports = {
-  getAll, getById
+  getAll, getById, insert
 };
