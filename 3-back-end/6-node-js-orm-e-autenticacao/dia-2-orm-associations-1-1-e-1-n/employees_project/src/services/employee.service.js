@@ -15,6 +15,21 @@ const getById = async (id) => {
   return employee;
 }
 
+const insert = async ({ firstName, lastName, age, city, street, number }) => {
+  const result = await sequelize.transaction(async (t) => {
+    const employee = await Employee.create({
+      firstName, lastName, age,
+    }, { transaction: t });
+
+    await Address.create({
+      city, street, number, employeeId: employee.id
+    }, { transaction: t });
+    return employee;
+  });
+
+  return result;
+};
+
 module.exports = {
-  getAll, getById
+  getAll, getById, insert
 };
