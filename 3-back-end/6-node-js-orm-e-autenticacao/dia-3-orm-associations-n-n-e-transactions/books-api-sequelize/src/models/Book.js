@@ -1,18 +1,18 @@
-// src/models/User.js
+// src/models/Book.js
 module.exports = (sequelize, DataTypes) => {
-  const User = sequelize.define(
-    'User',
+  const Book = sequelize.define(
+    'Book',
     {
       id: { type: DataTypes.INTEGER, primaryKey: true },
-      firstName: DataTypes.STRING,
-      lastName: DataTypes.STRING,
-      age: DataTypes.INTEGER,
+      name: DataTypes.STRING,
+      releaseYear: DataTypes.INTEGER,
+      totalPages: DataTypes.INTEGER,
     },
     {
       timestamps: false,
       underscored: true,
-    },
+    }
   );
 
-  return User;
+  return Book;
 };
