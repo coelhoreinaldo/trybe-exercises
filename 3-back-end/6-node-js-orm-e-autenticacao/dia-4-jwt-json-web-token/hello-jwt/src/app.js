@@ -24,4 +24,6 @@ app.use(middlewares.error);
 
 app.post('/login', controllers.login);
 
+app.get('/users/me', middlewares.auth, controllers.me);
+
 module.exports = app;
