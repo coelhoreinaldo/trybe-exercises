@@ -35,7 +35,5 @@ module.exports = async (req, res, next) => {
     expiresIn: '1h',
   });
 
-  console.log(payload);
-
   res.status(200).json({ token });
 };
