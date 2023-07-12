@@ -22,4 +22,6 @@ app.get('/ping', controllers.ping);
 
 app.use(middlewares.error);
 
+app.post('/login', controllers.login);
+
 module.exports = app;
