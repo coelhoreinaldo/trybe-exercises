@@ -189,7 +189,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 - [X] 6-2: _ORM - Associations 1:1 e 1:N_
 - [X] 6-3: _ORM - Associations N:N e Transactions_
 - [X] 6-4: _JWT - (JSON Web Token)_
-- [ ] 6-5: _Projeto - API de Blogs_
+- [X] 6-5: _[Projeto - API de Blogs](https://github.com/coelhoreinaldo/blogs_api)_
 
 ##### Bloco 7: Masterclass: Implantação de Aplicações na Nuvem
 
