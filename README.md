@@ -193,7 +193,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 7: Masterclass: Implantação de Aplicações na Nuvem
 
-- [ ] 7-1: _Infraestrutura: Deploy com Railway_
+- [X] 7-1: _Infraestrutura: Deploy com Railway_
 
 ##### Bloco 8: Introdução a TypeScript
 
