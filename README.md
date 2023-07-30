@@ -222,40 +222,24 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 - [ ] 1-1: _Introdução à Python_
 - [ ] 1-2: _Entrada e Saída de Dados_
-- [ ] 1-3: _Testes_
-- [ ] 1-4: _Projeto- Job Insights_
 
-##### Bloco 2: Padrões de Projeto 
+##### Bloco 2: Algoritmos
 
-- [ ] 2-1: _P.O.O em Python_
-- [ ] 2-2: _Padrões - Iterator, Adapter, Strategy_
-- [ ] 2-3: _Padrões - decorator, Observer, Factory_
-- [ ] 2-4: _Projeto - Relatórios de Estoque_
+- [ ] 2-1: _Complexidade de Algoritmos_
+- [ ] 2-2: _Recursividade e Estratégias para solução de problemas_
+- [ ] 2-3: _Algoritmos de ordenação e busca_
+- [ ] 2-4: _Projeto - Algoritmos_
 
-##### Bloco 3: Redes e Raspagem de Dados
+##### Bloco 3: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
 
-- [ ] 3-1: _Arquitetura de redes_
-- [ ] 3-2: _Raspagem de Dados_
-- [ ] 3-3: _Outras Ferramentas de Raspagem de Dados_
-- [ ] 3-4: _Projeto - Tech news_
+- [ ] 3-1: _P.O.O em Python_
+- [ ] 3-2: _Arrays_
+- [ ] 3-3: _Nó e Listas Encadeadas_
+- [ ] 3-4: _Pilhas e Filas_
+- [ ] 3-5: _Projeto - TING - Trybe Is Not Google_
 
-##### Bloco 4: Algoritmos
+##### Bloco 4: Estrutura de Dados II: Hashmaps e Sets
 
-- [ ] 4-1: _Complexidade de Algoritmos_
-- [ ] 4-2: _Recursividade e Estratégias para solução de problemas_
-- [ ] 4-3: _Algoritmos de ordenação e busca_
-- [ ] 4-4: _Projeto - Algoritmos_
-
-##### Bloco 5: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
-
-- [ ] 5-1: _Arquitetura de Computadores_
-- [ ] 5-2: _Arrays_
-- [ ] 5-3: _Nó e Listas Encadeadas_
-- [ ] 5-4: _Pilhas e Filas_
-- [ ] 5-5: _Projeto - TING - Trybe Is Not Google_
-
-##### Bloco 6: Estrutura de Dados II: Hashmaps e Sets
-
-- [ ] 6-1: _Hashmap e Dict_
-- [ ] 6-2: _Set_
-- [ ] 6-3: _Projeto - Restaurant Orders_
+- [ ] 4-1: _Hashmap e Dict_
+- [ ] 4-2: _Set_
+- [ ] 4-3: _Projeto - Restaurant Orders_
