@@ -29,3 +29,19 @@ function printId(id: number | string) {
 
 printId(101);
 printId("202");
+
+//Crie union types que representem: a. Os estados físicos da matéria como strings: líquido, sólido ou gasoso. b. O documento identificador de uma pessoa que pode receber valores numéricos ou texto. Ex.: “123.567.890-12” ou 123456789012. c. Sistemas operacionais: Linux, MacOS ou Windows.
+
+type StatesOfMatter = 'líquido' | 'sólido' | 'gasoso';
+type Id = number | string;
+type Os = 'Linux' | 'Windows' | 'MacOS'
+
+//Crie type aliases para: a. Representar um ou mais nomes de pessoas em uma variável que guarda reservas de restaurante. b. Um objeto que represente um endereço.
+
+type Aliases = string | string[];
+type Address = {
+    city: string;
+    state: string;
+    number: string;
+    street: string;
+}
