@@ -199,7 +199,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 - [X] 8-1: _Aprendendo TypeScript_
 - [X] 8-2: _Introdução a Generics_
-- [ ] 8-3: _API REST com Express, JWT, Sequelize e TypeScript_
+- [X] 8-3: _API REST com Express, JWT, Sequelize e TypeScript_
 - [ ] 8-4: _Testando Aplicações com TypeScript_
 - [ ] 8-5: _Projeto - Trybesmith_
 
