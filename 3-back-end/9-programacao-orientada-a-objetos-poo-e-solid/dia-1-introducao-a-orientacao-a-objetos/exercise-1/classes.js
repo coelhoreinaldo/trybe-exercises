@@ -1,16 +1,16 @@
 "use strict";
 class Tv {
-    constructor(b, s, r, connects, connectedT) {
-        console.log(`Creating ${b} tv`);
-        this.brand = b;
-        this.size = s;
-        this.resolution = r;
-        this.connections = connects;
-        this.connectedTo = connectedT;
+    constructor(brand, size, resolution, connections) {
+        console.log(`Creating ${brand} tv`);
+        this.brand = brand;
+        this.size = size;
+        this.resolution = resolution;
+        this.connections = connections;
     }
     turnOn() {
-        console.log(`${this.brand}, ${this.size}, ${this.resolution}, ${this.connections}, ${this.connectedTo}`);
+        console.log(`${this.brand}, ${this.size}, resolution: ${this.resolution}, \n\ available connections: ${this.connections}, ${this.connectedTo}`);
     }
     ;
 }
-new Tv('philips', 42, 'HD', 'HDMI');
+const tv1 = new Tv('philips', 42, 'HD', ['HDMI', 'Ethernet']);
+tv1.turnOn();

@@ -2,22 +2,27 @@ class Tv {
   brand: string;
   size: number;
   resolution: string;
-  connections: string;
+  connections: string[];
   connectedTo?: string;
 
-  constructor(b: string, s: number, r:string, connects: string, connectedT?: string){
-    console.log(`Creating ${b} tv`)
+  constructor( 
+    brand: string, 
+    size: number, 
+    resolution: string, 
+    connections: string[]
+    ){
+    console.log(`Creating ${brand} tv`)
 
-    this.brand = b;
-    this.size = s;
-    this.resolution = r;
-    this.connections = connects;
-    this.connectedTo = connectedT;
+    this.brand = brand;
+    this.size = size;
+    this.resolution = resolution;
+    this.connections = connections;
   }
 
   turnOn(){
-    console.log(`${this.brand}, ${this.size}, ${this.resolution}, ${this.connections}, ${this.connectedTo}`)
+    console.log(`${this.brand}, ${this.size}, resolution: ${this.resolution}, \n\ available connections: ${this.connections}, ${this.connectedTo}`)
   };
 }
 
-new Tv('philips', 42, 'HD', 'HDMI')
+const tv1 = new Tv('philips', 42, 'HD', ['HDMI', 'Ethernet'])
+tv1.turnOn();
