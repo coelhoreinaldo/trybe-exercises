@@ -19,11 +19,11 @@ class Tv {
     this._connections = connections;
   }
 
-  turnOn(){
+  turnOn():void{
     console.log(`${this._brand}, ${this._size}, resolution: ${this._resolution}, \n\ available connections: ${this._connections}, ${this._connectedTo}`)
   };
 
-  getConnectedTo() {
+  get connectedTo(): string | undefined {
     return this._connectedTo;
   }
   
@@ -38,4 +38,8 @@ class Tv {
 }
 
 const tv1 = new Tv('philips', 42, 'HD', ['HDMI', 'Ethernet'])
+
+tv1.connectedTo = 'HDMI'
+console.log('connectedTo', tv1.connectedTo);
+
 tv1.turnOn();
