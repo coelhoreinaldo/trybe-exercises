@@ -28,7 +28,12 @@ class Tv {
   }
   
   set connectedTo(newValue:string){
-    this._connectedTo = newValue
+    if(this._connections.includes(newValue)){
+      this._connectedTo = newValue
+    } else {
+      console.log('Sorry, connection unavailable!');
+    }
+    
   }
 }
 
