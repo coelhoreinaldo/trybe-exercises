@@ -10,15 +10,21 @@ class Superclass {
 }
 
 class Subclass extends Superclass {
-
+  constructor(isSuper: boolean) {
+    isSuper = false;
+    super(isSuper);
+  }
 }
 
 const myFunc = (object: Superclass) => {
-  object.sayHello();
+  if(object.isSuper){
+    return true;
+  }
+  return false;
 }
 
 const object1 = new Superclass(true);
 const object2 = new Subclass(true);
 
-myFunc(object1);
-myFunc(object2);
+console.log(myFunc(object1));
+console.log(myFunc(object2));
