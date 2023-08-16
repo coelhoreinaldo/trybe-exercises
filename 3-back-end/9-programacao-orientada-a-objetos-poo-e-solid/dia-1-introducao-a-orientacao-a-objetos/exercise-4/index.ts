@@ -36,18 +36,24 @@ class Student {
     this._assignmentsGrades = value;
   }
 
-  calculateGrades(){
+  calculateGrades():number{
     const examsTotal = this._examsGrades.reduce((acc, curr) => acc + curr, 0)
     const assignmentsTotal = this._assignmentsGrades.reduce((acc, curr) => acc + curr, 0)
 
     return examsTotal + assignmentsTotal;
   }
+
+  calculateAverage():number {
+    const divider = this.assignmentsGrades.length + this._examsGrades.length;
+    return Math.round(this.calculateGrades() / divider);
+  }
 }
 
 const personOne = new Student('202001011', 'Maria da Silva');
 
+personOne.examsGrades = [1, 1, 1, 1];
+personOne.assignmentsGrades = [1, 1];
+
 console.log(personOne);
-
-const personTwo = new Student('202001012', 'João da Silva');
-
-console.log(personTwo);
+console.log('Soma de todas as notas: ', personOne.calculateGrades());
+console.log('Média de todas as notas: ', personOne.calculateAverage());
