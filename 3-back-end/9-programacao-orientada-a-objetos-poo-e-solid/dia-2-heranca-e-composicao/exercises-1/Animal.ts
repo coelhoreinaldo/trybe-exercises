@@ -1,16 +1,12 @@
 class Animal {
-  constructor(public name: string, private birthDate: Date) { }
+  constructor(public name: string, protected birthDate: Date) { }
 
   get age() {
-    /*Para operar com datas, vamos operar somente com milissegundos. Uma data
-    é o número de milissegundos desde o dia 01/01/1970 (era Unix).*/
     const timeDiff = Math.abs(
       Date.now() -
       new Date(this.birthDate).getTime()
     );
 
-    /*Convertendo de volta para o número de anos inteiros, considerando anos bissextos.
-    Tente entender a lógica abaixo: como converter de milissegundos para anos?*/
     return Math.floor(timeDiff / (1000 * 3600 * 24) / 365.25);
   }
 }
@@ -33,17 +29,13 @@ const main = (animal: Animal) => {
 // main(tiger);
 // tiger.walk();
 
-/*
-Saída (código rodado em Mar/2022):
-1
-Tigre está andando!
-*/
-
-// Bird.ts
-
 class Bird extends Animal {
   fly() {
     console.log(`${this.name} está voando!`);
+  }
+
+  showBirthDate(){
+    console.log(this.birthDate);
   }
 }
 
@@ -52,11 +44,6 @@ const parrot = new Bird(
   new Date(Date.parse('Jun 07, 2017')),
 );
 
-console.log(parrot.age);
-parrot.fly();
-
-/*
-Saída (código executado em Mar/2022):
-4
-Papagaio está voando!
-*/
+// console.log(parrot.age);
+// parrot.fly();
+parrot.showBirthDate();
