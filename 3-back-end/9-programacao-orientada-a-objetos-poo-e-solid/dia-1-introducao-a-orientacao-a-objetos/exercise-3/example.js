@@ -10,9 +10,7 @@ class Email {
         if (newSubject.length <= 40)
             this._subject = newSubject;
     }
-    get subject() {
-        return this._subject;
-    }
+    get subject() { return this._subject; }
     get from() { return this._from; }
     get to() { return this._to; }
     get content() {
