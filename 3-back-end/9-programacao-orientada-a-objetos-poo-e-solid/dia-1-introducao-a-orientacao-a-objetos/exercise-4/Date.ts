@@ -139,9 +139,9 @@ class Data {
   console.log(`A primeira data é ${compareStates[compared + 1]} a segunda.`);
   
   // data inválida
-  const invalidDate = new Data(31, 2, 2021);
+  // const invalidDate = new Data(31, 2, 2021);
   
-  console.log('Teste data inválida: ', invalidDate);
+  // console.log('Teste data inválida: ', invalidDate);
   
-  // formato inválido
-  console.log(invalidDate.format('a m d'));
+  // // formato inválido
+  // console.log(invalidDate.format('a m d'));
