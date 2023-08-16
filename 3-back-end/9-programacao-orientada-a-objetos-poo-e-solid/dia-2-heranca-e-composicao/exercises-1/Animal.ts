@@ -47,3 +47,4 @@ const parrot = new Bird(
 // console.log(parrot.age);
 // parrot.fly();
 parrot.showBirthDate();
+
