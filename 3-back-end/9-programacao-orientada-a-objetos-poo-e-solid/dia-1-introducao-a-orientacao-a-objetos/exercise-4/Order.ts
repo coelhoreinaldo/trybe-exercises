@@ -1,7 +1,7 @@
 import Client from "./Client";
 import OrderItem from "./OrderItem";
 
-class Order {
+export default class Order {
   private _client: Client;
   private _items: OrderItem[];
   private _payment: 'cartão' | 'dinheiro' | 'pix';
@@ -34,8 +34,12 @@ class Order {
     this._discount = discount;
   }
 
-  get total() {
+  calculateTotal() {
     return this._items.reduce((acc, {price}) => acc + price, 0);
+  }
+
+  calculateTotalWithDiscount(): number {
+    return this.calculateTotal() * (1 - (this.discount || 0));
   }
   
 }

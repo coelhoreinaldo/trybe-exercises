@@ -53,7 +53,3 @@ const personOne = new Student('202001011', 'Maria da Silva');
 
 personOne.examsGrades = [1, 1, 1, 1];
 personOne.assignmentsGrades = [1, 1];
-
-console.log(personOne);
-console.log('Soma de todas as notas: ', personOne.calculateGrades());
-console.log('Média de todas as notas: ', personOne.calculateAverage());
