@@ -43,6 +43,6 @@ export default class Person implements Person {
 
   private validatePerson():void{
     this.validateBirthDate(this.birthDate)
-    this.validateName
+    this.validateName(this.name)
   }
 }
