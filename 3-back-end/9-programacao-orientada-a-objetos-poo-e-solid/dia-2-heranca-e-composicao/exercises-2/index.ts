@@ -1,5 +1,6 @@
 import Person from './Person';
 import Student from './Student';
+import Subject from './Subject';
 
 // Exercise 1
 
@@ -29,11 +30,21 @@ lucas.examsGrades = [25, 20, 25, 23];
 jessica.assignmentsGrades = [50, 45];
 tamires.assignmentsGrades = [47, 42];
 
-console.log(carolina);
-console.log(lucas);
-console.log(jessica);
-console.log(tamires);
-console.log(fernando);
+// console.log(carolina);
+// console.log(lucas);
+// console.log(jessica);
+// console.log(tamires);
+// console.log(fernando);
 
 // deve retornar erro
 // fernando.assignmentsGrades = [45, 45, 45];
+
+// Exercise 4
+
+const math = new Subject('matemática')
+const philosophy = new Subject('filosofia')
+const story = new Subject('história')
+
+console.log(math);
+console.log(philosophy);
+console.log(story);
