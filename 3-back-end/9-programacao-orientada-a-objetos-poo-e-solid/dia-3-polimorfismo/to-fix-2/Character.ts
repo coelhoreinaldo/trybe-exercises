@@ -80,3 +80,43 @@ class CharacterService {
     return ({ status: 200, data: allCharacter });
   }
 }
+
+class MockDbModel implements IModel {
+  async create(character: Character) {
+    console.log('character created');
+    return { id: 1, name: 'Peach', specialMove: 'Toad' };
+  }
+
+  async update(id: number, character: Character) {
+    console.log('character updated');
+    return { id: 1, name: 'Yoshi', specialMove: 'Egg Lay' };
+  }
+
+  async remove(id: number) {
+    console.log('character deleted');
+    return true;
+  }
+
+  async getAll() {
+    return [
+      { id: 1, name: 'Samus', specialMove: 'Charge Shot' },
+      { id: 2, name: 'Kirby', specialMove: 'Inhale' },
+    ];
+  }
+  
+  findIndexById = (id: number) => {
+    const index = db.findIndex((character) => character.id === id);
+    if (index < 0) throw new Error('Character not found');
+    return index;
+  };
+
+  async getById(id: number) {
+    return { id: 1, name: 'Mario', specialMove: 'Fireball' };
+  }
+}
+
+const A = new CharacterService(new LocalDbModel());
+A.getAll().then(console.log);
+
+const B = new CharacterService(new MockDbModel());
+B.getAll().then(console.log);
