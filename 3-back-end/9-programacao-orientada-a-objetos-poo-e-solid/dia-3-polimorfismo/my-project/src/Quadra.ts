@@ -1,4 +1,4 @@
-import IAgenda from "./interfaces/iAgenda";
+import IAgenda from "./interfaces/IAgenda";
 
 // src/Quadra.ts
 abstract class Quadra { 
