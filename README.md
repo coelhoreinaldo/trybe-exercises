@@ -206,9 +206,9 @@ Trybe is a technology school that has a genuine commitment to the professional s
 ##### Bloco 9: Programação Orientada a Objetos (POO) e Solid
 
 - [X] 9-1: _Introdução à Orientação a Objetos_
-- [ ] 9-2: _Herança e Interfaces_
-- [ ] 9-3: _Poliformismo_
-- [ ] 9-4: _SOLID - Introdução e Princípios S, O e D_
+- [X] 9-2: _Herança e Interfaces_
+- [X] 9-3: _Poliformismo_
+- [X] 9-4: _SOLID - Introdução e Princípios S, O e D_
 - [ ] 9-5: _SOLID - Princípios L e I_
 - [ ] 9-6: _Projeto - Trybers and Dragons_
 
