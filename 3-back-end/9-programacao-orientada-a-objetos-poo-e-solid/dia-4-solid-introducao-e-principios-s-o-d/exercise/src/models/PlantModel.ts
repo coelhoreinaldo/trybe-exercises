@@ -1,4 +1,4 @@
-import { IPlant } from '../interfaces/IPlant';
+import { IPlant } from '../interfaces';
 import { FileType, HandleFile } from './HandleFile';
 import { IModel, IOpsInfo } from './interfaces';
 
