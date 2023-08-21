@@ -1,4 +1,3 @@
-// ./FuturisticCar.ts
 import { IVehicle } from './interfaces';
 
 export default class FuturisticCar implements IVehicle {
