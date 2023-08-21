@@ -1,9 +1,13 @@
-export interface Connector {
+// ./src/Connectors/Connector.ts
+
+export interface ReadOnlyConnector {
   getCount(token: string): number | Promise<number>;
 
-  incrementCount(token: string): void;
-  
   closeConnection(): void;
+}
+
+export interface Connector extends ReadOnlyConnector {
+  incrementCount(token: string): void;
 
   clearCount(token: string): void;
 
