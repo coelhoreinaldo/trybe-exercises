@@ -210,7 +210,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 - [X] 9-3: _Poliformismo_
 - [X] 9-4: _SOLID - Introdução e Princípios S, O e D_
 - [X] 9-5: _SOLID - Princípios L e I_
-- [X] 9-6: _Projeto - Trybers and Dragons_
+- [X] 9-6: _[Projeto - Trybers and Dragons](https://github.com/coelhoreinaldo/trybers-and-dragons)_
 
 ##### Bloco 10: TFC - Trybe Futebol Clube
 
