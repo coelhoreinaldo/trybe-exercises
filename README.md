@@ -214,7 +214,8 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 10: TFC - Trybe Futebol Clube
 
-- [ ] 10-1: _Projeto - TFC - Trybe Futebol Clube_
+- [X] 10-1: _Express com Classes_
+- [ ] 10-2: _Projeto - TFC - Trybe Futebol Clube_
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
