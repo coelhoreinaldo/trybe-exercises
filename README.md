@@ -141,7 +141,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 - [X] 10-1: _[Projeto - App de Receitas](https://github.com/coelhoreinaldo/cook-script)_
 
-## Back-end :hourglass_flowing_sand:
+## Back-end ✅
 
 ##### Bloco 1: Docker: Utilizando Containers
 
@@ -215,7 +215,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 ##### Bloco 10: TFC - Trybe Futebol Clube
 
 - [X] 10-1: _Express com Classes_
-- [X] 10-2: _Projeto - TFC - Trybe Futebol Clube_
+- [X] 10-2: _[Projeto - TFC - Trybe Futebol Clube](https://github.com/coelhoreinaldo/trybe-futebol-clube)_
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
