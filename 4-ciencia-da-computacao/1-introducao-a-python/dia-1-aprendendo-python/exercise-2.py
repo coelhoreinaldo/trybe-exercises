@@ -34,7 +34,7 @@ var = set();
 
 var.add('Reinaldo Coelho')
 
-print(var)
+# print(var)
 
 # Frozen Set
 
@@ -59,3 +59,19 @@ people_by_id[1]  # saída: Maria
 del people_by_id[1]
 people_by_id.items()  # dict_items([(2, "Fernanda"), (3, "Felipe")])
 # é retornada uma coleção iterável de tuplas contendo chaves e valores
+
+# exercise-8
+
+info = {
+  "personagem": "Margarida",
+  "origem": "Pato Donald",
+  "nota": "Namorada do personagem principal nos quadrinhos do Pato Donald",
+}
+
+info.update({"recorrente": "Sim"})
+print(info)
+
+# exercise-9
+
+info.pop("origem")
+print(info)
