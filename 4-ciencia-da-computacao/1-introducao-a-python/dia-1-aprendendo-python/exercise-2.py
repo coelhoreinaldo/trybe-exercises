@@ -27,3 +27,11 @@ permissions.union({"user"})  # retorna um conjunto resultado da união
 permissions.intersection({"user", "member"})  # retorna um conjunto resultante da intersecção dos conjuntos
 
 permissions.difference({"user"})  # retorna a diferença entre os dois conjuntos
+
+# exercise-7
+
+var = set();
+
+var.add('Reinaldo Coelho')
+
+print(var)
