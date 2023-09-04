@@ -31,3 +31,9 @@ for factor in range(1, number+1):
 ratings = [6, 8, 5, 9, 10]
 new_ratings = [10 * rating for rating in ratings]
 print(new_ratings)
+
+for rating in ratings:
+    if rating % 3 == 0: 
+        print(f'{rating} é múltiplo de 3')
+
+      
