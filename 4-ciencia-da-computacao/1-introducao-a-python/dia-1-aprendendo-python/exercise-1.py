@@ -17,7 +17,7 @@ seconds = minutes * 60
 
 # exercise 3 "trailling comma"
 
-# exercise 4 
+# exercise 4
 
 books = 60
 book_price = (1 - 0.4) * 24.20

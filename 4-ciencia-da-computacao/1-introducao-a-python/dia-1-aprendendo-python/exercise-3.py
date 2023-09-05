@@ -7,14 +7,14 @@
 # while counter < number:
 #     result = result * counter
 #     counter += 1
-    
+
 
 # print(result)
 
 number = 5
 result = 1
 # Usamos number + 1 pro range ir até o number
-for factor in range(1, number+1):
+for factor in range(1, number + 1):
     result *= factor
 # print(result)
 
@@ -33,7 +33,5 @@ new_ratings = [10 * rating for rating in ratings]
 print(new_ratings)
 
 for rating in ratings:
-    if rating % 3 == 0: 
-        print(f'{rating} é múltiplo de 3')
-
-      
+    if rating % 3 == 0:
+        print(f"{rating} é múltiplo de 3")

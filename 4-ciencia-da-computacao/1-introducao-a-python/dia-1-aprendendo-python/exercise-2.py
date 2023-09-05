@@ -1,56 +1,86 @@
 trybe_course = ["Introdução", "Front-end", "Back-end"]
 
-# exercise-5 
+# exercise-5
 
-trybe_course.append('Ciência da Computação')
+trybe_course.append("Ciência da Computação")
 
 # exercise-6
 
-trybe_course[0] = 'Fundamentos'
+trybe_course[0] = "Fundamentos"
 
 # Tuple
 
-user = ("Will", "Marcondes", 42)  # elementos são definidos separados por vírgula, envolvidos por parênteses
+user = (
+    "Will",
+    "Marcondes",
+    42,
+)  # elementos são definidos separados por vírgula, envolvidos por parênteses
 
 user[0]  # acesso também por índices
 
 # Set
 
-permissions = {"member", "group"}  # elementos separados por vírgula, envolvidos por chaves
+permissions = {
+    "member",
+    "group",
+}  # elementos separados por vírgula, envolvidos por chaves
 
 permissions.add("root")  # adiciona um novo elemento ao conjunto
 
-permissions.add("member")  # como o elemento já existe, nenhum novo item é adicionado ao conjunto
+permissions.add(
+    "member"
+)  # como o elemento já existe, nenhum novo item é adicionado ao conjunto
 
 permissions.union({"user"})  # retorna um conjunto resultado da união
 
-permissions.intersection({"user", "member"})  # retorna um conjunto resultante da intersecção dos conjuntos
+permissions.intersection(
+    {"user", "member"}
+)  # retorna um conjunto resultante da intersecção dos conjuntos
 
 permissions.difference({"user"})  # retorna a diferença entre os dois conjuntos
 
 # exercise-7
 
-var = set();
+var = set()
 
-var.add('Reinaldo Coelho')
+var.add("Reinaldo Coelho")
 
 # print(var)
 
 # Frozen Set
 
-permissions = frozenset(["member", "group"])  # assim como o set, qualquer estrutura iterável pode ser utilizada para criar um frozenset
+permissions = frozenset(
+    ["member", "group"]
+)  # assim como o set, qualquer estrutura iterável pode ser utilizada para
+# criar um frozenset
 
-permissions.union({"user"})  # novos conjuntos imutáveis podem ser criados à partir do original, mas o mesmo não pode ser modificado
+permissions.union(
+    {"user"}
+)  # novos conjuntos imutáveis podem ser criados à partir do original, mas o
+# mesmo não pode ser modificado
 
-permissions.intersection({"user", "member"})  # retorna um conjunto resultante da intersecção dos conjuntos
+permissions.intersection(
+    {"user", "member"}
+)  # retorna um conjunto resultante da intersecção dos conjuntos
 
 permissions.difference({"user"})  # retorna a diferença entre os dois conjuntos
 
 # Dict
 
-people_by_id = {1: "Maria", 2: "Fernanda", 3: "Felipe"}  # elementos no formato "chave: valor" separados por vírgula, envolvidos por chaves
+people_by_id = {
+    1: "Maria",
+    2: "Fernanda",
+    3: "Felipe",
+}  # elementos no formato "chave: valor" separados por vírgula, envolvidos por
+# chaves
 
-people_by_name = {"Maria": 1, "Fernanda": 2, "Felipe": 3}  # outro exemplo, dessa vez usando strings como chaves. As aspas são necessárias para que o Python não ache que `Maria`, `Fernanda` e `Felipe` sejam variáveis.
+people_by_name = {
+    "Maria": 1,
+    "Fernanda": 2,
+    "Felipe": 3,
+}  # outro exemplo, dessa vez usando strings como chaves. As aspas são
+# necessárias para que o Python não ache que `Maria`, `Fernanda` e `Felipe`
+# sejam variáveis.
 
 # elementos são acessados por suas chaves
 people_by_id[1]  # saída: Maria
@@ -63,9 +93,9 @@ people_by_id.items()  # dict_items([(2, "Fernanda"), (3, "Felipe")])
 # exercise-8
 
 info = {
-  "personagem": "Margarida",
-  "origem": "Pato Donald",
-  "nota": "Namorada do personagem principal nos quadrinhos do Pato Donald",
+    "personagem": "Margarida",
+    "origem": "Pato Donald",
+    "nota": "Namorada do personagem principal nos quadrinhos do Pato Donald",
 }
 
 # info.update({"recorrente": "Sim"})
@@ -102,7 +132,7 @@ my_array = [20, 20, 1, 2]
 freq_dict = {}
 
 for item in my_array:
-    if (item in freq_dict):
+    if item in freq_dict:
         freq_dict[item] += 1
     else:
         freq_dict[item] = 1
@@ -111,6 +141,6 @@ for key, valor in freq_dict.items():
     print(f"{key} : {valor}")
 
 # Saída
-20: 2
-1: 1
-2: 1
+# 20: 2
+# 1: 1
+# 2: 1
