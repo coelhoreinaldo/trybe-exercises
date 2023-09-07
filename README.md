@@ -221,7 +221,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 1: Introdução à Python
 
-- [ ] 1-1: _Introdução à Python_
+- [X] 1-1: _Introdução à Python_
 - [ ] 1-2: _Entrada e Saída de Dados_
 
 ##### Bloco 2: Algoritmos
