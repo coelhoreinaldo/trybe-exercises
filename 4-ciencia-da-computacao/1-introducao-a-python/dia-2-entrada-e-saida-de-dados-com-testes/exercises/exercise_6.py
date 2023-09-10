@@ -8,7 +8,7 @@ def validate_email(email):
         if (
             not letter.isalpha()
             and not letter.isdigit()
-            and not letter.isnumeric()
+            and letter not in ("_", "-")
         ):
             raise ValueError(
                 "Username should contain only letters, numbers or characters"
@@ -23,9 +23,14 @@ def validate_email(email):
 
     extension = email.split("@")[1].split(".")[1]
     if (len(extension)) > 3:
-        raise ValueError("Extension should contain max 3 characteres")
+        raise ValueError("Extension maximum length is 3")
 
 
-user_email = input("Qual seu email?")
+def main():
+    user_email = input("Qual seu email?")
 
-validate_email(user_email)
+    validate_email(user_email)
+
+
+if __name__ == "__main__":
+    main()
