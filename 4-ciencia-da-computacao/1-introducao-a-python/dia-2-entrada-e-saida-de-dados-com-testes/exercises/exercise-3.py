@@ -1,16 +1,10 @@
 import random
 
 
-def words():
-    words = []
-    with open("words.txt") as WORDS:
-        for line in WORDS:
-            word = line.strip()
-            words.append(word)
+def load_words():
+    with open("words.txt") as words_file:
+        words = [line.strip() for line in words_file]
     return words
-
-
-WORDS = words()
 
 
 def draw_secret_word(words):
@@ -19,31 +13,37 @@ def draw_secret_word(words):
     return secret_word, scrambled_word
 
 
-secret_word, scrambled_word = draw_secret_word(WORDS)
-
-print(scrambled_word)
-
-
-def collect_guesses():
+def collect_guesses(words):
     attempts = 3
     result = "loss"
     while attempts > 0:
         guess = input("qual a palavra? ")
-        if guess in WORDS:
+        if guess in words:
             print("você acertou!")
             result = "win"
             break
         else:
             attempts -= 1
-            print("tente novamente!")
+            print(
+                f"tente novamente! você tem {attempts} tentativas restantes."
+            )
     return result
 
 
-def check_result(result):
+def check_result(result, secret_word):
     if result == "win":
         print(f"You win: {secret_word}")
     else:
         print(f"You lose: {secret_word}")
 
 
-check_result(collect_guesses())
+def main():
+    WORDS = load_words()
+    secret_word, scrambled_word = draw_secret_word(WORDS)
+    print(scrambled_word)
+    result = collect_guesses(WORDS)
+    check_result(result, secret_word)
+
+
+if __name__ == "__main__":
+    main()
