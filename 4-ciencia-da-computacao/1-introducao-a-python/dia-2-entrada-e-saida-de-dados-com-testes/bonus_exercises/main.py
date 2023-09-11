@@ -10,7 +10,7 @@ def get_random_pokemon():
     return pokemons[random_number]["name"]
 
 
-if __name__ == "__main__":
+def game():
     secret_pokemon = get_random_pokemon()
     showed_letters = -1
     hint = ""
@@ -27,3 +27,7 @@ if __name__ == "__main__":
             print(hint)
         if hint == secret_pokemon:
             print(f"Você Perdeu! A resposta era: {secret_pokemon}.")
+
+
+if __name__ == "__main__":
+    game()
