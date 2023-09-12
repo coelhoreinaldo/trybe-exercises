@@ -7,3 +7,4 @@ def multiply_array(numbers):
 
 
 # Complexidade de tempo: O(n)
+# Complexidade de espaço: O(1)
