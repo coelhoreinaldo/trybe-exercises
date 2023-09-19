@@ -227,8 +227,8 @@ Trybe is a technology school that has a genuine commitment to the professional s
 ##### Bloco 2: Algoritmos
 
 - [X] 2-1: _Complexidade de Algoritmos_
-- [ ] 2-2: _Recursividade e Estratégias para solução de problemas_
-- [ ] 2-3: _Algoritmos de ordenação e busca_
+- [X] 2-2: _Recursividade e Estratégias para solução de problemas_
+- [X] 2-3: _Algoritmos de ordenação e busca_
 - [ ] 2-4: _Projeto - Algoritmos_
 
 ##### Bloco 3: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
