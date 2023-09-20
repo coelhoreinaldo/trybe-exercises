@@ -29,7 +29,11 @@ class Liquidificador:
         return self.__ligado
 
 
-meu_liquidificador = Liquidificador("Azul", 200, 127, 200)
-seu_liquidificador = Liquidificador(
+liquidificador_azul = Liquidificador("Azul", 200, 127, 200)
+liquidificador_vermelho = Liquidificador(
     cor="Vermelho", potencia=250, tensao=220, preco=100
 )
+liquidificador_vermelho.ligar(1)
+print("Está ligado?", liquidificador_vermelho.esta_ligado())
+liquidificador_vermelho.desligar()
+print("Está ligado?", liquidificador_vermelho.esta_ligado())
