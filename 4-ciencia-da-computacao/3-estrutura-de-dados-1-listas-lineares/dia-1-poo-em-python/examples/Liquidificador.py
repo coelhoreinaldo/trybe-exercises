@@ -55,6 +55,11 @@ class Pessoa:
             self.saldo_na_conta -= liquidificador.preco
             self.liquidificador = liquidificador
 
+    def __str__(self) -> str:
+        return (
+            f"{self.nome} - possui {self.saldo_na_conta} reais em sua conta."
+        )
+
 
 pessoa_cozinheira = Pessoa("Paola Carosella", 1000)
 pessoa_cozinheira.comprar_liquidificador(liquidificador)
