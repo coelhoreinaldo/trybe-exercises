@@ -39,3 +39,26 @@ class Eletrodomestico:
 
 class Liquidificador(Eletrodomestico):
     pass
+
+
+class Secador(Eletrodomestico):
+    pass
+
+
+class Batedeira(Eletrodomestico):
+    pass
+
+
+class MaquinaDeLavar(Eletrodomestico):
+    pass
+
+
+secador = Secador("Branco", 450, 127, 450)
+batedeira = Batedeira("Azul", 420, 127, 230)
+maquina_de_lavar = MaquinaDeLavar("Azul", 120, 127, 400)
+
+print(f"O secador {secador.cor} custa {secador.preco}")
+print(f"A batedeira {batedeira.cor} custa {batedeira.preco}")
+print(
+    f"A máquina de lavar {maquina_de_lavar.cor} custa {maquina_de_lavar.preco}"
+)
