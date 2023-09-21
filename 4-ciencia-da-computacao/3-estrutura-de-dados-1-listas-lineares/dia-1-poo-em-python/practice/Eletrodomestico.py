@@ -35,3 +35,7 @@ class Eletrodomestico:
     @cor.setter
     def cor(self, nova_cor):
         self.__cor = nova_cor
+
+
+class Liquidificador(Eletrodomestico):
+    pass
