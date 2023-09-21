@@ -38,7 +38,8 @@ class Eletrodomestico:
 
 
 class Liquidificador(Eletrodomestico):
-    pass
+    def esta_ligado(self):
+        return "Sim" if super().esta_ligado() else "Não"
 
 
 class Secador(Eletrodomestico):
