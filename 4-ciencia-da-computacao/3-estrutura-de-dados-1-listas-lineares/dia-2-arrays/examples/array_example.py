@@ -1,4 +1,4 @@
-import sys
+# import sys
 
 
 class ListaArray:
@@ -17,6 +17,12 @@ class ListaArray:
     def set(self, index, value):
         self.data.insert(index, value)
 
+    def remove(self, index):
+        return self.data.pop(index)
+
+    def update(self, index, value):
+        self.data[index] = value
+
 
 array = ListaArray()
 
@@ -31,18 +37,18 @@ array = ListaArray()
 array.set(0, "Marcos")
 array.set(1, "Patrícia")
 
-array_memory_size = sys.getsizeof(array.data)
-print(array_memory_size)
+# array_memory_size = sys.getsizeof(array.data)
+# print(array_memory_size)
+print(array)
 
-array.set(2, "Matheus")
-array.set(3, "Giovana")
+# array.set(0, "Valeria")
+# print(array)
 
-array_memory_size = sys.getsizeof(array.data)
-print(array_memory_size)
+# print(array)
 
-array.set(4, "Alberto")
-array.set(5, "Marta")
-array.set(6, "Túlio")
-array.set(7, "Michelle")
-array_memory_size = sys.getsizeof(array.data)
-print(array_memory_size)  # 120
+array.remove(0)
+
+array.set(1, "Giovana")
+print(array)
+array.update(1, "Marla")
+print(array)
