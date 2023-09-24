@@ -229,12 +229,12 @@ Trybe is a technology school that has a genuine commitment to the professional s
 - [X] 2-1: _Complexidade de Algoritmos_
 - [X] 2-2: _Recursividade e Estratégias para solução de problemas_
 - [X] 2-3: _Algoritmos de ordenação e busca_
-- [X] 2-4: _Projeto - Algoritmos_
+- [X] 2-4: _[Projeto - Algoritmos](https://github.com/coelhoreinaldo/python-algorithms)_
 
 ##### Bloco 3: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
 
 - [X] 3-1: _P.O.O em Python_
-- [ ] 3-2: _Arrays_
+- [X] 3-2: _Arrays_
 - [ ] 3-3: _Nó e Listas Encadeadas_
 - [ ] 3-4: _Pilhas e Filas_
 - [ ] 3-5: _Projeto - TING - Trybe Is Not Google_
