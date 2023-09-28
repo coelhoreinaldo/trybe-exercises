@@ -241,6 +241,6 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 ##### Bloco 4: Estrutura de Dados II: Hashmaps e Sets
 
-- [ ] 4-1: _Hashmap e Dict_
+- [X] 4-1: _Hashmap e Dict_
 - [ ] 4-2: _Set_
 - [ ] 4-3: _Projeto - Restaurant Orders_
