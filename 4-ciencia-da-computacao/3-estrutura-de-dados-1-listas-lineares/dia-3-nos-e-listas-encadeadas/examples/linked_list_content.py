@@ -3,13 +3,13 @@ from node import Node
 
 class LinkedList:
     def __init__(self):
-        self.head.value = None
+        self.head_value = None
         self.__length = 0
 
-    def __str__(self) -> str:
+    def __str__(self):
         return f"LinkedList(len={self.__length}, value={self.head_value})"
 
-    def __len__(self) -> int:
+    def __len__(self):
         return self.__length
 
     def insert_first(self, value):
@@ -22,7 +22,7 @@ class LinkedList:
         last_value = Node(value)
         current_value = self.head_value
 
-        if current_value is None:
+        if self.is_empty():
             return self.insert_first(value)
 
         while current_value.next:
@@ -42,11 +42,10 @@ class LinkedList:
         next_value = Node(value)
         next_value.next = current_value.next
         current_value.next = next_value
-        current_value.next = next_value
         self.__length += 1
 
     def remove_first(self):
-        value_to_be_removed = self.head_value.next
+        value_to_be_removed = self.head_value
         if value_to_be_removed:
             self.head_value = self.head_value.next
             value_to_be_removed.next = None
@@ -83,6 +82,7 @@ class LinkedList:
         previous_to_be_removed.next = value_to_be_removed.next
         value_to_be_removed.next = None
         self.__length -= 1
+
         return value_to_be_removed
 
     def get_element_at(self, position):
@@ -95,3 +95,6 @@ class LinkedList:
             if value_to_be_returned:
                 value_returned = Node(value_to_be_returned.value)
         return value_returned
+
+    def is_empty(self):
+        return not self.__length
