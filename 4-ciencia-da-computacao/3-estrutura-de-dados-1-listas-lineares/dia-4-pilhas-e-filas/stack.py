@@ -37,30 +37,27 @@ class Stack:
 
         return "Stack(" + str_items + ")"
 
+    def min_value(self):
+        if self.is_empty():
+            return None
+
+        min_value = self._data[0]
+
+        for elem in self._data:
+            if elem < min_value:
+                min_value = elem
+        return min_value
+
 
 if __name__ == "__main__":
-    elements = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    elements = [2, 1, 5, 4, 10, 6, 8, 22, 11, 10]
     content_stack = Stack()
 
     for elem in elements:
         content_stack.push(elem)
-    # saída: Stack(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-    print(content_stack)
-    # saída: 10
-    print(content_stack.size())
 
-    # saída: 10
-    print(content_stack.peek())
-    # saída: 10, pois a função retorna o elemento que está sendo retirado
-    print(content_stack.pop())
-
-    # saída: 9, pois, após o 10 ter sido removido, o 9 se tornou o
-    # elemento do topo da pilha
-    print(content_stack.peek())
-    # saída: 9
-    print(content_stack.size())
-
-    # saída: None, pois a função não retorna nada!
-    print(content_stack.clear())
-    # saída: 0
-    print(content_stack.size())
+    # saída: 1
+    print(content_stack.min_value())
+    content_stack.push(-5)
+    # saída: -5
+    print(content_stack.min_value())
