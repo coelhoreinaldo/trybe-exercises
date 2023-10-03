@@ -29,6 +29,10 @@ class HashMap:
         address = self.get_address(id_num)
         return self._buckets[address] is not None
 
+    def update_value(self, id_num, new_name):
+        address = self.get_address(id_num)
+        self._buckets[address].name = new_name
+
 
 employees = [(14, "name1"), (23, "name2"), (10, "name3"), (9, "name4")]
 
@@ -38,4 +42,10 @@ for e_id, e_name in employees:
     curr_employee = Employee(e_id, e_name)
     hashmap.insert(curr_employee)
 
-print(hashmap.get_value(23))
+# print(hashmap.get_value(23))
+
+print(hashmap.get_value(10))
+
+hashmap.update_value(10, "coelho")
+
+print(hashmap.get_value(10))
