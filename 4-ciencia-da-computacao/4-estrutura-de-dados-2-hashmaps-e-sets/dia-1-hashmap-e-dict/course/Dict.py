@@ -49,3 +49,13 @@ def count_character(str):
 print(count_character(str))
 str = "coxinha"
 print(count_character(str))
+
+
+def triple_odd(dict):
+    for key in dict.keys():
+        if key % 2 != 0:
+            dict[key] = key * 3
+
+
+triple_odd(dict_comprehension)
+print(dict_comprehension)
