@@ -26,3 +26,8 @@ print(f"Novo dicionário 1, pós inserção/alteração: {dict1}")
 name = dict1[14]
 del dict1[14]
 print(f"Dicionário 1 pós consulta e deleção: {dict1}")
+
+
+# exercise 5
+dict_comprehension = {x: x * 2 for x in range(3, 21)}
+print(dict_comprehension)
