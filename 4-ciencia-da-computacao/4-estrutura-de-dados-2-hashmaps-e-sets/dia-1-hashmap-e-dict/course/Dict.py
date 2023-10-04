@@ -31,3 +31,21 @@ print(f"Dicionário 1 pós consulta e deleção: {dict1}")
 # exercise 5
 dict_comprehension = {x: x * 2 for x in range(3, 21)}
 print(dict_comprehension)
+
+# exercise 6
+str = "bbbbaaaacccaaaaaaddddddddccccccc"
+
+
+def count_character(str):
+    count = {}
+    for char in str:
+        if char not in count:
+            count[char] = 1
+        else:
+            count[char] += 1
+    return count
+
+
+print(count_character(str))
+str = "coxinha"
+print(count_character(str))
