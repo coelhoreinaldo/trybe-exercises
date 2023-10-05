@@ -57,6 +57,13 @@ class Conjunto:
 
         return True
 
+    def issuperset(self, conjunto_b):
+        for index in range(1001):
+            if conjunto_b.set[index] and not self.set[index]:
+                return False
+
+        return True
+
 
 if __name__ == "__main__":
     collection = Conjunto()
