@@ -41,6 +41,15 @@ class Conjunto:
 
         return new_set
 
+    def difference(self, conjunto_b):
+        new_set = Conjunto()
+
+        for index in range(1001):
+            if self.set[index] and not conjunto_b.set[index]:
+                new_set.add(index)
+
+        return new_set
+
 
 if __name__ == "__main__":
     collection = Conjunto()
@@ -86,3 +95,4 @@ if __name__ == "__main__":
         collection8.add(i)
 
     print(collection7.intersection(collection8))
+    print(collection7.difference(collection8))
