@@ -23,6 +23,15 @@ class Conjunto:
     def __contains__(self, item):
         return self.set[item]
 
+    def union(self, conjunto_b):
+        new_set = Conjunto()
+
+        for index in range(1001):
+            if self.set[index] or conjunto_b.set[index]:
+                new_set.add(index)
+
+        return new_set
+
 
 if __name__ == "__main__":
     collection = Conjunto()
@@ -37,5 +46,14 @@ if __name__ == "__main__":
     for i in [1, 2, 3]:
         collection2.add(i)
 
-    print(collection2)
-    print(collection2.__contains__(3))
+    # print(collection2)
+    # print(collection2.__contains__(3))
+
+    collection3 = Conjunto()
+    for i in range(0, 11):
+        collection3.add(i)
+    collection4 = Conjunto()
+    for i in range(10, 21):
+        collection4.add(i)
+
+    print(collection3.union(collection4))
