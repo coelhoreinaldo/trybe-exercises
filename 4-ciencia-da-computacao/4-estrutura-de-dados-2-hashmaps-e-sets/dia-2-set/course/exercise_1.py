@@ -66,47 +66,30 @@ class Conjunto:
 
 
 if __name__ == "__main__":
-    collection = Conjunto()
+    conj_estudantes = Conjunto()
+    conj_lista1 = Conjunto()
+    conj_lista2 = Conjunto()
 
-    for item in [0, 10, 100, 1000]:
-        collection.add(item)
+    estudantes = [1, 2, 3, 4, 5, 6, 7]
+    lista1_entregues = [1, 4, 7, 3]
+    lista2_entregues = [3, 1, 6]
 
-    # print(collection)
+    for elem in estudantes:
+        conj_estudantes.add(elem)
 
-    collection2 = Conjunto()
+    for elem in lista1_entregues:
+        conj_lista1.add(elem)
 
-    for i in [1, 2, 3]:
-        collection2.add(i)
+    for elem in lista2_entregues:
+        conj_lista2.add(elem)
 
-    # print(collection2)
-    # print(collection2.__contains__(3))
-
-    collection3 = Conjunto()
-    for i in range(0, 11):
-        collection3.add(i)
-    collection4 = Conjunto()
-    for i in range(10, 21):
-        collection4.add(i)
-
-    # print(collection3.union(collection4))
-
-    collection5 = Conjunto()
-    for i in [1, 2, 3]:
-        collection5.add(i)
-
-    collection6 = Conjunto()
-    for i in [3, 4, 5]:
-        collection6.add(i)
-
-    print(collection5.intersection(collection6))
-
-    collection7 = Conjunto()
-    for i in [0, 3, 6, 9]:
-        collection7.add(i)
-
-    collection8 = Conjunto()
-    for i in [12, 15, 18]:
-        collection8.add(i)
-
-    print(collection7.intersection(collection8))
-    print(collection7.difference(collection8))
+    print("Não entregaram a lista 1:", conj_estudantes.difference(conj_lista1))
+    print("Já entregaram as 2 listas:", conj_lista1.intersection(conj_lista2))
+    print(
+        "Quem já entregou pelo menos uma lista:",
+        conj_lista1.union(conj_lista2),
+    )
+    print(
+        "Quem não entregou nenhuma:",
+        conj_estudantes.difference(conj_lista1.union(conj_lista2)),
+    )
