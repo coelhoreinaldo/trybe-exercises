@@ -32,6 +32,15 @@ class Conjunto:
 
         return new_set
 
+    def intersection(self, conjunto_b):
+        new_set = Conjunto()
+
+        for index in range(1001):
+            if self.set[index] and conjunto_b.set[index]:
+                new_set.add(index)
+
+        return new_set
+
 
 if __name__ == "__main__":
     collection = Conjunto()
@@ -56,4 +65,24 @@ if __name__ == "__main__":
     for i in range(10, 21):
         collection4.add(i)
 
-    print(collection3.union(collection4))
+    # print(collection3.union(collection4))
+
+    collection5 = Conjunto()
+    for i in [1, 2, 3]:
+        collection5.add(i)
+
+    collection6 = Conjunto()
+    for i in [3, 4, 5]:
+        collection6.add(i)
+
+    print(collection5.intersection(collection6))
+
+    collection7 = Conjunto()
+    for i in [0, 3, 6, 9]:
+        collection7.add(i)
+
+    collection8 = Conjunto()
+    for i in [12, 15, 18]:
+        collection8.add(i)
+
+    print(collection7.intersection(collection8))
