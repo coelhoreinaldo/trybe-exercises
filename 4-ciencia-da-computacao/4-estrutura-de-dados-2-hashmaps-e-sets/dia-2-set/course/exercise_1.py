@@ -20,6 +20,9 @@ class Conjunto:
         if item > self.last_element:
             self.last_element = item
 
+    def __contains__(self, item):
+        return self.set[item]
+
 
 if __name__ == "__main__":
     collection = Conjunto()
@@ -27,4 +30,12 @@ if __name__ == "__main__":
     for item in [0, 10, 100, 1000]:
         collection.add(item)
 
-    print(collection)
+    # print(collection)
+
+    collection2 = Conjunto()
+
+    for i in [1, 2, 3]:
+        collection2.add(i)
+
+    print(collection2)
+    print(collection2.__contains__(3))
