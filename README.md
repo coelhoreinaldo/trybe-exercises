@@ -237,7 +237,7 @@ Trybe is a technology school that has a genuine commitment to the professional s
 - [X] 3-2: _Arrays_
 - [X] 3-3: _Nó e Listas Encadeadas_
 - [X] 3-4: _Pilhas e Filas_
-- [ ] 3-5: _Projeto - TING - Trybe Is Not Google_
+- [X] 3-5: _Projeto - TING - Trybe Is Not Google_
 
 ##### Bloco 4: Estrutura de Dados II: Hashmaps e Sets
 
