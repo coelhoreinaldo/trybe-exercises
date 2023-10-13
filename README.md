@@ -243,4 +243,4 @@ Trybe is a technology school that has a genuine commitment to the professional s
 
 - [X] 4-1: _Hashmap e Dict_
 - [X] 4-2: _Set_
-- [ ] 4-3: _Projeto - Restaurant Orders_
+- [X] 4-3: _[Projeto - Restaurant Orders](https://github.com/coelhoreinaldo/trybe-exercises/blob/main/README.md)_
